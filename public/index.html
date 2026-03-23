@@ -15,15 +15,28 @@
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
 </head>
-<body>
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-900" x-data="{ isOpen: false }">
+<body class="bg-black text-white antialiased text-base">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-900"
+  x-data="{ isOpen: false }">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20">
       
       <div class="flex items-center" data-aos="fade-right">
-        <a href="#home" class="flex items-center gap-3">
+        <a href="/" class="flex items-center gap-3">
           <img src="/images/logo.png" alt="Project Conquerors" class="h-12 w-auto object-contain">
           <div class="hidden sm:flex flex-col">
             <span class="font-black text-xl text-white">PROJECT CONQUERORS</span>
@@ -34,11 +47,16 @@
 
       
       <div class="hidden md:flex items-center space-x-8">
-        <a href="#home" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm" data-aos="fade-down" data-aos-delay="0">ACCUEIL</a>
-        <a href="#news" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm" data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
-        <a href="#services" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm" data-aos="fade-down" data-aos-delay="200">SERVICES</a>
-        <a href="#partners" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm" data-aos="fade-down" data-aos-delay="300">PARTENAIRES</a>
-        <a href="#contact" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm" data-aos="fade-down" data-aos-delay="400">CONTACT</a>
+        <a href="/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+          data-aos="fade-down" data-aos-delay="0">ACCUEIL</a>
+        <a href="/news/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+          data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
+        <a href="/#partners" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+          data-aos="fade-down" data-aos-delay="300">PARTENAIRES</a>
+        <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
+          rel="noopener noreferrer"
+          class="bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 font-bold text-sm px-6 py-2.5 rounded-md shadow-lg hover:shadow-red-600/20"
+          data-aos="fade-down" data-aos-delay="500">BOUTIQUE</a>
       </div>
 
       
@@ -50,25 +68,25 @@
   </div>
 
   
-  <div x-show="isOpen" 
-       x-transition:enter="transition ease-out duration-200"
-       x-transition:enter-start="opacity-0 -translate-y-2"
-       x-transition:enter-end="opacity-100 translate-y-0"
-       x-transition:leave="transition ease-in duration-150"
-       x-transition:leave-start="opacity-100 translate-y-0"
-       x-transition:leave-end="opacity-0 -translate-y-2"
-       class="md:hidden bg-black/98 border-t border-gray-900" style="display: none;">
+  <div x-show="isOpen" x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 -translate-y-2" class="md:hidden bg-black/98 border-t border-gray-900"
+    style="display: none;">
     <div class="px-4 py-6 space-y-4">
-      <a href="#home" @click="isOpen = false" class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACCUEIL</a>
-      <a href="#news" @click="isOpen = false" class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACTUALITÉS</a>
-      <a href="#services" @click="isOpen = false" class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">SERVICES</a>
-      <a href="#partners" @click="isOpen = false" class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">PARTENAIRES</a>
-      <a href="#contact" @click="isOpen = false" class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">CONTACT</a>
+      <a href="/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACCUEIL</a>
+      <a href="/news/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACTUALITÉS</a>
+      <a href="/#partners" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">PARTENAIRES</a>
+      <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
+        rel="noopener noreferrer"
+        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg">BOUTIQUE</a>
     </div>
   </div>
 </nav>
-
-  <main>
+  <main class="w-full relative z-0 flex-grow">
     
       <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
   
@@ -114,311 +132,6 @@
     </div>
   </div>
 </section>
-      <section id="news" class="py-24 bg-black">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <div data-aos="fade-up" data-aos-duration="600" class="mb-16">
-      <h2 class="text-5xl sm:text-6xl font-black text-white mb-4">ACTUALITÉS</h2>
-      <div class="h-1 w-24 bg-red-600"></div>
-    </div>
-
-    
-    <article data-aos="fade-up" data-aos-duration="600" class="mb-16 group cursor-pointer block">
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-900 rounded-lg overflow-hidden border border-red-900/30 hover:border-red-600 transition-all duration-300">
-        <div class="relative h-96 lg:h-auto overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1746396887626-6bd54c6b2181?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3BvcnRzJTIwdGVhbSUyMHZpY3RvcnklMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzM2NDU3Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Victoire historique en finale nationale"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-          <div class="absolute top-6 left-6">
-            <span class="px-4 py-2 bg-red-600 text-white font-bold text-sm rounded">À LA UNE</span>
-          </div>
-        </div>
-        <div class="p-8 lg:p-12 flex flex-col justify-center">
-          <div class="flex items-center gap-3 text-gray-400 mb-4">
-            <i data-lucide="calendar" width="18" height="18"></i>
-            <span class="text-sm font-semibold">15 Mars 2026</span>
-            <span class="text-red-500">•</span>
-            <span class="text-sm font-semibold">Compétition</span>
-          </div>
-          <h3
-            class="text-3xl sm:text-4xl font-black text-white mb-6 group-hover:text-red-500 transition-colors duration-300">
-            Victoire historique en finale nationale
-          </h3>
-          <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-          <div class="flex items-center gap-3 text-red-500 font-bold group-hover:gap-5 transition-all duration-300">
-            <span>LIRE L'ARTICLE</span>
-            <i data-lucide="arrow-right" width="20" height="20"></i>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-      
-      <article data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class="group cursor-pointer">
-        <div
-          class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 h-full flex flex-col">
-          <div class="relative h-48 overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1758410473735-c76baff30a79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjB0b3VybmFtZW50JTIwYXJlbmElMjBsaWdodHN8ZW58MXx8fHwxNzczNjcwMjk2fDA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Nouveau partenariat"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-            <div class="absolute top-4 left-4">
-              <span class="px-3 py-1 bg-black/80 text-white text-xs font-bold rounded">Partenariat</span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
-              <i data-lucide="calendar" width="14" height="14"></i>
-              <span class="font-semibold">10 Mars 2026</span>
-            </div>
-            <h3
-              class="font-bold text-lg text-white mb-3 group-hover:text-red-500 transition-colors duration-300 line-clamp-2">
-              Nouveau partenariat avec LegendsPath</h3>
-            <p class="text-gray-400 text-sm mb-4 flex-1 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="flex items-center gap-2 text-red-500 text-sm font-bold">
-              <span>LIRE</span>
-              <i data-lucide="arrow-right" width="16" height="16"></i>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      
-      <article data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group cursor-pointer">
-        <div
-          class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 h-full flex flex-col">
-          <div class="relative h-48 overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1759701546668-4fe410517caf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNwb3J0JTIwcGxheWVyJTIwY29tcGV0aXRpb258ZW58MXx8fHwxNzczNjcwMjk1fDA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Journée portes ouvertes"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-            <div class="absolute top-4 left-4">
-              <span class="px-3 py-1 bg-black/80 text-white text-xs font-bold rounded">Événement</span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
-              <i data-lucide="calendar" width="14" height="14"></i>
-              <span class="font-semibold">5 Mars 2026</span>
-            </div>
-            <h3
-              class="font-bold text-lg text-white mb-3 group-hover:text-red-500 transition-colors duration-300 line-clamp-2">
-              Bootcamp multi-gaming - Mars 2026</h3>
-            <p class="text-gray-400 text-sm mb-4 flex-1 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="flex items-center gap-2 text-red-500 text-sm font-bold">
-              <span>LIRE</span>
-              <i data-lucide="arrow-right" width="16" height="16"></i>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      
-      <article data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" class="group cursor-pointer">
-        <div
-          class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 h-full flex flex-col">
-          <div class="relative h-48 overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1764493824817-ba770988de79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBzZXR1cCUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzM2ODA2MjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Lancement du programme de coaching"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-            <div class="absolute top-4 left-4">
-              <span class="px-3 py-1 bg-black/80 text-white text-xs font-bold rounded">Formation</span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
-              <i data-lucide="calendar" width="14" height="14"></i>
-              <span class="font-semibold">1 Mars 2026</span>
-            </div>
-            <h3
-              class="font-bold text-lg text-white mb-3 group-hover:text-red-500 transition-colors duration-300 line-clamp-2">
-              Lancement du programme de coaching</h3>
-            <p class="text-gray-400 text-sm mb-4 flex-1 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="flex items-center gap-2 text-red-500 text-sm font-bold">
-              <span>LIRE</span>
-              <i data-lucide="arrow-right" width="16" height="16"></i>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      
-      <article data-aos="fade-up" data-aos-delay="300" data-aos-duration="600" class="group cursor-pointer">
-        <div
-          class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 h-full flex flex-col">
-          <div class="relative h-48 overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1770067665792-9975acdec4fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3BvcnRzJTIwZXZlbnQlMjBjcm93ZHxlbnwxfHx8fDE3NzM2ODA2MjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Tournoi mensuel League of Legends"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-            <div class="absolute top-4 left-4">
-              <span class="px-3 py-1 bg-black/80 text-white text-xs font-bold rounded">Compétition</span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
-              <i data-lucide="calendar" width="14" height="14"></i>
-              <span class="font-semibold">25 Février 2026</span>
-            </div>
-            <h3
-              class="font-bold text-lg text-white mb-3 group-hover:text-red-500 transition-colors duration-300 line-clamp-2">
-              Tournoi mensuel League of Legends</h3>
-            <p class="text-gray-400 text-sm mb-4 flex-1 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="flex items-center gap-2 text-red-500 text-sm font-bold">
-              <span>LIRE</span>
-              <i data-lucide="arrow-right" width="16" height="16"></i>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    
-    <div data-aos="fade-up" data-aos-duration="600" class="text-center">
-      <a href="#news"
-        class="inline-flex items-center gap-3 px-10 py-5 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-all duration-300">TOUTES
-        LES ACTUALITÉS
-        <i data-lucide="arrow-right" width="24" height="24"></i>
-      </a>
-    </div>
-
-    
-    <div data-aos="fade-up" data-aos-duration="600" class="mt-24 mb-12">
-      <h2 class="text-4xl sm:text-5xl font-black text-white mb-4">PROCHAINS ÉVÈNEMENTS</h2>
-      <div class="h-1 w-24 bg-red-600"></div>
-    </div>
-
-    
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-      
-      <article data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class="group cursor-pointer">
-        <div
-          class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 h-full flex items-center p-4">
-          <div
-            class="w-24 h-24 bg-red-600/10 rounded flex flex-col items-center justify-center border border-red-600/20 text-red-500 mr-6 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300 shrink-0">
-            <span class="text-2xl font-black">14,15</span>
-            <span class="text-sm font-bold uppercase">Mars</span>
-          </div>
-          <div class="flex-1">
-            <h3 class="font-bold text-xl text-white mb-1 group-hover:text-red-500 transition-colors duration-300">
-              Salon Japan Manga Wave</h3>
-            <p class="text-gray-400 text-sm mb-2">La Roche sur Foron</p>
-            <div class="flex items-center gap-2 text-red-500 text-sm font-bold">
-              <span>PARTICIPER</span>
-              <i data-lucide="arrow-right" width="16" height="16"></i>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      
-      <article data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group cursor-pointer">
-        <div
-          class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 h-full flex items-center p-4">
-          <div
-            class="w-24 h-24 bg-red-600/10 rounded flex flex-col items-center justify-center border border-red-600/20 text-red-500 mr-6 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300 shrink-0">
-            <span class="text-2xl font-black">28,29</span>
-            <span class="text-sm font-bold uppercase">Mars</span>
-          </div>
-          <div class="flex-1">
-            <h3 class="font-bold text-xl text-white mb-1 group-hover:text-red-500 transition-colors duration-300">
-              Japan Otaku Festival</h3>
-            <p class="text-gray-400 text-sm mb-2">La Roche sur Yon</p>
-            <div class="flex items-center gap-2 text-red-500 text-sm font-bold">
-              <span>PARTICIPER</span>
-              <i data-lucide="arrow-right" width="16" height="16"></i>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    
-    <div data-aos="fade-up" data-aos-duration="600" class="text-center">
-      <a href="/events"
-        class="inline-flex items-center gap-3 px-10 py-5 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-all duration-300">
-        VOIR PLUS D'ÉVÈNEMENTS
-        <i data-lucide="calendar" width="24" height="24"></i>
-      </a>
-    </div>
-  </div>
-</section>
-      <section id="services" class="py-24 bg-gray-950">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div data-aos="fade-up" data-aos-duration="600" class="mb-16">
-      <h2 class="text-5xl sm:text-6xl font-black text-white mb-4">NOS SERVICES</h2>
-      <div class="h-1 w-24 bg-red-600 mb-6"></div>
-      <p class="text-gray-400 text-xl max-w-3xl leading-relaxed">
-        Une gamme complète de services pour accompagner les joueurs,
-        les équipes et développer la scène esport française
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class="group p-8 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-        <div class="inline-flex items-center justify-center w-16 h-16 bg-red-600 rounded mb-6 group-hover:scale-110 transition-transform duration-300">
-          <i data-lucide="users" class="text-white" width="32" height="32"></i>
-        </div>
-        <h3 class="font-black text-2xl text-white mb-4">Gestion d'équipes</h3>
-        <p class="text-gray-400 text-lg leading-relaxed">Accompagnement dans la structuration et le développement des équipes esport.</p>
-      </div>
-      
-      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group p-8 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-        <div class="inline-flex items-center justify-center w-16 h-16 bg-red-600 rounded mb-6 group-hover:scale-110 transition-transform duration-300">
-          <i data-lucide="gamepad-2" class="text-white" width="32" height="32"></i>
-        </div>
-        <h3 class="font-black text-2xl text-white mb-4">Compétitions</h3>
-        <p class="text-gray-400 text-lg leading-relaxed">Organisation et participation à des tournois locaux et nationaux.</p>
-      </div>
-      
-      <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" class="group p-8 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-        <div class="inline-flex items-center justify-center w-16 h-16 bg-red-600 rounded mb-6 group-hover:scale-110 transition-transform duration-300">
-          <i data-lucide="calendar" class="text-white" width="32" height="32"></i>
-        </div>
-        <h3 class="font-black text-2xl text-white mb-4">Événements</h3>
-        <p class="text-gray-400 text-lg leading-relaxed">Création d'événements gaming pour rassembler la communauté.</p>
-      </div>
-      
-      <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="600" class="group p-8 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-        <div class="inline-flex items-center justify-center w-16 h-16 bg-red-600 rounded mb-6 group-hover:scale-110 transition-transform duration-300">
-          <i data-lucide="award" class="text-white" width="32" height="32"></i>
-        </div>
-        <h3 class="font-black text-2xl text-white mb-4">Coaching</h3>
-        <p class="text-gray-400 text-lg leading-relaxed">Programmes de formation pour aider les joueurs à progresser.</p>
-      </div>
-      
-      <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="600" class="group p-8 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-        <div class="inline-flex items-center justify-center w-16 h-16 bg-red-600 rounded mb-6 group-hover:scale-110 transition-transform duration-300">
-          <i data-lucide="megaphone" class="text-white" width="32" height="32"></i>
-        </div>
-        <h3 class="font-black text-2xl text-white mb-4">Communication</h3>
-        <p class="text-gray-400 text-lg leading-relaxed">Stratégies de communication et couverture médiatique.</p>
-      </div>
-      
-      <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="600" class="group p-8 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-        <div class="inline-flex items-center justify-center w-16 h-16 bg-red-600 rounded mb-6 group-hover:scale-110 transition-transform duration-300">
-          <i data-lucide="graduation-cap" class="text-white" width="32" height="32"></i>
-        </div>
-        <h3 class="font-black text-2xl text-white mb-4">Formation</h3>
-        <p class="text-gray-400 text-lg leading-relaxed">Ateliers sur l'univers de l'esport et les métiers du gaming.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
       <section id="partners" class="py-10 bg-black overflow-hidden border-t border-b border-gray-900">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
     <div data-aos="fade-up" data-aos-duration="600" class="text-center">
@@ -430,24 +143,883 @@
     <div class="animate-marquee gap-16 md:gap-32">
       
       <div class="flex items-center gap-16 md:gap-32 px-8">
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          LEGENDS PATH</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          SONIX</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          E2C MARSEILLE</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          RESPECT ZONE</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          HERO FESTIVAL</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          JOKO WEAR</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          AFD TECH</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          BANDAI NAMCO</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          KONIX</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          GRENIER DU GEEK</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          UPPERSCORE</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          TURTLE BEACH</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          DAIKYO</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          NEL WORKSHOP</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          COSMOCOVER</div>
       </div>
       
       <div class="flex items-center gap-16 md:gap-32 px-8">
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
-        <div class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">LEGENDS PATH</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          LEGENDS PATH</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          SONIX</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          E2C MARSEILLE</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          RESPECT ZONE</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          HERO FESTIVAL</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          JOKO WEAR</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          AFD TECH</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          BANDAI NAMCO</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          KONIX</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          GRENIER DU GEEK</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          UPPERSCORE</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          TURTLE BEACH</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          DAIKYO</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          NEL WORKSHOP</div>
+        <div
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
+          COSMOCOVER</div>
       </div>
+    </div>
+</section>
+      <section id="news" class="py-24 bg-black">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div data-aos="fade-up" data-aos-duration="600" class="mb-16">
+      <h2 class="text-5xl sm:text-6xl font-black text-white mb-4">ACTUALITÉS</h2>
+      <div class="h-1 w-24 bg-red-600"></div>
+    </div>
+
+    
+    
+    
+      
+      <article data-aos="fade-up" data-aos-duration="600" class="mb-16 group cursor-pointer block">
+        <a href="/news/2024-09-24-league-of-legends-toutes-les-infos-sur-le-red-bull-league-of-its-own/" class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-900 rounded-lg overflow-hidden border border-red-900/30 hover:border-red-600 transition-all duration-300">
+          <div class="relative h-96 lg:h-auto overflow-hidden bg-black">
+            <img src="/images/uploads/redbull-league-of-its-own-2024.jpg" alt="League Of Legends : toutes les infos sur le Red Bull League of Its Own" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+            <div class="absolute top-6 left-6">
+              <span class="px-4 py-2 bg-red-600 text-white font-bold text-sm rounded shadow-lg uppercase tracking-wider">À LA UNE</span>
+            </div>
+          </div>
+          <div class="p-8 lg:p-12 flex flex-col justify-center">
+            <div class="flex items-center gap-3 text-gray-400 mb-4 uppercase tracking-widest text-xs font-semibold">
+              <i data-lucide="calendar" class="w-4 h-4 text-red-500"></i>
+              <span>24 Sep 2024</span>
+            </div>
+            <h3 class="text-3xl sm:text-4xl font-black text-white mb-6 group-hover:text-red-500 transition-colors duration-300 leading-tight">
+              League Of Legends : toutes les infos sur le Red Bull League of Its Own
+            </h3>
+            <p class="text-gray-400 text-lg mb-8 leading-relaxed line-clamp-3">
+              <h2 id="quand-et-comment-suivre-l"><strong>Quand et comment suivre l&rsquo;événement ?</strong></h2>
+<p>Réservez bien votre <strong>dimanche 15 décembre</strong>, date du Red Bull League Its Own qui prendra place à l’<strong>Accord Arena de Paris dès 14h</strong>, dans une salle de pas moins de 15 000 places afin d’accueillir bon …</p>
+            </p>
+            <div class="flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider group-hover:gap-4 transition-all duration-300">
+              <span>Lire l'article</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      
+      
+    
+
+    
+    <div data-aos="fade-up" data-aos-duration="600" class="text-center">
+      <a href="/news/"
+        class="inline-flex items-center gap-3 px-10 py-5 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-all duration-300 uppercase tracking-wide">
+        Toutes les actualités
+        <i data-lucide="arrow-right" class="w-6 h-6"></i>
+      </a>
+    </div>
+
+    
+    <div data-aos="fade-up" data-aos-duration="600" class="mt-24 mb-12">
+      <h2 class="text-4xl sm:text-5xl font-black text-white mb-4">PROCHAINS ÉVÈNEMENTS</h2>
+      <div class="h-1 w-24 bg-red-600"></div>
+    </div>
+
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12" x-data="calendarEvents()" x-init="fetchEvents()">
+
+      
+      <template x-if="isLoading">
+        <div class="col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+          <div
+            class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 h-32 animate-pulse flex items-center p-4">
+            <div class="w-24 h-24 bg-gray-800 rounded mr-6"></div>
+            <div class="flex-1 space-y-3">
+              <div class="h-4 bg-gray-800 rounded w-3/4"></div>
+              <div class="h-3 bg-gray-800 rounded w-1/2"></div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 h-32 animate-pulse hidden lg:flex items-center p-4">
+            <div class="w-24 h-24 bg-gray-800 rounded mr-6"></div>
+            <div class="flex-1 space-y-3">
+              <div class="h-4 bg-gray-800 rounded w-3/4"></div>
+              <div class="h-3 bg-gray-800 rounded w-1/2"></div>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      
+      <template x-if="error">
+        <div
+          class="col-span-1 lg:col-span-2 p-8 bg-red-900/20 border border-red-900/30 rounded-lg flex items-center justify-center">
+          <p class="text-red-500 font-bold">Impossible de charger les évènements pour le moment.</p>
+        </div>
+      </template>
+
+      
+      <template x-if="!isLoading && !error && events.length === 0">
+        <div
+          class="col-span-1 lg:col-span-2 p-8 bg-gray-900/50 border border-gray-800 rounded-lg flex items-center justify-center">
+          <p class="text-gray-400 font-medium">Aucun évènement à venir.</p>
+        </div>
+      </template>
+
+      
+      <template x-for="(event, index) in events" :key="event.id">
+        <article class="group cursor-pointer">
+          <a :href="event.link" target="_blank" rel="noopener noreferrer"
+            class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 h-full flex items-center p-4 min-h-[128px]">
+            <div
+              class="w-24 h-24 bg-red-600/10 rounded flex flex-col items-center justify-center border border-red-600/20 text-red-500 mr-6 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300 shrink-0">
+              <span class="text-2xl font-black" x-text="event.dateStr"></span>
+              <span class="text-sm font-bold uppercase" x-text="event.monthStr"></span>
+            </div>
+            <div class="flex-1">
+              <h3
+                class="font-bold text-xl text-white mb-1 group-hover:text-red-500 transition-colors duration-300 line-clamp-1"
+                x-text="event.title"></h3>
+              <p class="text-gray-400 text-sm mb-2 flex items-center gap-2 line-clamp-1">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="inline opacity-70">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span x-text="event.location"></span>
+              </p>
+              <div class="flex items-center gap-2 text-red-500 text-sm font-bold mt-2">
+                <span>DÉTAILS</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="inline group-hover:translate-x-1 transition-transform">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+      </template>
+    </div>
+
+    
+    <script>
+      function calendarEvents() {
+        return {
+          events: [],
+          isLoading: true,
+          error: false,
+          async fetchEvents() {
+            const apiKey = 'AIzaSyAl3-zlkhFZU8v4K1iAl9XAjYOxC6D2Tgk';
+            const calendarId = '42e7f455aa67b0978c4279ddcb3be12cf9e69804cd1e0999c78f5b09a31480ac@group.calendar.google.com';
+            const timeMin = new Date().toISOString();
+            const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${encodeURIComponent(timeMin)}&singleEvents=true&orderBy=startTime&maxResults=2`;
+
+            try {
+              const response = await fetch(url);
+              if (!response.ok) throw new Error('API HTTP error ' + response.status);
+              const data = await response.json();
+
+              this.events = (data.items || []).map(item => {
+                const start = new Date(item.start.dateTime || item.start.date);
+                const end = new Date(item.end.dateTime || item.end.date);
+
+                const startDay = start.getDate();
+                const startMonth = start.toLocaleString('fr-FR', { month: 'short' });
+
+                let dateStr = startDay.toString();
+                if (item.end.date) {
+                  
+                  const realEnd = new Date(end.getTime() - 86400000);
+                  if (realEnd.getDate() !== startDay) {
+                    dateStr = `${startDay}-${realEnd.getDate()}`;
+                  }
+                } else {
+                  
+                  if (end.getDate() !== start.getDate()) {
+                    dateStr = `${startDay}-${end.getDate()}`;
+                  }
+                }
+
+                
+                const cleanedMonth = startMonth.replace('.', '');
+
+                return {
+                  id: item.id,
+                  title: item.summary || 'Évènement',
+                  location: item.location ? item.location.split(',')[0] : 'En ligne / À définir',
+                  dateStr: dateStr,
+                  monthStr: cleanedMonth,
+                  link: item.htmlLink
+                };
+              });
+            } catch (err) {
+              console.error('Failed to fetch events from Google Calendar API:', err);
+              this.error = true;
+            } finally {
+              this.isLoading = false;
+            }
+          }
+        }
+      }
+    </script>
+
+    
+    <div data-aos="fade-up" data-aos-duration="600" class="text-center">
+      <a href="/events"
+        class="inline-flex items-center gap-3 px-10 py-5 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-all duration-300">
+        VOIR PLUS D'ÉVÈNEMENTS
+        <i data-lucide="calendar" width="24" height="24"></i>
+      </a>
     </div>
   </div>
 </section>
+      
+<section id="teams" class="py-24 bg-black border-t border-gray-900" x-data="{ activeGame: 0 }">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
+    
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-12 gap-6">
+
+      
+      <div data-aos="fade-right" data-aos-duration="600" class="flex-shrink-0">
+        <h2 class="text-3xl sm:text-4xl font-black text-white mb-2">NOS ÉQUIPES</h2>
+        <div class="h-1 w-16 bg-red-600"></div>
+      </div>
+
+      
+      <div data-aos="fade-down" data-aos-duration="600"
+        class="flex-1 flex overflow-x-auto gap-4 lg:gap-6 hide-scrollbar items-center justify-start lg:justify-center px-2 py-4">
+
+        
+        <button @click="activeGame = 0"
+          :class="activeGame === 0 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
+          class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
+          <img src="https://placehold.co/400x400/1a1a24/ffffff?text=2XKO" alt="2XKO" class="w-10 h-10 object-contain drop-shadow-md">
+        </button>
+        
+        <button @click="activeGame = 1"
+          :class="activeGame === 1 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
+          class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
+          <img src="https://placehold.co/400x400/1a1a24/ffffff?text=Apex&#43;Legends" alt="Apex Legends" class="w-10 h-10 object-contain drop-shadow-md">
+        </button>
+        
+        <button @click="activeGame = 2"
+          :class="activeGame === 2 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
+          class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
+          <img src="https://placehold.co/400x400/1a1a24/ffffff?text=Call&#43;of&#43;Duty" alt="Call of Duty" class="w-10 h-10 object-contain drop-shadow-md">
+        </button>
+        
+        <button @click="activeGame = 3"
+          :class="activeGame === 3 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
+          class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
+          <img src="https://placehold.co/400x400/1a1a24/ffffff?text=CS:GO" alt="CS:GO" class="w-10 h-10 object-contain drop-shadow-md">
+        </button>
+        
+        <button @click="activeGame = 4"
+          :class="activeGame === 4 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
+          class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
+          <img src="https://placehold.co/400x400/1a1a24/ffffff?text=EA&#43;FC&#43;26" alt="EA FC 26" class="w-10 h-10 object-contain drop-shadow-md">
+        </button>
+        
+
+      </div>
+
+      
+      <div data-aos="fade-left" data-aos-duration="600" class="flex-shrink-0 lg:ml-auto">
+        <a href="/teams"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-600 text-white font-bold text-sm rounded hover:bg-red-700 transition-all duration-300 whitespace-nowrap">
+          Voir plus d'équipes
+          <i data-lucide="chevrons-right" width="20" height="20"></i>
+        </a>
+      </div>
+    </div>
+
+    
+    <div class="relative w-full overflow-hidden min-h-[500px] rounded-xl">
+
+      
+      
+      <div x-show="activeGame === 0" x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
+        x-transition:enter-end="opacity-100 translate-y-0 relative"
+        x-transition:leave="transition ease-in duration-300 transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
+         class="relative group/slider w-full h-full">
+
+        <div x-ref="slider_0" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+          
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;1" alt="Joueur 1"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/2xko/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 1</h3>
+                    <p class="text-gray-300 text-sm italic">Support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;2" alt="Joueur 2"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/2xko/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 2</h3>
+                    <p class="text-gray-300 text-sm italic">Attaquant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+      
+      
+      <div x-show="activeGame === 1" x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
+        x-transition:enter-end="opacity-100 translate-y-0 relative"
+        x-transition:leave="transition ease-in duration-300 transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
+        style="display: none;" class="relative group/slider w-full h-full">
+
+        <div x-ref="slider_1" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+          
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;1" alt="Joueur 1"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/apex/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 1</h3>
+                    <p class="text-gray-300 text-sm italic">Support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;2" alt="Joueur 2"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/apex/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 2</h3>
+                    <p class="text-gray-300 text-sm italic">Attaquant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+      
+      
+      <div x-show="activeGame === 2" x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
+        x-transition:enter-end="opacity-100 translate-y-0 relative"
+        x-transition:leave="transition ease-in duration-300 transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
+        style="display: none;" class="relative group/slider w-full h-full">
+
+        <div x-ref="slider_2" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+          
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;1" alt="Joueur 1"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/cod/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 1</h3>
+                    <p class="text-gray-300 text-sm italic">Support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;2" alt="Joueur 2"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/cod/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 2</h3>
+                    <p class="text-gray-300 text-sm italic">Attaquant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+      
+      
+      <div x-show="activeGame === 3" x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
+        x-transition:enter-end="opacity-100 translate-y-0 relative"
+        x-transition:leave="transition ease-in duration-300 transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
+        style="display: none;" class="relative group/slider w-full h-full">
+
+        <div x-ref="slider_3" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+          
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;1" alt="Joueur 1"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/csgo/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 1</h3>
+                    <p class="text-gray-300 text-sm italic">Support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;2" alt="Joueur 2"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/csgo/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 2</h3>
+                    <p class="text-gray-300 text-sm italic">Attaquant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+      
+      
+      <div x-show="activeGame === 4" x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
+        x-transition:enter-end="opacity-100 translate-y-0 relative"
+        x-transition:leave="transition ease-in duration-300 transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
+        style="display: none;" class="relative group/slider w-full h-full">
+
+        <div x-ref="slider_4" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+          
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;1" alt="Joueur 1"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/fc26/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 1</h3>
+                    <p class="text-gray-300 text-sm italic">Support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Joueur&#43;2" alt="Joueur 2"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/fc26/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Joueur 2</h3>
+                    <p class="text-gray-300 text-sm italic">Attaquant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+  <style>
+     
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+     
+    .hide-scrollbar * {
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sliders = document.querySelectorAll('.hide-scrollbar');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      sliders.forEach(slider => {
+        
+        slider.style.cursor = 'grab';
+
+        slider.addEventListener('mousedown', (e) => {
+          isDown = true;
+          slider.style.cursor = 'grabbing';
+          
+          slider.style.scrollSnapType = 'none';
+          startX = e.pageX - slider.offsetLeft;
+          scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('mouseleave', () => {
+          isDown = false;
+          slider.style.cursor = 'grab';
+          slider.style.scrollSnapType = '';
+        });
+
+        slider.addEventListener('mouseup', () => {
+          isDown = false;
+          slider.style.cursor = 'grab';
+          slider.style.scrollSnapType = '';
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - slider.offsetLeft;
+          const walk = (x - startX) * 1.5; 
+          slider.scrollLeft = scrollLeft - walk;
+        });
+      });
+    });
+  </script>
+</section>
+      <section id="shop" class="py-24 bg-black border-t border-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-12 gap-6">
+
+      
+      <div data-aos="fade-right" data-aos-duration="600" class="flex-shrink-0">
+        <h2 class="text-3xl sm:text-4xl font-black text-white mb-2">LA BOUTIQUE PCS</h2>
+        <div class="h-1 w-16 bg-red-600"></div>
+      </div>
+
+      
+      <div data-aos="fade-left" data-aos-duration="600" class="flex-shrink-0 lg:ml-auto">
+        <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-600 text-white font-bold text-sm rounded hover:bg-red-700 transition-all duration-300 whitespace-nowrap">
+          Visiter le shop
+          <i data-lucide="shopping-cart" width="20" height="20"></i>
+        </a>
+      </div>
+    </div>
+
+    
+    <div class="relative w-full overflow-hidden min-h-[500px] rounded-xl">
+      <div class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar group/slider">
+
+      
+      <div style="min-width: 320px; width: 320px; height: 450px; flex: 0 0 auto;">
+        <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
+          class="relative w-full h-full flex flex-col group overflow-hidden rounded-xl bg-gray-900 border border-gray-800 hover:border-red-600 transition-all duration-300 shadow-lg hover:shadow-red-900/40 cursor-pointer">
+          
+          <img src="/images/maillotpcs2026.png"
+            class="absolute inset-0 w-full h-full object-cover saturate-50 opacity-80 group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-105 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+
+          <div
+            class="absolute top-4 left-4 bg-red-600 text-white font-black text-xs px-3 py-1 rounded shadow-lg uppercase tracking-wider backdrop-blur-md">
+            Nouveau</div>
+
+          <div class="absolute bottom-0 inset-x-0 p-6 z-20 flex flex-col pointer-events-none">
+            <span class="text-gray-300 text-sm font-bold uppercase tracking-wide mb-1">Vêtement Pro</span>
+            <h4 class="font-black text-white text-3xl leading-none group-hover:text-red-500 transition-colors">Maillot
+              PCS 2026</h4>
+            <span class="font-black text-2xl text-red-500 mt-4">35.00 €</span>
+          </div>
+        </a>
+      </div>
+
+      
+      <div style="min-width: 320px; width: 320px; height: 450px; flex: 0 0 auto;">
+        <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
+          class="relative w-full h-full flex flex-col group overflow-hidden rounded-xl bg-gray-900 border border-gray-800 hover:border-red-600 transition-all duration-300 shadow-lg hover:shadow-red-900/40 cursor-pointer">
+          
+          <img src="https://images.unsplash.com/photo-1610041321427-af6f0e4b7b25?w=600&q=80"
+            class="absolute inset-0 w-full h-full object-cover saturate-50 opacity-80 group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-105 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+
+          <div class="absolute bottom-0 inset-x-0 p-6 z-20 flex flex-col pointer-events-none">
+            <span class="text-gray-300 text-sm font-bold uppercase tracking-wide mb-1">Périphérique</span>
+            <h4 class="font-black text-white text-3xl leading-none group-hover:text-red-500 transition-colors">Tapis de
+              souris</h4>
+            <span class="font-black text-2xl text-red-500 mt-4">20.00 €</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
       <section id="contact" class="py-24 bg-gray-950">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div data-aos="fade-up" data-aos-duration="600" class="mb-16">
@@ -528,7 +1100,7 @@
       
       <div class="col-span-1">
         <div class="mb-6 flex items-center gap-4">
-          <img src="/images/logo.png" alt="Project Conquerors" class="h-32 w-auto object-contain">
+          <img src="/images/logo.png" alt="Project Conquerors" class="h-15 w-auto object-contain">
         </div>
         <div class="flex gap-3">
           <a href="https://www.linkedin.com/company/project-conquerors/" target="_blank" rel="noopener noreferrer"
@@ -560,7 +1132,7 @@
         <ul class="space-y-3">
           <li><a href="#home"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Accueil</a></li>
-          <li><a href="#news"
+          <li><a href="/news/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Actualités</a></li>
           <li><a href="#services"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Services</a></li>

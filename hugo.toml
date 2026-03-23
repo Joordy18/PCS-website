@@ -2,3 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Project Conquerors'
 theme = 'pcs-theme'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

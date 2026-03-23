@@ -1,0 +1,153 @@
+{{ $topGames := first 5 (where .Site.RegularPages "Section" "teams") }}
+<section id="teams" class="py-24 bg-black border-t border-gray-900" x-data="{ activeGame: 0 }">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Top Bar: Title & Game Tabs -->
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-12 gap-6">
+
+      <!-- Title -->
+      <div data-aos="fade-right" data-aos-duration="600" class="flex-shrink-0">
+        <h2 class="text-3xl sm:text-4xl font-black text-white mb-2">NOS ÉQUIPES</h2>
+        <div class="h-1 w-16 bg-red-600"></div>
+      </div>
+
+      <!-- Games -->
+      <div data-aos="fade-down" data-aos-duration="600"
+        class="flex-1 flex overflow-x-auto gap-4 lg:gap-6 hide-scrollbar items-center justify-start lg:justify-center px-2 py-4">
+
+        {{ range $index, $game := $topGames }}
+        <button @click="activeGame = {{ $index }}"
+          :class="activeGame === {{ $index }} ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
+          class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
+          <img src="{{ .Params.image | default (printf "https://placehold.co/400x400/1a1a24/ffffff?text=%s" (replace .Title " " "+")) }}" alt="{{ .Title }}" class="w-10 h-10 object-contain drop-shadow-md">
+        </button>
+        {{ end }}
+
+      </div>
+
+      <!-- View All Button -->
+      <div data-aos="fade-left" data-aos-duration="600" class="flex-shrink-0 lg:ml-auto">
+        <a href="/teams"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-600 text-white font-bold text-sm rounded hover:bg-red-700 transition-all duration-300 whitespace-nowrap">
+          Voir plus d'équipes
+          <i data-lucide="chevrons-right" width="20" height="20"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Players Slider Wrapper -->
+    <div class="relative w-full overflow-hidden min-h-[500px] rounded-xl">
+
+      {{ range $index, $game := $topGames }}
+      <!-- {{ .Title }} SLIDER -->
+      <div x-show="activeGame === {{ $index }}" x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
+        x-transition:enter-end="opacity-100 translate-y-0 relative"
+        x-transition:leave="transition ease-in duration-300 transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
+        {{ if ne $index 0 }}style="display: none;"{{ end }} class="relative group/slider w-full h-full">
+
+        <div x-ref="slider_{{ $index }}" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+          {{ if .Params.players }}
+            {{ range .Params.players }}
+            <!-- Player Card -->
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="{{ .image | default (printf "https://placehold.co/400x500/1a1a24/ffffff?text=%s" (replace .name " " "+")) }}" alt="{{ .name }}"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="{{ $game.RelPermalink }}"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      {{ .name }}</h3>
+                    <p class="text-gray-300 text-sm italic">{{ .role }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          {{ else }}
+            <p class="text-gray-400 text-center py-20 w-full italic">Aucun joueur renseigné pour le moment.</p>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+  <style>
+    /* Custom Hide Scrollbar implementation used globally if not defined */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Prevent text selection and image dragging while using the slider */
+    .hide-scrollbar * {
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sliders = document.querySelectorAll('.hide-scrollbar');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      sliders.forEach(slider => {
+        // Set initial cursor
+        slider.style.cursor = 'grab';
+
+        slider.addEventListener('mousedown', (e) => {
+          isDown = true;
+          slider.style.cursor = 'grabbing';
+          // Temporarily disable snapping for smooth dragging
+          slider.style.scrollSnapType = 'none';
+          startX = e.pageX - slider.offsetLeft;
+          scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('mouseleave', () => {
+          isDown = false;
+          slider.style.cursor = 'grab';
+          slider.style.scrollSnapType = '';
+        });
+
+        slider.addEventListener('mouseup', () => {
+          isDown = false;
+          slider.style.cursor = 'grab';
+          slider.style.scrollSnapType = '';
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - slider.offsetLeft;
+          const walk = (x - startX) * 1.5; // Scroll speed multiplier
+          slider.scrollLeft = scrollLeft - walk;
+        });
+      });
+    });
+  </script>
+</section>

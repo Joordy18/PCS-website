@@ -1,0 +1,4 @@
+---
+title: "Actualités"
+layout: "list"
+---
