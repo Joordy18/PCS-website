@@ -576,6 +576,9 @@
   .h-px {
     height: 1px;
   }
+  .min-h-\[3\.5rem\] {
+    min-height: 3.5rem;
+  }
   .min-h-\[128px\] {
     min-height: 128px;
   }
@@ -847,6 +850,11 @@
       margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -2167,11 +2175,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
-  .xl\:grid-cols-4 {
-    @media (width >= 80rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .xl\:pr-24 {

@@ -1,11 +1,12 @@
-﻿---
-title: "2XKO"
+---
+title: 2XKO
 players:
-  - name: "Joueur 1"
-    role: "Support"
-  - name: "Joueur 2"
-    role: "Attaquant"
+  - name: Joordy
+    role: poste
+    image: /images/uploads/img_20231224_215837.jpg
+  - name: Joueur 2
+    role: Attaquant
 staff:
-  - name: "Coach 1"
-    role: "Head Coach"
+  - name: Coach 1
+    role: Head Coach
 ---
