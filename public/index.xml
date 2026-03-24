@@ -16,6 +16,20 @@
       <description></description>
     </item>
     <item>
+      <title>Bénévole Pôle Événementiel (H/F)</title>
+      <link>http://localhost:1313/recrutement/benevole-evenementiel/</link>
+      <pubDate>Sun, 01 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/recrutement/benevole-evenementiel/</guid>
+      <description>&lt;h2 id=&#34;ta-mission&#34;&gt;Ta mission&lt;/h2&gt;&#xA;&lt;p&gt;Envie de vivre les coulisses de l&amp;rsquo;esport ? Nous recherchons des bénévoles pour nous accompagner lors des prochains événements physiques (LANs, conventions, tournois).&lt;/p&gt;&#xA;&lt;h2 id=&#34;ce-que-tu-feras&#34;&gt;Ce que tu feras&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Accueil et encadrement des joueurs ainsi que du public.&lt;/li&gt;&#xA;&lt;li&gt;Installation et logistique du matériel sur les stands.&lt;/li&gt;&#xA;&lt;li&gt;Animation et gestion de l&amp;rsquo;espace Project Conquerors sur de formidables salons.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;le-profil-idéal&#34;&gt;Le profil idéal&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Disponibilité le week-end occasionnellement.&lt;/li&gt;&#xA;&lt;li&gt;Bonne humeur, esprit d&amp;rsquo;équipe et dynamisme infaillible.&lt;/li&gt;&#xA;&lt;li&gt;Expérience dans l&amp;rsquo;événementiel ou joueur/joueuse passionné(e) avec une forte envie d&amp;rsquo;apprendre les différentes cordes du métier.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Stage Développeur Web Front-End (H/F)</title>
+      <link>http://localhost:1313/recrutement/stage-developpeur-web/</link>
+      <pubDate>Sun, 01 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/recrutement/stage-developpeur-web/</guid>
+      <description>&lt;h2 id=&#34;à-propos-de-nous&#34;&gt;À propos de nous&lt;/h2&gt;&#xA;&lt;p&gt;Project Conquerors est une structure esportive historique évoluant sur de nombreux jeux. Nous recherchons une personne motivée pour rejoindre le pôle Tech.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tes-missions&#34;&gt;Tes missions&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Maintenir et faire évoluer notre site vitrine (Dédié avec Hugo, TailwindCSS et AlpineJS).&lt;/li&gt;&#xA;&lt;li&gt;Intégrer de nouvelles maquettes au pixel près.&lt;/li&gt;&#xA;&lt;li&gt;Assurer la connexion avec des API externes permettant d&amp;rsquo;enrichir le site (Google Calendar, etc.).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;profil-recherché&#34;&gt;Profil recherché&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Étudiant(e) en école du web ou informatique (Bac+2 à Bac+5).&lt;/li&gt;&#xA;&lt;li&gt;Maîtrise de HTML, CSS (Tailwind) et JavaScript.&lt;/li&gt;&#xA;&lt;li&gt;Des connaissances sur les générateurs de sites statiques (Hugo) et Alpine.js sont un gros plus.&lt;/li&gt;&#xA;&lt;li&gt;Autonomie, rigueur et grande passion pour l&amp;rsquo;esport !&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>League Of Legends : toutes les infos sur le Red Bull League of Its Own</title>
       <link>http://localhost:1313/news/2024-09-24-league-of-legends-toutes-les-infos-sur-le-red-bull-league-of-its-own/</link>
       <pubDate>Tue, 24 Sep 2024 10:00:00 +0200</pubDate>
@@ -30,10 +44,24 @@
       <description></description>
     </item>
     <item>
+      <title>AFD TECH</title>
+      <link>http://localhost:1313/partenaires/afd-tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/afd-tech/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Apex Legends</title>
       <link>http://localhost:1313/teams/apex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teams/apex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BANDAI NAMCO</title>
+      <link>http://localhost:1313/partenaires/bandai-namco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/bandai-namco/</guid>
       <description></description>
     </item>
     <item>
@@ -44,10 +72,38 @@
       <description></description>
     </item>
     <item>
+      <title>Conditions Générales d&#39;Utilisation</title>
+      <link>http://localhost:1313/cgu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cgu/</guid>
+      <description>&lt;h2 id=&#34;1-objet&#34;&gt;1. Objet&lt;/h2&gt;&#xA;&lt;p&gt;Les présentes conditions générales d&amp;rsquo;utilisation (ci-après les « CGU ») ont pour objet de préciser les modalités de mise à disposition des services du site &lt;strong&gt;Project Conquerors&lt;/strong&gt; et de définir les conditions d&amp;rsquo;accès et d&amp;rsquo;utilisation de nos services par le visiteur.&lt;/p&gt;&#xA;&lt;p&gt;Tout accès et/ou utilisation du site &lt;a href=&#34;https://www.project-conquerors.com&#34;&gt;www.project-conquerors.com&lt;/a&gt; suppose l&amp;rsquo;acceptation et le respect de l&amp;rsquo;ensemble des termes des présentes Conditions et leur acceptation inconditionnelle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-accès-au-site&#34;&gt;2. Accès au site&lt;/h2&gt;&#xA;&lt;p&gt;Le site est accessible gratuitement en tout lieu à tout utilisateur ayant un accès à Internet. Tous les frais supportés par l&amp;rsquo;utilisateur pour accéder au service (matériel informatique, logiciels, connexion Internet, etc.) sont à sa charge.&#xA;Le site met en œuvre tous les moyens mis à sa disposition pour assurer un accès de qualité à ses services. L&amp;rsquo;obligation étant de moyens, le site ne s&amp;rsquo;engage pas à atteindre ce résultat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>COSMOCOVER</title>
+      <link>http://localhost:1313/partenaires/cosmocover/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/cosmocover/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>CS:GO</title>
       <link>http://localhost:1313/teams/csgo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teams/csgo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DAIKYO</title>
+      <link>http://localhost:1313/partenaires/daikyo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/daikyo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E2C MARSEILLE</title>
+      <link>http://localhost:1313/partenaires/e2c-marseille/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/e2c-marseille/</guid>
       <description></description>
     </item>
     <item>
@@ -65,6 +121,34 @@
       <description></description>
     </item>
     <item>
+      <title>GRENIER DU GEEK</title>
+      <link>http://localhost:1313/partenaires/grenier-du-geek/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/grenier-du-geek/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HERO FESTIVAL</title>
+      <link>http://localhost:1313/partenaires/hero-festival/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/hero-festival/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JOKO WEAR</title>
+      <link>http://localhost:1313/partenaires/joko-wear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/joko-wear/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KONIX</title>
+      <link>http://localhost:1313/partenaires/konix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/konix/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>League of Legends</title>
       <link>http://localhost:1313/teams/lol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -79,6 +163,41 @@
       <description></description>
     </item>
     <item>
+      <title>LEGENDS PATH</title>
+      <link>http://localhost:1313/partenaires/legends-path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/legends-path/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maillot PCS 2026</title>
+      <link>http://localhost:1313/shop/maillot-pcs-2026/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/shop/maillot-pcs-2026/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mentions Légales</title>
+      <link>http://localhost:1313/mentions-legales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mentions-legales/</guid>
+      <description>&lt;p&gt;Le présent site est la propriété de l&amp;rsquo;association &lt;strong&gt;Project Conquerors&lt;/strong&gt;, association loi 1901.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-éditeur-du-site&#34;&gt;1. Éditeur du site&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Nom de l&amp;rsquo;association :&lt;/strong&gt; Project Conquerors (PCS)&#xA;&lt;strong&gt;Adresse du siège social :&lt;/strong&gt; [À compléter]&#xA;&lt;strong&gt;Email de contact :&lt;/strong&gt; &lt;a href=&#34;mailto:contact@project-conquerors.com&#34;&gt;contact@project-conquerors.com&lt;/a&gt;&#xA;&lt;strong&gt;Directeur de la publication :&lt;/strong&gt; [Nom du directeur/président]&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-hébergement-du-site&#34;&gt;2. Hébergement du site&lt;/h2&gt;&#xA;&lt;p&gt;Le site est hébergé par [Nom de l&amp;rsquo;hébergeur], situé au [Adresse de l&amp;rsquo;hébergeur].&lt;/p&gt;&#xA;&lt;h2 id=&#34;3-propriété-intellectuelle&#34;&gt;3. Propriété intellectuelle&lt;/h2&gt;&#xA;&lt;p&gt;L&amp;rsquo;ensemble de ce site relève de la législation française et internationale sur le droit d&amp;rsquo;auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.&#xA;La reproduction de tout ou partie de ce site sur un support électronique quel qu&amp;rsquo;il soit est formellement interdite sauf autorisation expresse du directeur de la publication.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NEL WORKSHOP</title>
+      <link>http://localhost:1313/partenaires/nel-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/nel-workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RESPECT ZONE</title>
+      <link>http://localhost:1313/partenaires/respect-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/respect-zone/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Rocket League</title>
       <link>http://localhost:1313/teams/rl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -86,10 +205,24 @@
       <description></description>
     </item>
     <item>
+      <title>SONIX</title>
+      <link>http://localhost:1313/partenaires/sonix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/sonix/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Super Smash Bros Ultimate</title>
       <link>http://localhost:1313/teams/ssbu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teams/ssbu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tapis de souris</title>
+      <link>http://localhost:1313/shop/tapis-de-souris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/shop/tapis-de-souris/</guid>
       <description></description>
     </item>
     <item>
@@ -107,10 +240,24 @@
       <description></description>
     </item>
     <item>
+      <title>TURTLE BEACH</title>
+      <link>http://localhost:1313/partenaires/turtle-beach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/turtle-beach/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>UFC 5</title>
       <link>http://localhost:1313/teams/ufc5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teams/ufc5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UPPERSCORE</title>
+      <link>http://localhost:1313/partenaires/upperscore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/upperscore/</guid>
       <description></description>
     </item>
     <item>

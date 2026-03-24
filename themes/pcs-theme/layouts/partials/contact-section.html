@@ -16,9 +16,9 @@
           <div class="p-3 bg-red-600 rounded">
             <i data-lucide="mail" class="text-white" width="24" height="24"></i>
           </div>
-          <div>
+          <div x-data="{ user: 'contact', domain: 'project-conquerors.com' }">
             <h4 class="font-bold text-white mb-1">Email</h4>
-            <p class="text-gray-400">contact@projectconquerors.fr</p>
+            <a :href="'mailto:' + user + '@' + domain" class="text-gray-400 hover:text-red-500 transition-colors inline-block" x-text="user + '@' + domain"></a>
           </div>
         </div>
 

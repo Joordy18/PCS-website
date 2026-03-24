@@ -5,6 +5,19 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Project Conquerors</title>
+<meta name="description" content="Project Conquerors (PCS), association d&#39;esport depuis 2013. Organisateur de tournois, événements gaming locaux et équipes compétitives.">
+<meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="Project Conquerors">
+  <meta property="og:title" content="Home">
+  <meta property="og:description" content="Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim excepteur excepteur pariatur nostrud qui irure ullamco.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Home">
+  <meta name="twitter:description" content="Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim excepteur excepteur pariatur nostrud qui irure ullamco.">
+
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -29,7 +42,7 @@
 </script>
 
 </head>
-<body class="bg-black text-white antialiased text-base">
+<body class="bg-black text-white antialiased text-base overflow-x-hidden">
   <nav class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-900"
   x-data="{ isOpen: false }">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,7 +53,7 @@
           <img src="/images/logo.png" alt="Project Conquerors" class="h-12 w-auto object-contain">
           <div class="hidden sm:flex flex-col">
             <span class="font-black text-xl text-white">PROJECT CONQUERORS</span>
-            <span class="text-red-600 text-xs font-bold tracking-wider">ESPORT</span>
+            <span class="text-red-600 text-xs font-bold tracking-wider">CLUB ESPORT</span>
           </div>
         </a>
       </div>
@@ -51,7 +64,7 @@
           data-aos="fade-down" data-aos-delay="0">ACCUEIL</a>
         <a href="/news/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
           data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
-        <a href="/#partners" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+        <a href="/partenaires" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
           data-aos="fade-down" data-aos-delay="300">PARTENAIRES</a>
         <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
           rel="noopener noreferrer"
@@ -78,7 +91,7 @@
         class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACCUEIL</a>
       <a href="/news/" @click="isOpen = false"
         class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACTUALITÉS</a>
-      <a href="/#partners" @click="isOpen = false"
+      <a href="/partenaires" @click="isOpen = false"
         class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">PARTENAIRES</a>
       <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
         rel="noopener noreferrer"
@@ -91,16 +104,14 @@
       <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
   
   <div class="absolute inset-0 z-0">
-    <img
-      src="https://images.unsplash.com/photo-1745766292846-631cdf8a6e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3BvcnRzJTIwdGVhbSUyMGJhbm5lciUyMHdpZGV8ZW58MXx8fHwxNzczNjgwNjIzfDA&ixlib=rb-4.1.0&q=80&w=1080"
-      alt="Gaming Arena" class="w-full h-full object-cover" />
+    <img src="/images/20250705_224354-scaled.jpg" alt="Gaming Arena" class="w-full h-full object-cover" />
     <div class="absolute inset-0 bg-black/70"></div>
   </div>
 
   
   <div class="relative z-10 text-center px-4 max-w-6xl mx-auto py-32">
-    <div data-aos="fade-up" data-aos-duration="800">
-      <h1 class="text-7xl sm:text-8xl lg:text-9xl font-black mb-8 text-white tracking-tight">
+    <div data-aos="fade-up" data-aos-duration="800" class="max-w-full overflow-hidden px-2 sm:px-0">
+      <h1 class="text-[14vw] sm:text-8xl lg:text-9xl font-black mb-8 text-white tracking-tight leading-none">
         PROJECT<br />
         <span class="text-red-600">CONQUERORS</span>
       </h1>
@@ -117,7 +128,7 @@
         class="px-10 py-5 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-colors duration-300">
         Actualités
       </a>
-      <a href="#contact"
+      <a href="#events"
         class="px-10 py-5 bg-transparent border-2 border-white text-white font-bold text-lg rounded hover:bg-white hover:text-black transition-all duration-300">
         Evènements
       </a>
@@ -132,7 +143,9 @@
     </div>
   </div>
 </section>
-      <section id="partners" class="py-10 bg-black overflow-hidden border-t border-b border-gray-900">
+      
+
+<section id="partners" class="py-10 bg-black overflow-hidden border-t border-b border-gray-900">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
     <div data-aos="fade-up" data-aos-duration="600" class="text-center">
       <h2 class="text-xl font-bold text-gray-500 uppercase tracking-widest">ILS NOUS FONT CONFIANCE</h2>
@@ -143,102 +156,166 @@
     <div class="animate-marquee gap-16 md:gap-32">
       
       <div class="flex items-center gap-16 md:gap-32 px-8">
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          LEGENDS PATH</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          SONIX</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          E2C MARSEILLE</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          RESPECT ZONE</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          HERO FESTIVAL</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          JOKO WEAR</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          AFD TECH</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          BANDAI NAMCO</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          KONIX</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          GRENIER DU GEEK</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          UPPERSCORE</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          TURTLE BEACH</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          DAIKYO</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          NEL WORKSHOP</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          COSMOCOVER</div>
+        
+        <a href="/partenaires/#afd-tech"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          AFD TECH
+        </a>
+        
+        <a href="/partenaires/#bandai-namco"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          BANDAI NAMCO
+        </a>
+        
+        <a href="/partenaires/#cosmocover"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          COSMOCOVER
+        </a>
+        
+        <a href="/partenaires/#daikyo"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          DAIKYO
+        </a>
+        
+        <a href="/partenaires/#e2c-marseille"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          E2C MARSEILLE
+        </a>
+        
+        <a href="/partenaires/#grenier-du-geek"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          GRENIER DU GEEK
+        </a>
+        
+        <a href="/partenaires/#hero-festival"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          HERO FESTIVAL
+        </a>
+        
+        <a href="/partenaires/#joko-wear"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          JOKO WEAR
+        </a>
+        
+        <a href="/partenaires/#konix"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          KONIX
+        </a>
+        
+        <a href="/partenaires/#legends-path"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          LEGENDS PATH
+        </a>
+        
+        <a href="/partenaires/#nel-workshop"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          NEL WORKSHOP
+        </a>
+        
+        <a href="/partenaires/#respect-zone"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          RESPECT ZONE
+        </a>
+        
+        <a href="/partenaires/#sonix"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          SONIX
+        </a>
+        
+        <a href="/partenaires/#turtle-beach"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          TURTLE BEACH
+        </a>
+        
+        <a href="/partenaires/#upperscore"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          UPPERSCORE
+        </a>
+        
       </div>
       
       <div class="flex items-center gap-16 md:gap-32 px-8">
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          LEGENDS PATH</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          SONIX</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          E2C MARSEILLE</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          RESPECT ZONE</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          HERO FESTIVAL</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          JOKO WEAR</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          AFD TECH</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          BANDAI NAMCO</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          KONIX</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          GRENIER DU GEEK</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          UPPERSCORE</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          TURTLE BEACH</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          DAIKYO</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          NEL WORKSHOP</div>
-        <div
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer">
-          COSMOCOVER</div>
+        
+        <a href="/partenaires/#afd-tech"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          AFD TECH
+        </a>
+        
+        <a href="/partenaires/#bandai-namco"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          BANDAI NAMCO
+        </a>
+        
+        <a href="/partenaires/#cosmocover"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          COSMOCOVER
+        </a>
+        
+        <a href="/partenaires/#daikyo"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          DAIKYO
+        </a>
+        
+        <a href="/partenaires/#e2c-marseille"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          E2C MARSEILLE
+        </a>
+        
+        <a href="/partenaires/#grenier-du-geek"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          GRENIER DU GEEK
+        </a>
+        
+        <a href="/partenaires/#hero-festival"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          HERO FESTIVAL
+        </a>
+        
+        <a href="/partenaires/#joko-wear"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          JOKO WEAR
+        </a>
+        
+        <a href="/partenaires/#konix"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          KONIX
+        </a>
+        
+        <a href="/partenaires/#legends-path"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          LEGENDS PATH
+        </a>
+        
+        <a href="/partenaires/#nel-workshop"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          NEL WORKSHOP
+        </a>
+        
+        <a href="/partenaires/#respect-zone"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          RESPECT ZONE
+        </a>
+        
+        <a href="/partenaires/#sonix"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          SONIX
+        </a>
+        
+        <a href="/partenaires/#turtle-beach"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          TURTLE BEACH
+        </a>
+        
+        <a href="/partenaires/#upperscore"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          UPPERSCORE
+        </a>
+        
       </div>
     </div>
+  </div>
 </section>
+
       <section id="news" class="py-24 bg-black">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
@@ -250,37 +327,42 @@
     
     
     
-      
-      <article data-aos="fade-up" data-aos-duration="600" class="mb-16 group cursor-pointer block">
-        <a href="/news/2024-09-24-league-of-legends-toutes-les-infos-sur-le-red-bull-league-of-its-own/" class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-900 rounded-lg overflow-hidden border border-red-900/30 hover:border-red-600 transition-all duration-300">
-          <div class="relative h-96 lg:h-auto overflow-hidden bg-black">
-            <img src="/images/uploads/redbull-league-of-its-own-2024.jpg" alt="League Of Legends : toutes les infos sur le Red Bull League of Its Own" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
-            <div class="absolute top-6 left-6">
-              <span class="px-4 py-2 bg-red-600 text-white font-bold text-sm rounded shadow-lg uppercase tracking-wider">À LA UNE</span>
-            </div>
+    
+    <article data-aos="fade-up" data-aos-duration="600" class="mb-16 group cursor-pointer block">
+      <a href="/news/2024-09-24-league-of-legends-toutes-les-infos-sur-le-red-bull-league-of-its-own/"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-900 rounded-lg overflow-hidden border border-red-900/30 hover:border-red-600 transition-all duration-300">
+        <div class="relative h-96 lg:h-auto overflow-hidden bg-black">
+          <img src='/images/uploads/redbull-league-of-its-own-2024.jpg' alt="League Of Legends : toutes les infos sur le Red Bull League of Its Own"
+            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+          <div class="absolute top-6 left-6">
+            <span class="px-4 py-2 bg-red-600 text-white font-bold text-sm rounded shadow-lg uppercase tracking-wider">À
+              LA UNE</span>
           </div>
-          <div class="p-8 lg:p-12 flex flex-col justify-center">
-            <div class="flex items-center gap-3 text-gray-400 mb-4 uppercase tracking-widest text-xs font-semibold">
-              <i data-lucide="calendar" class="w-4 h-4 text-red-500"></i>
-              <span>24 Sep 2024</span>
-            </div>
-            <h3 class="text-3xl sm:text-4xl font-black text-white mb-6 group-hover:text-red-500 transition-colors duration-300 leading-tight">
-              League Of Legends : toutes les infos sur le Red Bull League of Its Own
-            </h3>
-            <p class="text-gray-400 text-lg mb-8 leading-relaxed line-clamp-3">
-              <h2 id="quand-et-comment-suivre-l"><strong>Quand et comment suivre l&rsquo;événement ?</strong></h2>
+        </div>
+        <div class="p-8 lg:p-12 flex flex-col justify-center">
+          <div class="flex items-center gap-3 text-gray-400 mb-4 uppercase tracking-widest text-xs font-semibold">
+            <i data-lucide="calendar" class="w-4 h-4 text-red-500"></i>
+            <span>24 Sep 2024</span>
+          </div>
+          <h3
+            class="text-3xl sm:text-4xl font-black text-white mb-6 group-hover:text-red-500 transition-colors duration-300 leading-tight">
+            League Of Legends : toutes les infos sur le Red Bull League of Its Own
+          </h3>
+          <p class="text-gray-400 text-lg mb-8 leading-relaxed line-clamp-3">
+            <h2 id="quand-et-comment-suivre-l"><strong>Quand et comment suivre l&rsquo;événement ?</strong></h2>
 <p>Réservez bien votre <strong>dimanche 15 décembre</strong>, date du Red Bull League Its Own qui prendra place à l’<strong>Accord Arena de Paris dès 14h</strong>, dans une salle de pas moins de 15 000 places afin d’accueillir bon …</p>
-            </p>
-            <div class="flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider group-hover:gap-4 transition-all duration-300">
-              <span>Lire l'article</span>
-              <i data-lucide="arrow-right" class="w-5 h-5"></i>
-            </div>
+          </p>
+          <div
+            class="flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider group-hover:gap-4 transition-all duration-300">
+            <span>Lire l'article</span>
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
           </div>
-        </a>
-      </article>
+        </div>
+      </a>
+    </article>
 
-      
-      
+    
+    
     
 
     
@@ -293,7 +375,7 @@
     </div>
 
     
-    <div data-aos="fade-up" data-aos-duration="600" class="mt-24 mb-12">
+    <div id="events" data-aos="fade-up" data-aos-duration="600" class="mt-24 mb-12">
       <h2 class="text-4xl sm:text-5xl font-black text-white mb-4">PROCHAINS ÉVÈNEMENTS</h2>
       <div class="h-1 w-24 bg-red-600"></div>
     </div>
@@ -977,44 +1059,47 @@
       <div class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar group/slider">
 
       
+      
       <div style="min-width: 320px; width: 320px; height: 450px; flex: 0 0 auto;">
-        <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
+        <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs/1" target="_blank"
           class="relative w-full h-full flex flex-col group overflow-hidden rounded-xl bg-gray-900 border border-gray-800 hover:border-red-600 transition-all duration-300 shadow-lg hover:shadow-red-900/40 cursor-pointer">
           
-          <img src="/images/maillotpcs2026.png"
+          <img src="/images/maillotpcs2026.png" alt="Maillot PCS 2026"
             class="absolute inset-0 w-full h-full object-cover saturate-50 opacity-80 group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-105 transition-all duration-700">
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
+          
           <div
             class="absolute top-4 left-4 bg-red-600 text-white font-black text-xs px-3 py-1 rounded shadow-lg uppercase tracking-wider backdrop-blur-md">
             Nouveau</div>
+          
 
           <div class="absolute bottom-0 inset-x-0 p-6 z-20 flex flex-col pointer-events-none">
-            <span class="text-gray-300 text-sm font-bold uppercase tracking-wide mb-1">Vêtement Pro</span>
-            <h4 class="font-black text-white text-3xl leading-none group-hover:text-red-500 transition-colors">Maillot
-              PCS 2026</h4>
+            <span class="text-gray-300 text-sm font-bold uppercase tracking-wide mb-1">Vêtement</span>
+            <h4 class="font-black text-white text-3xl leading-none group-hover:text-red-500 transition-colors">Maillot PCS 2026</h4>
             <span class="font-black text-2xl text-red-500 mt-4">35.00 €</span>
           </div>
         </a>
       </div>
-
       
       <div style="min-width: 320px; width: 320px; height: 450px; flex: 0 0 auto;">
         <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
           class="relative w-full h-full flex flex-col group overflow-hidden rounded-xl bg-gray-900 border border-gray-800 hover:border-red-600 transition-all duration-300 shadow-lg hover:shadow-red-900/40 cursor-pointer">
           
-          <img src="https://images.unsplash.com/photo-1610041321427-af6f0e4b7b25?w=600&q=80"
+          <img src="/images/uploads/texture-maillot-scaled.png" alt="Tapis de souris"
             class="absolute inset-0 w-full h-full object-cover saturate-50 opacity-80 group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-105 transition-all duration-700">
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
+          
+
           <div class="absolute bottom-0 inset-x-0 p-6 z-20 flex flex-col pointer-events-none">
             <span class="text-gray-300 text-sm font-bold uppercase tracking-wide mb-1">Périphérique</span>
-            <h4 class="font-black text-white text-3xl leading-none group-hover:text-red-500 transition-colors">Tapis de
-              souris</h4>
+            <h4 class="font-black text-white text-3xl leading-none group-hover:text-red-500 transition-colors">Tapis de souris</h4>
             <span class="font-black text-2xl text-red-500 mt-4">20.00 €</span>
           </div>
         </a>
       </div>
+      
 
     </div>
   </div>
@@ -1038,9 +1123,9 @@
           <div class="p-3 bg-red-600 rounded">
             <i data-lucide="mail" class="text-white" width="24" height="24"></i>
           </div>
-          <div>
+          <div x-data="{ user: 'contact', domain: 'project-conquerors.com' }">
             <h4 class="font-bold text-white mb-1">Email</h4>
-            <p class="text-gray-400">contact@projectconquerors.fr</p>
+            <a :href="'mailto:' + user + '@' + domain" class="text-gray-400 hover:text-red-500 transition-colors inline-block" x-text="user + '@' + domain"></a>
           </div>
         </div>
 
@@ -1115,10 +1200,12 @@
             class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/></svg>
           </a>
-          <a href="mailto:contact@project-conquerors.com"
-            class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
-            <i data-lucide="mail" class="text-white" width="20" height="20"></i>
-          </a>
+          <div x-data="{ user: 'contact', domain: 'project-conquerors.com' }" class="flex">
+            <a :href="'mailto:' + user + '@' + domain" title="Nous contacter"
+              class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
+              <i data-lucide="mail" class="text-white" width="20" height="20"></i>
+            </a>
+          </div>
           <a href="https://www.facebook.com/ProjectConquerors" target="_blank" rel="noopener noreferrer"
             class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -1130,15 +1217,13 @@
       <div>
         <h4 class="font-black text-white mb-6 text-lg">NAVIGATION</h4>
         <ul class="space-y-3">
-          <li><a href="#home"
+          <li><a href="/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Accueil</a></li>
           <li><a href="/news/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Actualités</a></li>
-          <li><a href="#services"
-              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Services</a></li>
-          <li><a href="#partners"
+          <li><a href="/partenaires/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Partenaires</a></li>
-          <li><a href="#contact"
+          <li><a href="/#contact"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Contact</a></li>
         </ul>
       </div>
@@ -1154,7 +1239,7 @@
               target="_blank" rel="noopener noreferrer"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nous soutenir</a>
           </li>
-          <li><a href="https://discord.com/invite/esport" target="_blank" rel="noopener noreferrer"
+          <li><a href="/recrutement/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Recrutement</a></li>
         </ul>
       </div>
@@ -1163,13 +1248,8 @@
       <div>
         <h4 class="font-black text-white mb-6 text-lg">LÉGAL</h4>
         <ul class="space-y-3">
-          <li><a href="#" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Mentions
-              légales</a></li>
-          <li><a href="#"
-              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Confidentialité</a>
-          </li>
-          <li><a href="#" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">CGU</a>
-          </li>
+          <li><a href="/mentions-legales/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Mentions légales</a></li>
+          <li><a href="/cgu/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">CGU</a></li>
         </ul>
       </div>
     </div>

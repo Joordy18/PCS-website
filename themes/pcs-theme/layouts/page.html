@@ -1,10 +1,22 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+<div class="bg-black text-white min-h-screen pt-32 pb-24 border-t border-gray-900">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-aos="fade-up">
+      <h1 class="text-4xl sm:text-5xl font-black mb-10 leading-tight uppercase tracking-tight text-center">{{ .Title }}</h1>
+      
+      {{ if not .Date.IsZero }}
+      <div class="text-gray-500 mb-8 flex items-center justify-center gap-2 font-medium">
+        <i data-lucide="calendar" class="w-4 h-4"></i>
+        Mise à jour : {{ .Date | time.Format "02 Jan 2006" }}
+      </div>
+      {{ end }}
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      <div class="prose prose-invert prose-red max-w-none bg-gray-900 p-8 sm:p-12 rounded-xl border border-gray-800 shadow-2xl">
+        {{ .Content }}
+      </div>
+      
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </div>
+  </div>
+</div>
 {{ end }}

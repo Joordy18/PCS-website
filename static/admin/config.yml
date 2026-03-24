@@ -39,3 +39,41 @@ collections:
           {label: "Photo", name: "image", widget: "image", required: false}
         ]}
       - {label: "Contenu Optionnel (ex: Stratégie globale)", name: "body", widget: "markdown", required: false}
+
+  - name: "partenaires"
+    label: "Partenaires"
+    folder: "content/partenaires"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Nom du partenaire", name: "title", widget: "string"}
+      - {label: "Logo", name: "image", widget: "image", required: false}
+      - {label: "Catégorie", name: "category", widget: "select", options: ["Majeur", "Officiel", "Fournisseur", "Autre"]}
+      - {label: "Lien site web", name: "link", widget: "string", required: false}
+      - {label: "Afficher dans la banderole", name: "show_in_banner", widget: "boolean", default: true}
+      - {label: "Description", name: "body", widget: "markdown", required: false}
+
+  - name: "jobs"
+    label: "Offres & Recrutement"
+    folder: "content/recrutement"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre du poste / Offre", name: "title", widget: "string"}
+      - {label: "Type de contrat", name: "contract_type", widget: "select", options: ["Stage", "Bénévolat", "CDD", "CDI", "Alternance"]}
+      - {label: "Lieu", name: "location", widget: "string", default: "Télétravail"}
+      - {label: "Date de début", name: "date", widget: "datetime", required: false}
+      - {label: "Description détaillée de l'offre", name: "body", widget: "markdown"}
+
+  - name: "shop"
+    label: "Boutique"
+    folder: "content/shop"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Nom du produit", name: "title", widget: "string"}
+      - {label: "Photo de l'article", name: "image", widget: "image"}
+      - {label: "Catégorie (Ex: Vêtement pro)", name: "category", widget: "string"}
+      - {label: "Prix (Ex: 35.00 €)", name: "price", widget: "string"}
+      - {label: "Lien vers la boutique HelloAsso", name: "link", widget: "string"}
+      - {label: "Nouveau produit ?", name: "is_new", widget: "boolean", default: false}

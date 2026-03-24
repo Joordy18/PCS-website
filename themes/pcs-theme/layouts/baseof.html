@@ -3,7 +3,7 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="bg-black text-white antialiased text-base">
+<body class="bg-black text-white antialiased text-base overflow-x-hidden">
   {{ partial "navigation.html" . }}
   <main class="w-full relative z-0 flex-grow">
     {{ block "main" . }}{{ end }}

@@ -8,6 +8,15 @@
     <loc>http://localhost:1313/posts/test/</loc>
     <lastmod>2026-03-16T11:09:55+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/recrutement/benevole-evenementiel/</loc>
+    <lastmod>2026-03-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/recrutement/</loc>
+    <lastmod>2026-03-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/recrutement/stage-developpeur-web/</loc>
+    <lastmod>2026-03-01T10:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/news/</loc>
     <lastmod>2024-09-24T10:00:00+02:00</lastmod>
   </url><url>
@@ -17,37 +26,79 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/partenaires/</loc>
+  </url><url>
     <loc>http://localhost:1313/teams/2xko/</loc>
   </url><url>
+    <loc>http://localhost:1313/partenaires/afd-tech/</loc>
+  </url><url>
     <loc>http://localhost:1313/teams/apex/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/bandai-namco/</loc>
+  </url><url>
+    <loc>http://localhost:1313/shop/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/cod/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/cgu/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/cosmocover/</loc>
+  </url><url>
     <loc>http://localhost:1313/teams/csgo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/daikyo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/e2c-marseille/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/fc26/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/eva/</loc>
   </url><url>
+    <loc>http://localhost:1313/partenaires/grenier-du-geek/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/hero-festival/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/joko-wear/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/konix/</loc>
+  </url><url>
     <loc>http://localhost:1313/teams/lol/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/div2/</loc>
   </url><url>
+    <loc>http://localhost:1313/partenaires/legends-path/</loc>
+  </url><url>
+    <loc>http://localhost:1313/shop/maillot-pcs-2026/</loc>
+  </url><url>
+    <loc>http://localhost:1313/mentions-legales/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/nel-workshop/</loc>
+  </url><url>
     <loc>http://localhost:1313/teams/</loc>
   </url><url>
+    <loc>http://localhost:1313/partenaires/respect-zone/</loc>
+  </url><url>
     <loc>http://localhost:1313/teams/rl/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/sonix/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/ssbu/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
+    <loc>http://localhost:1313/shop/tapis-de-souris/</loc>
+  </url><url>
     <loc>http://localhost:1313/teams/tft/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/thefinals/</loc>
   </url><url>
+    <loc>http://localhost:1313/partenaires/turtle-beach/</loc>
+  </url><url>
     <loc>http://localhost:1313/teams/ufc5/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/upperscore/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/valorant/</loc>
   </url>

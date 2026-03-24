@@ -2,6 +2,10 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Project Conquerors'
 theme = 'pcs-theme'
+enableRobotsTXT = true
+
+[params]
+  description = "Project Conquerors (PCS), association d'esport depuis 2013. Organisateur de tournois, événements gaming locaux et équipes compétitives."
 
 [markup]
   [markup.goldmark]

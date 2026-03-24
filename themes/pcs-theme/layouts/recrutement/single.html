@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="bg-black text-white min-h-screen pt-32 pb-24 border-t border-gray-900">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-aos="fade-up">
+      <div class="mb-4">
+        <a href="/recrutement/" class="inline-flex items-center gap-2 text-gray-400 hover:text-red-500 transition-colors">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i> Retour aux offres
+        </a>
+      </div>
+      
+      <div class="flex flex-wrap items-center gap-3 mb-6">
+        <span class="px-4 py-1.5 bg-red-600/20 text-red-500 text-sm font-bold uppercase tracking-wider rounded border border-red-600/30">
+          {{ .Params.contract_type }}
+        </span>
+        <span class="text-gray-400 flex items-center gap-1 font-medium">
+          <i data-lucide="map-pin" class="w-4 h-4"></i> {{ .Params.location }}
+        </span>
+        {{ if .Params.date }}
+        <span class="text-gray-500 flex items-center gap-1 text-sm ml-auto">
+          <i data-lucide="calendar" class="w-4 h-4"></i> Publié le {{ .Date.Format "02 Jan 2006" }}
+        </span>
+        {{ end }}
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl font-black mb-10 leading-tight uppercase tracking-tight">{{ .Title }}</h1>
+      
+      <div class="prose prose-invert prose-red max-w-none mb-12 bg-gray-900 p-8 sm:p-10 rounded-xl border border-gray-800">
+        {{ .Content }}
+      </div>
+      
+      <div class="text-center bg-gray-900 border border-red-900/40 p-10 rounded-xl mt-12 shadow-2xl">
+        <h2 class="text-2xl font-bold mb-4">Envie de nous rejoindre ?</h2>
+        <p class="text-gray-400 mb-8 max-w-lg mx-auto">Envoyez-nous votre candidature par e-mail en précisant le titre du poste en objet.</p>
+        <a href="mailto:contact@project-conquerors.com?subject=Candidature : {{ .Title }}" class="inline-flex items-center gap-3 px-10 py-4 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-red-600/25">
+          <i data-lucide="mail" class="w-5 h-5"></i> POSTULER MAINTENANT
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
