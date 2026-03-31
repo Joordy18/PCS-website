@@ -7,12 +7,11 @@ Le présent site est la propriété de l'association **Project Conquerors**, ass
 
 ## 1. Éditeur du site
 **Nom de l'association :** Project Conquerors (PCS)
-**Adresse du siège social :** [À compléter]
+
 **Email de contact :** contact@project-conquerors.com
-**Directeur de la publication :** [Nom du directeur/président]
 
 ## 2. Hébergement du site
-Le site est hébergé par [Nom de l'hébergeur], situé au [Adresse de l'hébergeur].
+Le site est hébergé sur Vercel.
 
 ## 3. Propriété intellectuelle
 L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.

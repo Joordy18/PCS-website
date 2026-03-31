@@ -14,17 +14,24 @@
       </div>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+      <div class="hidden md:flex items-center gap-12">
+        <a href="/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="0">ACCUEIL</a>
-        <a href="/news/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+        <a href="/news/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
-        <a href="/partenaires" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
-          data-aos="fade-down" data-aos-delay="300">PARTENAIRES</a>
+        <a href="/partenaires/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="200">PARTENAIRES</a>
+        <a href="/a-propos/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="300">À PROPOS</a>
+
         <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
           rel="noopener noreferrer"
-          class="bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 font-bold text-sm px-6 py-2.5 rounded-md shadow-lg hover:shadow-red-600/20"
-          data-aos="fade-down" data-aos-delay="500">BOUTIQUE</a>
+          class="bg-red-600 text-white hover:bg-red-700 transition-all duration-300 font-black text-xs px-8 py-3 rounded-md shadow-lg shadow-red-600/20 uppercase tracking-widest italic"
+          data-aos="fade-down" data-aos-delay="400">BOUTIQUE</a>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -43,14 +50,24 @@
     style="display: none;">
     <div class="px-4 py-6 space-y-4">
       <a href="/" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACCUEIL</a>
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACCUEIL</a>
       <a href="/news/" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACTUALITÉS</a>
-      <a href="/partenaires" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">PARTENAIRES</a>
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACTUALITÉS</a>
+      <a href="/partenaires/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">PARTENAIRES</a>
+      <a href="/a-propos/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">À
+        PROPOS</a>
+      <div class="pl-4 border-l border-gray-800 space-y-2">
+        <a href="/teams/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Nos
+          Équipes</a>
+        <a href="/recrutement/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Recrutement</a>
+      </div>
       <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
         rel="noopener noreferrer"
-        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg">BOUTIQUE</a>
+        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg uppercase italic tracking-widest text-sm">BOUTIQUE</a>
     </div>
   </div>
 </nav>

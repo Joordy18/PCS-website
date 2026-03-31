@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/a-propos/</loc>
+    <lastmod>2026-03-25T16:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-03-16T11:09:55+01:00</lastmod>
   </url><url>
@@ -34,7 +37,7 @@
   </url><url>
     <loc>http://localhost:1313/teams/apex/</loc>
   </url><url>
-    <loc>http://localhost:1313/partenaires/bandai-namco/</loc>
+    <loc>http://localhost:1313/partenaires/avignon-geek-expo/</loc>
   </url><url>
     <loc>http://localhost:1313/shop/</loc>
   </url><url>
@@ -42,15 +45,9 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/cgu/</loc>
-  </url><url>
-    <loc>http://localhost:1313/partenaires/cosmocover/</loc>
-  </url><url>
     <loc>http://localhost:1313/teams/csgo/</loc>
   </url><url>
     <loc>http://localhost:1313/partenaires/daikyo/</loc>
-  </url><url>
-    <loc>http://localhost:1313/partenaires/e2c-marseille/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/fc26/</loc>
   </url><url>
@@ -74,13 +71,21 @@
   </url><url>
     <loc>http://localhost:1313/mentions-legales/</loc>
   </url><url>
+    <loc>http://localhost:1313/partenaires/mysafetychild/</loc>
+  </url><url>
     <loc>http://localhost:1313/partenaires/nel-workshop/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/</loc>
   </url><url>
+    <loc>http://localhost:1313/politique-confidentialite/</loc>
+  </url><url>
+    <loc>http://localhost:1313/politique-cookies/</loc>
+  </url><url>
     <loc>http://localhost:1313/partenaires/respect-zone/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/rl/</loc>
+  </url><url>
+    <loc>http://localhost:1313/partenaires/safe-bear/</loc>
   </url><url>
     <loc>http://localhost:1313/partenaires/sonix/</loc>
   </url><url>

@@ -6,8 +6,15 @@
     <description>Recent content in Home on Project Conquerors</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2026 11:09:55 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 16:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>À Propos</title>
+      <link>http://localhost:1313/a-propos/</link>
+      <pubDate>Wed, 25 Mar 2026 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/a-propos/</guid>
+      <description>&lt;h2 id=&#34;qui-sommes-nous-&#34;&gt;Qui sommes-nous ?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Project Conquerors (PCS)&lt;/strong&gt; est une association loi 1901 passionnée par l&amp;rsquo;esport, le gaming et les valeurs de partage. Depuis notre création, nous œuvrons pour professionnaliser la scène amateur tout en gardant une dimension humaine et citoyenne forte.&lt;/p&gt;&#xA;&lt;h2 id=&#34;nos-valeurs-fondamentales&#34;&gt;Nos Valeurs Fondamentales&lt;/h2&gt;&#xA;&lt;p&gt;Au cœur de notre ADN, trois piliers guident nos actions quotidiennes :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;L&amp;rsquo;Excellence&lt;/strong&gt; : Que ce soit dans la compétition ou dans l&amp;rsquo;organisation d&amp;rsquo;événements.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;L&amp;rsquo;Inclusion&lt;/strong&gt; : Faire de l&amp;rsquo;esport un espace ouvert à tous, sans distinction.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;La Responsabilité&lt;/strong&gt; : Agir en tant qu&amp;rsquo;acteur citoyen du monde numérique.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;nos-engagements-rse&#34;&gt;Nos Engagements RSE&lt;/h2&gt;&#xA;&lt;p&gt;Nous croyons que l&amp;rsquo;esport peut être un puissant levier de changement social. PCS s&amp;rsquo;engage sur plusieurs fronts cruciaux :&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Test</title>
       <link>http://localhost:1313/posts/test/</link>
@@ -48,7 +55,7 @@
       <link>http://localhost:1313/partenaires/afd-tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/partenaires/afd-tech/</guid>
-      <description></description>
+      <description>&lt;p&gt;test&lt;/p&gt;</description>
     </item>
     <item>
       <title>Apex Legends</title>
@@ -58,10 +65,10 @@
       <description></description>
     </item>
     <item>
-      <title>BANDAI NAMCO</title>
-      <link>http://localhost:1313/partenaires/bandai-namco/</link>
+      <title>Avignon Geek Expo</title>
+      <link>http://localhost:1313/partenaires/avignon-geek-expo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/partenaires/bandai-namco/</guid>
+      <guid>http://localhost:1313/partenaires/avignon-geek-expo/</guid>
       <description></description>
     </item>
     <item>
@@ -69,20 +76,6 @@
       <link>http://localhost:1313/teams/cod/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teams/cod/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Conditions Générales d&#39;Utilisation</title>
-      <link>http://localhost:1313/cgu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cgu/</guid>
-      <description>&lt;h2 id=&#34;1-objet&#34;&gt;1. Objet&lt;/h2&gt;&#xA;&lt;p&gt;Les présentes conditions générales d&amp;rsquo;utilisation (ci-après les « CGU ») ont pour objet de préciser les modalités de mise à disposition des services du site &lt;strong&gt;Project Conquerors&lt;/strong&gt; et de définir les conditions d&amp;rsquo;accès et d&amp;rsquo;utilisation de nos services par le visiteur.&lt;/p&gt;&#xA;&lt;p&gt;Tout accès et/ou utilisation du site &lt;a href=&#34;https://www.project-conquerors.com&#34;&gt;www.project-conquerors.com&lt;/a&gt; suppose l&amp;rsquo;acceptation et le respect de l&amp;rsquo;ensemble des termes des présentes Conditions et leur acceptation inconditionnelle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-accès-au-site&#34;&gt;2. Accès au site&lt;/h2&gt;&#xA;&lt;p&gt;Le site est accessible gratuitement en tout lieu à tout utilisateur ayant un accès à Internet. Tous les frais supportés par l&amp;rsquo;utilisateur pour accéder au service (matériel informatique, logiciels, connexion Internet, etc.) sont à sa charge.&#xA;Le site met en œuvre tous les moyens mis à sa disposition pour assurer un accès de qualité à ses services. L&amp;rsquo;obligation étant de moyens, le site ne s&amp;rsquo;engage pas à atteindre ce résultat.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>COSMOCOVER</title>
-      <link>http://localhost:1313/partenaires/cosmocover/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/partenaires/cosmocover/</guid>
       <description></description>
     </item>
     <item>
@@ -97,13 +90,6 @@
       <link>http://localhost:1313/partenaires/daikyo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/partenaires/daikyo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>E2C MARSEILLE</title>
-      <link>http://localhost:1313/partenaires/e2c-marseille/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/partenaires/e2c-marseille/</guid>
       <description></description>
     </item>
     <item>
@@ -181,7 +167,14 @@
       <link>http://localhost:1313/mentions-legales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mentions-legales/</guid>
-      <description>&lt;p&gt;Le présent site est la propriété de l&amp;rsquo;association &lt;strong&gt;Project Conquerors&lt;/strong&gt;, association loi 1901.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-éditeur-du-site&#34;&gt;1. Éditeur du site&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Nom de l&amp;rsquo;association :&lt;/strong&gt; Project Conquerors (PCS)&#xA;&lt;strong&gt;Adresse du siège social :&lt;/strong&gt; [À compléter]&#xA;&lt;strong&gt;Email de contact :&lt;/strong&gt; &lt;a href=&#34;mailto:contact@project-conquerors.com&#34;&gt;contact@project-conquerors.com&lt;/a&gt;&#xA;&lt;strong&gt;Directeur de la publication :&lt;/strong&gt; [Nom du directeur/président]&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-hébergement-du-site&#34;&gt;2. Hébergement du site&lt;/h2&gt;&#xA;&lt;p&gt;Le site est hébergé par [Nom de l&amp;rsquo;hébergeur], situé au [Adresse de l&amp;rsquo;hébergeur].&lt;/p&gt;&#xA;&lt;h2 id=&#34;3-propriété-intellectuelle&#34;&gt;3. Propriété intellectuelle&lt;/h2&gt;&#xA;&lt;p&gt;L&amp;rsquo;ensemble de ce site relève de la législation française et internationale sur le droit d&amp;rsquo;auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.&#xA;La reproduction de tout ou partie de ce site sur un support électronique quel qu&amp;rsquo;il soit est formellement interdite sauf autorisation expresse du directeur de la publication.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Le présent site est la propriété de l&amp;rsquo;association &lt;strong&gt;Project Conquerors&lt;/strong&gt;, association loi 1901.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-éditeur-du-site&#34;&gt;1. Éditeur du site&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Nom de l&amp;rsquo;association :&lt;/strong&gt; Project Conquerors (PCS)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email de contact :&lt;/strong&gt; &lt;a href=&#34;mailto:contact@project-conquerors.com&#34;&gt;contact@project-conquerors.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-hébergement-du-site&#34;&gt;2. Hébergement du site&lt;/h2&gt;&#xA;&lt;p&gt;Le site est hébergé sur Vercel.&lt;/p&gt;&#xA;&lt;h2 id=&#34;3-propriété-intellectuelle&#34;&gt;3. Propriété intellectuelle&lt;/h2&gt;&#xA;&lt;p&gt;L&amp;rsquo;ensemble de ce site relève de la législation française et internationale sur le droit d&amp;rsquo;auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.&#xA;La reproduction de tout ou partie de ce site sur un support électronique quel qu&amp;rsquo;il soit est formellement interdite sauf autorisation expresse du directeur de la publication.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>mySafetyChild</title>
+      <link>http://localhost:1313/partenaires/mysafetychild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/mysafetychild/</guid>
+      <description></description>
     </item>
     <item>
       <title>NEL WORKSHOP</title>
@@ -189,6 +182,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/partenaires/nel-workshop/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Politique de confidentialité</title>
+      <link>http://localhost:1313/politique-confidentialite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/politique-confidentialite/</guid>
+      <description>&lt;h3 id=&#34;qui-sommes-nous-&#34;&gt;Qui sommes-nous ?&lt;/h3&gt;&#xA;&lt;p&gt;L’adresse de notre site est : &lt;a href=&#34;https://project-conquerors.com&#34;&gt;https://project-conquerors.com&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;commentaires&#34;&gt;Commentaires&lt;/h3&gt;&#xA;&lt;p&gt;Quand vous laissez un commentaire sur notre site, les données inscrites dans le formulaire de commentaire, ainsi que votre adresse IP et l’agent utilisateur de votre navigateur sont collectés pour nous aider à la détection des commentaires indésirables.&lt;/p&gt;&#xA;&lt;p&gt;Une chaîne anonymisée créée à partir de votre adresse e-mail (également appelée hash) peut être envoyée au service Gravatar pour vérifier si vous utilisez ce dernier. Les clauses de confidentialité du service Gravatar sont disponibles ici : &lt;a href=&#34;https://automattic.com/privacy/&#34;&gt;https://automattic.com/privacy/&lt;/a&gt;. Après validation de votre commentaire, votre photo de profil sera visible publiquement à coté de votre commentaire.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Politique relative aux cookies</title>
+      <link>http://localhost:1313/politique-cookies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/politique-cookies/</guid>
+      <description>&lt;p&gt;Cette politique relative aux cookies explique comment notre site web utilise les cookies et autres technologies similaires pour améliorer l’expérience des utilisateurs. En utilisant notre site web, vous acceptez l’utilisation de cookies conformément à cette politique.&lt;/p&gt;&#xA;&lt;h3 id=&#34;quest-ce-quun-cookie-&#34;&gt;Qu’est-ce qu’un cookie ?&lt;/h3&gt;&#xA;&lt;p&gt;Un cookie est un petit fichier texte qui est stocké sur votre ordinateur ou appareil mobile lorsque vous visitez notre site web. Les cookies permettent à notre site web de se souvenir de vos actions et préférences (telles que la langue choisie, la taille de la police, les informations de connexion, etc.) pendant une certaine période. Ces informations sont utilisées pour faciliter votre navigation ultérieure sur notre site web et pour rendre votre expérience plus agréable et personnalisée.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RESPECT ZONE</title>
@@ -202,6 +209,13 @@
       <link>http://localhost:1313/teams/rl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teams/rl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Safe Bear</title>
+      <link>http://localhost:1313/partenaires/safe-bear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/safe-bear/</guid>
       <description></description>
     </item>
     <item>

@@ -59,17 +59,24 @@
       </div>
 
       
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+      <div class="hidden md:flex items-center gap-12">
+        <a href="/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="0">ACCUEIL</a>
-        <a href="/news/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+        <a href="/news/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
-        <a href="/partenaires" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
-          data-aos="fade-down" data-aos-delay="300">PARTENAIRES</a>
+        <a href="/partenaires/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="200">PARTENAIRES</a>
+        <a href="/a-propos/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="300">À PROPOS</a>
+
         <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
           rel="noopener noreferrer"
-          class="bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 font-bold text-sm px-6 py-2.5 rounded-md shadow-lg hover:shadow-red-600/20"
-          data-aos="fade-down" data-aos-delay="500">BOUTIQUE</a>
+          class="bg-red-600 text-white hover:bg-red-700 transition-all duration-300 font-black text-xs px-8 py-3 rounded-md shadow-lg shadow-red-600/20 uppercase tracking-widest italic"
+          data-aos="fade-down" data-aos-delay="400">BOUTIQUE</a>
       </div>
 
       
@@ -88,24 +95,56 @@
     style="display: none;">
     <div class="px-4 py-6 space-y-4">
       <a href="/" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACCUEIL</a>
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACCUEIL</a>
       <a href="/news/" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACTUALITÉS</a>
-      <a href="/partenaires" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">PARTENAIRES</a>
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACTUALITÉS</a>
+      <a href="/partenaires/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">PARTENAIRES</a>
+      <a href="/a-propos/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">À
+        PROPOS</a>
+      <div class="pl-4 border-l border-gray-800 space-y-2">
+        <a href="/teams/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Nos
+          Équipes</a>
+        <a href="/recrutement/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Recrutement</a>
+      </div>
       <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
         rel="noopener noreferrer"
-        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg">BOUTIQUE</a>
+        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg uppercase italic tracking-widest text-sm">BOUTIQUE</a>
     </div>
   </div>
 </nav>
   <main class="w-full relative z-0 flex-grow">
     
-      <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      
+
+
+
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
   
   <div class="absolute inset-0 z-0">
-    <img src="/images/20250705_224354-scaled.jpg" alt="Gaming Arena" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/70"></div>
+
+    
+      
+      
+        
+        <div class="hero-slide"
+             style="--hero-duration:10s; --hero-delay:0s;">
+          <img src="/images/20250705_224354-scaled.jpg" alt="PCS St Germain du Puy" class="w-full h-full object-cover" />
+        </div>
+      
+        
+        <div class="hero-slide"
+             style="--hero-duration:10s; --hero-delay:5s;">
+          <img src="/images/DJI_0631-scaled.webp" alt="PCS" class="w-full h-full object-cover" />
+        </div>
+      
+    
+
+    
+    <div class="absolute inset-0 bg-black/70 z-10"></div>
   </div>
 
   
@@ -119,7 +158,7 @@
 
     <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="800"
       class="text-xl sm:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto">
-      Organisateur de tournois depuis 2013
+      Club Esport engagé, passioné et acteur depuis 2013
     </p>
 
     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="800"
@@ -162,24 +201,14 @@
           AFD TECH
         </a>
         
-        <a href="/partenaires/#bandai-namco"
+        <a href="/partenaires/#avignon-geek-expo"
           class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
-          BANDAI NAMCO
-        </a>
-        
-        <a href="/partenaires/#cosmocover"
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
-          COSMOCOVER
+          AVIGNON GEEK EXPO
         </a>
         
         <a href="/partenaires/#daikyo"
           class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
           DAIKYO
-        </a>
-        
-        <a href="/partenaires/#e2c-marseille"
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
-          E2C MARSEILLE
         </a>
         
         <a href="/partenaires/#grenier-du-geek"
@@ -207,6 +236,11 @@
           LEGENDS PATH
         </a>
         
+        <a href="/partenaires/#mysafetychild"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          MYSAFETYCHILD
+        </a>
+        
         <a href="/partenaires/#nel-workshop"
           class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
           NEL WORKSHOP
@@ -215,6 +249,11 @@
         <a href="/partenaires/#respect-zone"
           class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
           RESPECT ZONE
+        </a>
+        
+        <a href="/partenaires/#safe-bear"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          SAFE BEAR
         </a>
         
         <a href="/partenaires/#sonix"
@@ -241,24 +280,14 @@
           AFD TECH
         </a>
         
-        <a href="/partenaires/#bandai-namco"
+        <a href="/partenaires/#avignon-geek-expo"
           class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
-          BANDAI NAMCO
-        </a>
-        
-        <a href="/partenaires/#cosmocover"
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
-          COSMOCOVER
+          AVIGNON GEEK EXPO
         </a>
         
         <a href="/partenaires/#daikyo"
           class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
           DAIKYO
-        </a>
-        
-        <a href="/partenaires/#e2c-marseille"
-          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
-          E2C MARSEILLE
         </a>
         
         <a href="/partenaires/#grenier-du-geek"
@@ -286,6 +315,11 @@
           LEGENDS PATH
         </a>
         
+        <a href="/partenaires/#mysafetychild"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          MYSAFETYCHILD
+        </a>
+        
         <a href="/partenaires/#nel-workshop"
           class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
           NEL WORKSHOP
@@ -294,6 +328,11 @@
         <a href="/partenaires/#respect-zone"
           class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
           RESPECT ZONE
+        </a>
+        
+        <a href="/partenaires/#safe-bear"
+          class="text-3xl md:text-5xl font-black text-gray-700 hover:text-red-600 transition-colors duration-300 whitespace-nowrap cursor-pointer block">
+          SAFE BEAR
         </a>
         
         <a href="/partenaires/#sonix"
@@ -349,8 +388,7 @@
             League Of Legends : toutes les infos sur le Red Bull League of Its Own
           </h3>
           <p class="text-gray-400 text-lg mb-8 leading-relaxed line-clamp-3">
-            <h2 id="quand-et-comment-suivre-l"><strong>Quand et comment suivre l&rsquo;événement ?</strong></h2>
-<p>Réservez bien votre <strong>dimanche 15 décembre</strong>, date du Red Bull League Its Own qui prendra place à l’<strong>Accord Arena de Paris dès 14h</strong>, dans une salle de pas moins de 15 000 places afin d’accueillir bon …</p>
+            &#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis …
           </p>
           <div
             class="flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider group-hover:gap-4 transition-all duration-300">
@@ -662,6 +700,35 @@
                     <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
                       Joueur 2</h3>
                     <p class="text-gray-300 text-sm italic">Attaquant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Darius&#43;Black" alt="Darius Black"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/2xko/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Darius Black</h3>
+                    <p class="text-gray-300 text-sm italic">top</p>
                   </div>
                 </div>
               </div>
@@ -1113,66 +1180,44 @@
       <p class="text-xl text-gray-400 max-w-2xl mt-6">Vous avez un projet? Vous êtes curieux? Contactez-nous!</p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       
-      <div data-aos="fade-right" data-aos-duration="600" class="space-y-6">
-        <h3 class="text-3xl font-black text-white mb-8">MOYENS DE CONTACT</h3>
-
+      <div data-aos="fade-right" data-aos-duration="600" class="relative group h-full min-h-[400px]">
         <div
-          class="flex items-start gap-4 p-6 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-          <div class="p-3 bg-red-600 rounded">
-            <i data-lucide="mail" class="text-white" width="24" height="24"></i>
-          </div>
-          <div x-data="{ user: 'contact', domain: 'project-conquerors.com' }">
-            <h4 class="font-bold text-white mb-1">Email</h4>
-            <a :href="'mailto:' + user + '@' + domain" class="text-gray-400 hover:text-red-500 transition-colors inline-block" x-text="user + '@' + domain"></a>
-          </div>
+          class="absolute inset-0 bg-red-600/20 rounded-xl blur-2xl group-hover:bg-red-600/30 transition-all duration-700">
         </div>
-
-        <div
-          class="flex items-start gap-4 p-6 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-          <div class="p-3 bg-red-600 rounded">
-            <i data-lucide="phone" class="text-white" width="24" height="24"></i>
-          </div>
-          <div>
-            <h4 class="font-bold text-white mb-1">Téléphone</h4>
-            <p class="text-gray-400">+33 1 23 45 67 89</p>
-          </div>
-        </div>
-
-        <div
-          class="flex items-start gap-4 p-6 bg-black border border-gray-800 rounded-lg hover:border-red-600 transition-all duration-300">
-          <div class="p-3 bg-red-600 rounded">
-            <i data-lucide="map-pin" class="text-white" width="24" height="24"></i>
-          </div>
-          <div>
-            <h4 class="font-bold text-white mb-1">Adresse</h4>
-            <p class="text-gray-400">Paris, France</p>
+        <div class="relative h-full rounded-xl overflow-hidden border border-gray-800 shadow-2xl">
+          <img src="/images/test1.jpeg" alt="Contact Project Conquerors"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+          <div class="absolute bottom-10 left-10">
+            <h3 class="text-3xl font-black text-white mb-2 uppercase italic tracking-tighter">On reste en contact ?</h3>
+            <p class="text-gray-400 font-medium">Rejoignez l'aventure PCS sur nos réseaux.</p>
           </div>
         </div>
       </div>
 
       
-      <div data-aos="fade-left" data-aos-duration="600" class="bg-black border border-gray-800 rounded-lg p-8">
-        <h3 class="text-3xl font-black text-white mb-8">ENVOYEZ UN MESSAGE</h3>
-        <form class="space-y-6">
-          <div>
-            <input type="text" placeholder="Nom"
-              class="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300" />
-          </div>
-          <div>
-            <input type="email" placeholder="Email"
-              class="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300" />
-          </div>
-          <div>
-            <textarea rows="5" placeholder="Message"
-              class="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300 resize-none"></textarea>
-          </div>
-          <button type="button"
-            class="w-full px-8 py-5 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-colors duration-300">
-            ENVOYER
-          </button>
-        </form>
+      <div data-aos="fade-left" data-aos-duration="600" class="space-y-8">
+        <div class="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-8 shadow-2xl">
+          <h3 class="text-3xl font-black text-white mb-8 border-b border-red-600/30 pb-4">ENVOYEZ UN MESSAGE</h3>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input type="text" placeholder="Nom"
+                class="w-full px-6 py-4 bg-gray-900/50 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300" />
+              <input type="email" placeholder="Email"
+                class="w-full px-6 py-4 bg-gray-900/50 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300" />
+            </div>
+            <div>
+              <textarea rows="4" placeholder="Message"
+                class="w-full px-6 py-4 bg-gray-900/50 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300 resize-none"></textarea>
+            </div>
+            <button type="button"
+              class="w-full px-8 py-4 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_20px_-10px_rgba(220,38,38,0.5)]">
+              ENVOYER LE MESSAGE
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -1221,10 +1266,14 @@
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Accueil</a></li>
           <li><a href="/news/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Actualités</a></li>
+          <li><a href="/a-propos/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nos engagements</a></li>
+          <li><a href="/teams/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nos Équipes</a></li>
           <li><a href="/partenaires/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Partenaires</a></li>
-          <li><a href="/#contact"
-              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Contact</a></li>
+          <li><a href="/recrutement/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Recrutement</a></li>
         </ul>
       </div>
 
@@ -1235,12 +1284,15 @@
           <li><a href="https://drive.google.com/drive/folders/1_Yzxh7rdaWvGPhbKuzCXw-KT_eImvfju" target="_blank"
               rel="noopener noreferrer"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Press kit</a></li>
+          <li><a href="https://drive.google.com/drive/folders/19B5rJMzqQ2ZdiY1QYRGYYKtMprgKlhvh" target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Fonds d'écran PCS</a></li>
           <li><a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs"
               target="_blank" rel="noopener noreferrer"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nous soutenir</a>
           </li>
-          <li><a href="/recrutement/"
-              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Recrutement</a></li>
+          <li><a href="/#contact"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Contact</a></li>
         </ul>
       </div>
 
@@ -1249,7 +1301,8 @@
         <h4 class="font-black text-white mb-6 text-lg">LÉGAL</h4>
         <ul class="space-y-3">
           <li><a href="/mentions-legales/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Mentions légales</a></li>
-          <li><a href="/cgu/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">CGU</a></li>
+          <li><a href="/politique-confidentialite/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Politique de confidentialité</a></li>
+          <li><a href="/politique-cookies/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Politique cookies</a></li>
         </ul>
       </div>
     </div>
@@ -1262,5 +1315,42 @@
     </div>
   </div>
 </footer>
+  <div class="fixed left-0 top-1/2 -translate-y-1/2 z-50 social-floating-container hidden lg:flex flex-col gap-0 border-y border-r border-gray-800 rounded-r-xl overflow-hidden shadow-2xl bg-black/40 backdrop-blur-md">
+  
+  <a href="https://www.twitch.tv/projectconquerorstv1" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#9146FF] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Twitch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://x.com/PCS_Original" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-white transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="X">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-black transition-colors duration-300">
+      <path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.facebook.com/ProjectConquerors" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#1877F2] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.linkedin.com/company/project-conquerors/" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#0A66C2] transition-all duration-300 flex items-center justify-center" 
+     title="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+  </a>
+</div>
+
 </body>
 </html>

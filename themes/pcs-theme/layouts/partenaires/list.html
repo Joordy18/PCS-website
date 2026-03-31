@@ -7,14 +7,17 @@
     </div>
 
     <!-- Ordre des catégories -->
-    {{ $order := slice "Majeur" "Officiel" "Fournisseur" "Autre" }}
+    {{ $order := slice "Sponsor" "Majeur" "Officiel" "Fournisseur" "Partenaires RSE" "Autre" }}
     {{ $allPartners := where .Site.RegularPages "Type" "partenaires" }}
     
     {{ range $category := $order }}
       {{ $partnersInCategory := where $allPartners "Params.category" $category }}
       {{ if gt (len $partnersInCategory) 0 }}
       <div class="mb-24">
-        <h2 class="text-3xl font-black text-white mb-10 text-center uppercase tracking-widest bg-gray-900 py-4 shadow-lg">PARTENAIRES {{ $category | upper }}S</h2>
+        {{ $heading := printf "PARTENAIRES %sS" ($category | upper) }}
+        {{ if eq $category "Sponsor" }}{{ $heading = "NOS SPONSORS" }}
+        {{ else if eq $category "Partenaires RSE" }}{{ $heading = "PARTENAIRES RSE" }}{{ end }}
+        <h2 class="text-3xl font-black text-white mb-10 text-center uppercase tracking-widest bg-gray-900 py-4 shadow-lg">{{ $heading }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {{ range $partnersInCategory }}
           <div id="{{ .File.TranslationBaseName }}" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">

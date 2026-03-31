@@ -20,6 +20,7 @@ collections:
       - {label: "Image de couverture", name: "image", widget: "image", required: false}
       - {label: "Description / Résumé", name: "description", widget: "text", required: false}
       - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Activer les commentaires", name: "comments_enabled", widget: "boolean", default: true}
 
   - name: "teams"
     label: "Équipes et Rosters"
@@ -48,7 +49,7 @@ collections:
     fields:
       - {label: "Nom du partenaire", name: "title", widget: "string"}
       - {label: "Logo", name: "image", widget: "image", required: false}
-      - {label: "Catégorie", name: "category", widget: "select", options: ["Majeur", "Officiel", "Fournisseur", "Autre"]}
+      - {label: "Catégorie", name: "category", widget: "select", options: ["Sponsor", "Majeur", "Officiel", "Fournisseur", "Partenaires RSE", "Autre"]}
       - {label: "Lien site web", name: "link", widget: "string", required: false}
       - {label: "Afficher dans la banderole", name: "show_in_banner", widget: "boolean", default: true}
       - {label: "Description", name: "body", widget: "markdown", required: false}
@@ -77,3 +78,62 @@ collections:
       - {label: "Prix (Ex: 35.00 €)", name: "price", widget: "string"}
       - {label: "Lien vers la boutique HelloAsso", name: "link", widget: "string"}
       - {label: "Nouveau produit ?", name: "is_new", widget: "boolean", default: false}
+
+  - name: "settings"
+    label: "Paramètres du site"
+    files:
+
+      - name: "hero"
+        label: "Carrousel Hero (accueil)"
+        file: "content/_index.md"
+        fields:
+          - label: "Images du carrousel"
+            name: "heroImages"
+            widget: "list"
+            label_singular: "Image"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Description (alt)", name: "alt", widget: "string"}
+
+      - name: "palmares"
+        label: "Palmarès (accomplissements)"
+        file: "content/teams/_index.md"
+        fields:
+          - label: "Accomplissements"
+            name: "accomplishments"
+            widget: "list"
+            label_singular: "Accomplissement"
+            fields:
+              - {label: "Jeu", name: "game", widget: "string"}
+              - {label: "Classement (ex: Top 1)", name: "rank", widget: "string"}
+              - label: "Couleur du classement"
+                name: "rankClass"
+                widget: "select"
+                options:
+                  - {label: "Or (Top 1 / Champion)", value: "gold"}
+                  - {label: "Argent (Top 2)", value: "silver"}
+                  - {label: "Bronze (Top 3)", value: "bronze"}
+                  - {label: "Bleu (Top 4+)", value: "blue"}
+              - {label: "Tournoi / Compétition", name: "tournament", widget: "string"}
+              - {label: "Équipe / Joueur", name: "team", widget: "string"}
+              - {label: "Année", name: "year", widget: "number", value_type: "int"}
+
+          - label: "Ex-Talents"
+            name: "exTalents"
+            widget: "list"
+            label_singular: "Talent"
+            fields:
+              - {label: "Nom", name: "name", widget: "string"}
+              - {label: "Photo", name: "image", widget: "image"}
+
+          - label: "Équipe Mise en Avant (Banner)"
+            name: "featuredTeam"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Description (alt)", name: "alt", widget: "string"}
+              - {label: "Badge (ex: Champion)", name: "badge", widget: "string"}
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Joueurs", name: "players", widget: "string"}
+
+

@@ -1,8 +1,29 @@
+{{ $images := .Params.heroImages }}
+{{ $count  := len $images }}
+{{ $duration := mul $count 5 }}
+
 <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-  <!-- Background Image with Overlay -->
+  <!-- Background Carousel -->
   <div class="absolute inset-0 z-0">
-    <img src="/images/20250705_224354-scaled.jpg" alt="Gaming Arena" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/70"></div>
+
+    {{ if gt $count 0 }}
+      {{/* Carrousel : une image par slide avec crossfade CSS */}}
+      {{ range $i, $img := $images }}
+        {{ $delay := mul $i 5 }}
+        <div class="hero-slide"
+             style="--hero-duration:{{ $duration }}s; --hero-delay:{{ $delay }}s;">
+          <img src="{{ $img.src }}" alt="{{ $img.alt }}" class="w-full h-full object-cover" />
+        </div>
+      {{ end }}
+    {{ else }}
+      {{/* Fallback image statique */}}
+      <div style="position:absolute;inset:0;">
+        <img src="/images/20250705_224354-scaled.jpg" alt="Gaming Arena" class="w-full h-full object-cover" />
+      </div>
+    {{ end }}
+
+    <!-- Overlay sombre commun -->
+    <div class="absolute inset-0 bg-black/70 z-10"></div>
   </div>
 
   <!-- Content -->
@@ -16,7 +37,7 @@
 
     <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="800"
       class="text-xl sm:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto">
-      Organisateur de tournois depuis 2013
+      Club Esport engagé, passioné et acteur depuis 2013
     </p>
 
     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="800"

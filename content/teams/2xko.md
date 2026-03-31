@@ -6,6 +6,8 @@ players:
     image: /images/uploads/img_20231224_215837.jpg
   - name: Joueur 2
     role: Attaquant
+  - name: Darius Black
+    role: top
 staff:
   - name: Coach 1
     role: Head Coach

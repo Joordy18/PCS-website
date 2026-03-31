@@ -58,17 +58,24 @@
       </div>
 
       
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+      <div class="hidden md:flex items-center gap-12">
+        <a href="/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="0">ACCUEIL</a>
-        <a href="/news/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+        <a href="/news/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
-        <a href="/partenaires" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
-          data-aos="fade-down" data-aos-delay="300">PARTENAIRES</a>
+        <a href="/partenaires/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="200">PARTENAIRES</a>
+        <a href="/a-propos/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="300">À PROPOS</a>
+
         <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
           rel="noopener noreferrer"
-          class="bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 font-bold text-sm px-6 py-2.5 rounded-md shadow-lg hover:shadow-red-600/20"
-          data-aos="fade-down" data-aos-delay="500">BOUTIQUE</a>
+          class="bg-red-600 text-white hover:bg-red-700 transition-all duration-300 font-black text-xs px-8 py-3 rounded-md shadow-lg shadow-red-600/20 uppercase tracking-widest italic"
+          data-aos="fade-down" data-aos-delay="400">BOUTIQUE</a>
       </div>
 
       
@@ -87,14 +94,24 @@
     style="display: none;">
     <div class="px-4 py-6 space-y-4">
       <a href="/" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACCUEIL</a>
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACCUEIL</a>
       <a href="/news/" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACTUALITÉS</a>
-      <a href="/partenaires" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">PARTENAIRES</a>
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACTUALITÉS</a>
+      <a href="/partenaires/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">PARTENAIRES</a>
+      <a href="/a-propos/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">À
+        PROPOS</a>
+      <div class="pl-4 border-l border-gray-800 space-y-2">
+        <a href="/teams/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Nos
+          Équipes</a>
+        <a href="/recrutement/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Recrutement</a>
+      </div>
       <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
         rel="noopener noreferrer"
-        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg">BOUTIQUE</a>
+        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg uppercase italic tracking-widest text-sm">BOUTIQUE</a>
     </div>
   </div>
 </nav>
@@ -114,10 +131,63 @@
     
       
       
+      <div class="mb-24">
+        
+        
+        
+        <h2 class="text-3xl font-black text-white mb-10 text-center uppercase tracking-widest bg-gray-900 py-4 shadow-lg">NOS SPONSORS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div id="legends-path" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
+            <div class="h-32 flex items-center justify-center mb-6 w-full">
+              
+              <img src="https://www.legends-path.com/cdn/shop/files/logo_legends_path.png?v=1734108994&amp;width=500" alt="LEGENDS PATH" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">LEGENDS PATH</h3>
+            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
+              
+            </div>
+            
+            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
+              <a href="https://www.legends-path.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
+                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
+              </a>
+            </div>
+            
+          </div>
+          
+          <div id="sonix" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
+            <div class="h-32 flex items-center justify-center mb-6 w-full">
+              
+              <img src="https://play-lh.googleusercontent.com/pR6dElz3W5cApgI7jJIn0QSxZ-qPgD4FXySNTxEHAY83VJXcCkZw1FggUi4u-r21ayU" alt="SONIX" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">SONIX</h3>
+            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
+              
+            </div>
+            
+            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
+              <a href="https://www.sonix.gg/fr/accueil" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
+                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
+              </a>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      
+      
     
       
       
       <div class="mb-24">
+        
+        
         <h2 class="text-3xl font-black text-white mb-10 text-center uppercase tracking-widest bg-gray-900 py-4 shadow-lg">PARTENAIRES OFFICIELS</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
@@ -129,7 +199,7 @@
             </div>
             <h3 class="text-xl font-bold text-white mb-4">AFD TECH</h3>
             <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
-              
+              test
             </div>
             
             <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
@@ -140,38 +210,19 @@
             
           </div>
           
-          <div id="bandai-namco" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
+          <div id="avignon-geek-expo" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
             <div class="h-32 flex items-center justify-center mb-6 w-full">
               
-              <img src="https://imgs.search.brave.com/oPJVt5va1d8lco0A47RhGCztjfpxw2kHUO3g3S4IymU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iYW5k/YWluYW1jby5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MDQvbG9nby1CTi11/cGRhdGUuc3Zn" alt="BANDAI NAMCO" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              <img src="https://www.geekexpoavignon.fr/wp-content/uploads/2024/09/avatar-1000x1000-1.jpg" alt="Avignon Geek Expo" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
               
             </div>
-            <h3 class="text-xl font-bold text-white mb-4">BANDAI NAMCO</h3>
+            <h3 class="text-xl font-bold text-white mb-4">Avignon Geek Expo</h3>
             <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
               
             </div>
             
             <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
-              <a href="https://fr.bandainamcoent.eu/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
-                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
-              </a>
-            </div>
-            
-          </div>
-          
-          <div id="cosmocover" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
-            <div class="h-32 flex items-center justify-center mb-6 w-full">
-              
-              <img src="https://imgs.search.brave.com/AlaHwHSxJwJaxmN1O05pmXILbOVUwzOlccKPUrRDRu4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWhi/cHIwOXB3ejBzay5j/bG91ZGZyb250Lm5l/dC9sb2dvX3VybC9j/b3Ntb2NvdmVyLTgz/MTdlNWI0" alt="COSMOCOVER" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
-              
-            </div>
-            <h3 class="text-xl font-bold text-white mb-4">COSMOCOVER</h3>
-            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
-              
-            </div>
-            
-            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
-              <a href="https://www.cosmocover.com/fr/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
+              <a href="https://www.geekexpoavignon.fr/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
                 <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
               </a>
             </div>
@@ -191,25 +242,6 @@
             
             <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
               <a href="https://daikyogear.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
-                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
-              </a>
-            </div>
-            
-          </div>
-          
-          <div id="e2c-marseille" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
-            <div class="h-32 flex items-center justify-center mb-6 w-full">
-              
-              <img src="https://imgs.search.brave.com/tWW9FJdwHOeyfesRjc0PqdKa8NhGLMVN4PM_FzYjjyE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9qZXVu/ZXNkYXZlbmlycy5m/ci93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8wMy9Mb2dvLUUy/Q01hcnNlaWxsZV9S/VkJfSEQucG5n" alt="E2C MARSEILLE" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
-              
-            </div>
-            <h3 class="text-xl font-bold text-white mb-4">E2C MARSEILLE</h3>
-            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
-              
-            </div>
-            
-            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
-              <a href="https://www.e2c-marseille.fr/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
                 <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
               </a>
             </div>
@@ -292,25 +324,6 @@
             
           </div>
           
-          <div id="legends-path" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
-            <div class="h-32 flex items-center justify-center mb-6 w-full">
-              
-              <img src="https://www.legends-path.com/cdn/shop/files/logo_legends_path.png?v=1734108994&amp;width=500" alt="LEGENDS PATH" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
-              
-            </div>
-            <h3 class="text-xl font-bold text-white mb-4">LEGENDS PATH</h3>
-            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
-              
-            </div>
-            
-            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
-              <a href="https://www.legends-path.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
-                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
-              </a>
-            </div>
-            
-          </div>
-          
           <div id="nel-workshop" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
             <div class="h-32 flex items-center justify-center mb-6 w-full">
               
@@ -324,44 +337,6 @@
             
             <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
               <a href="https://www.instagram.com/nelworkshop/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
-                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
-              </a>
-            </div>
-            
-          </div>
-          
-          <div id="respect-zone" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
-            <div class="h-32 flex items-center justify-center mb-6 w-full">
-              
-              <img src="https://digital-games.hauts-de-seine.fr/wp-content/uploads/2025/01/respect-zone.png" alt="RESPECT ZONE" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
-              
-            </div>
-            <h3 class="text-xl font-bold text-white mb-4">RESPECT ZONE</h3>
-            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
-              
-            </div>
-            
-            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
-              <a href="https://www.respectzone.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
-                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
-              </a>
-            </div>
-            
-          </div>
-          
-          <div id="sonix" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
-            <div class="h-32 flex items-center justify-center mb-6 w-full">
-              
-              <img src="https://play-lh.googleusercontent.com/pR6dElz3W5cApgI7jJIn0QSxZ-qPgD4FXySNTxEHAY83VJXcCkZw1FggUi4u-r21ayU" alt="SONIX" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
-              
-            </div>
-            <h3 class="text-xl font-bold text-white mb-4">SONIX</h3>
-            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
-              
-            </div>
-            
-            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
-              <a href="https://www.sonix.gg/fr/accueil" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
                 <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
               </a>
             </div>
@@ -415,6 +390,75 @@
     
       
       
+      <div class="mb-24">
+        
+        
+        <h2 class="text-3xl font-black text-white mb-10 text-center uppercase tracking-widest bg-gray-900 py-4 shadow-lg">PARTENAIRES RSE</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div id="mysafetychild" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
+            <div class="h-32 flex items-center justify-center mb-6 w-full">
+              
+              <img src="https://app.safety-child.fr/logo.png" alt="mySafetyChild" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">mySafetyChild</h3>
+            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
+              
+            </div>
+            
+            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
+              <a href="https://app.safety-child.fr/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
+                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
+              </a>
+            </div>
+            
+          </div>
+          
+          <div id="respect-zone" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
+            <div class="h-32 flex items-center justify-center mb-6 w-full">
+              
+              <img src="https://digital-games.hauts-de-seine.fr/wp-content/uploads/2025/01/respect-zone.png" alt="RESPECT ZONE" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">RESPECT ZONE</h3>
+            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
+              
+            </div>
+            
+            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
+              <a href="https://www.respectzone.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
+                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
+              </a>
+            </div>
+            
+          </div>
+          
+          <div id="safe-bear" data-aos="fade-up" class="bg-gray-900 border border-gray-800 rounded-lg p-8 flex flex-col items-center hover:border-red-600 transition-colors duration-300 group">
+            <div class="h-32 flex items-center justify-center mb-6 w-full">
+              
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhE018esKViUzyJfDzU-NPUudZDCV0USMgsg&amp;s" alt="Safe Bear" class="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">Safe Bear</h3>
+            <div class="text-gray-400 text-sm text-center mb-6 flex-grow">
+              
+            </div>
+            
+            <div class="mt-auto pt-4 border-t border-gray-800 w-full text-center">
+              <a href="https://safebear.ai/fr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider text-sm hover:text-red-400 transition-colors">
+                <i data-lucide="external-link" class="w-4 h-4"></i> En savoir plus
+              </a>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      
+      
     
 
   </div>
@@ -463,10 +507,14 @@
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Accueil</a></li>
           <li><a href="/news/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Actualités</a></li>
+          <li><a href="/a-propos/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nos engagements</a></li>
+          <li><a href="/teams/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nos Équipes</a></li>
           <li><a href="/partenaires/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Partenaires</a></li>
-          <li><a href="/#contact"
-              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Contact</a></li>
+          <li><a href="/recrutement/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Recrutement</a></li>
         </ul>
       </div>
 
@@ -477,12 +525,15 @@
           <li><a href="https://drive.google.com/drive/folders/1_Yzxh7rdaWvGPhbKuzCXw-KT_eImvfju" target="_blank"
               rel="noopener noreferrer"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Press kit</a></li>
+          <li><a href="https://drive.google.com/drive/folders/19B5rJMzqQ2ZdiY1QYRGYYKtMprgKlhvh" target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Fonds d'écran PCS</a></li>
           <li><a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs"
               target="_blank" rel="noopener noreferrer"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nous soutenir</a>
           </li>
-          <li><a href="/recrutement/"
-              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Recrutement</a></li>
+          <li><a href="/#contact"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Contact</a></li>
         </ul>
       </div>
 
@@ -491,7 +542,8 @@
         <h4 class="font-black text-white mb-6 text-lg">LÉGAL</h4>
         <ul class="space-y-3">
           <li><a href="/mentions-legales/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Mentions légales</a></li>
-          <li><a href="/cgu/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">CGU</a></li>
+          <li><a href="/politique-confidentialite/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Politique de confidentialité</a></li>
+          <li><a href="/politique-cookies/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Politique cookies</a></li>
         </ul>
       </div>
     </div>
@@ -504,5 +556,42 @@
     </div>
   </div>
 </footer>
+  <div class="fixed left-0 top-1/2 -translate-y-1/2 z-50 social-floating-container hidden lg:flex flex-col gap-0 border-y border-r border-gray-800 rounded-r-xl overflow-hidden shadow-2xl bg-black/40 backdrop-blur-md">
+  
+  <a href="https://www.twitch.tv/projectconquerorstv1" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#9146FF] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Twitch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://x.com/PCS_Original" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-white transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="X">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-black transition-colors duration-300">
+      <path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.facebook.com/ProjectConquerors" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#1877F2] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.linkedin.com/company/project-conquerors/" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#0A66C2] transition-all duration-300 flex items-center justify-center" 
+     title="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+  </a>
+</div>
+
 </body>
 </html>

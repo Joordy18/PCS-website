@@ -72,144 +72,25 @@
           Derniers Accomplissements
         </h3>
 
+        {{ $rankColors := dict "gold" "text-yellow-500" "silver" "text-gray-300" "bronze" "text-orange-400" "blue" "text-blue-400" }}
+        {{ $accomplishments := .Params.accomplishments }}
+
         <ul class="space-y-3 font-medium text-sm sm:text-base text-gray-300">
-          <!-- 2025 -->
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">COD</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - LAN E-Coffee Lens - <span class="italic">Team
-                PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Nantarena 2025 - <span
-                class="italic">Zagranda</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Clash of Clans</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - PCL - 2025 - <span class="italic">PCS COC</span></span>
-          </li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">LOL</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - LFL2 Saison - 2025 - <span
-                class="italic">Div2</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">FIFA</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - PFL France Cashcup - 2025 - <span class="italic">PCS
-                Efoot</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Apex</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - EXO - 2025 - <span class="italic">Team
-                PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">SSBU</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Cinnamon Games - 2025 - <span
-                class="italic">Souren</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">SSBU</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Champi Série - 2025 - <span
-                class="italic">Ashgaar</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Brawlhalla</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - Brawl for Glory - 2025 - <span
-                class="italic">Shadra</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">OW2</strong> - <span
-                class="text-orange-400 font-bold">Top 3</span> - StarLight Tournament - 2025 - <span class="italic">PCS
-                ODIL</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">OW2</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - StarLight Tournament - 2025 - <span class="italic">PCS
-                Sans-Plomb</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">LOL</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - LFL2 Winter split, playoff - 2025 - <span
-                class="italic">Div2</span></span></li>
-
-          <!-- 2024 -->
-          <li class="flex items-start gap-3 mt-4"><span class="text-red-500 mt-1 shrink-0"><i
-                data-lucide="chevron-right" class="w-4 h-4"></i></span> <span><strong
-                class="text-white">Lorcana</strong> - <span class="text-blue-400 font-bold">Top 16/2100</span> - Lorcana
-              Lille Challenge - Mai 2024 - <span class="italic">Flaxeau</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">NBA2K</strong> - <span
-                class="text-blue-400 font-bold">Top 4</span> - Championnat de France - Mai 2024 - <span
-                class="italic">Team PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Overwatch 2</strong> - <span
-                class="text-blue-400 font-bold">Top 4</span> - Gamers Assembly - Avril 2024 - <span class="italic">PCS
-                Cooking</span></span></li>
-
-          <!-- 2023 -->
-          <li class="flex items-start gap-3 mt-4"><span class="text-red-500 mt-1 shrink-0"><i
-                data-lucide="chevron-right" class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> -
-              <span class="text-blue-400 font-bold">Top 4</span> - Hex League - Octobre 2023 - <span
-                class="italic">CrocoCostaud</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">R6S</strong> - <span
-                class="text-blue-400 font-bold">Top 4</span> - Euro League&Cup (ELC) - Mai 2023 - <span
-                class="italic">Team PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">NBA2K</strong> - <span
-                class="text-blue-400 font-bold">Top 4</span> - PlayOffs nationaux - Mai 2023 - <span class="italic">Team
-                PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">BS</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - Thonon Gaming Fest - Mai 2023 - <span class="italic">Team
-                PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-orange-400 font-bold">Top 3</span> - Hex League - Avril 2023 - <span
-                class="italic">Texita</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">LOR</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Open Runeterra EMEA - Avril 2023 - <span
-                class="italic">Tabouta</span></span></li>
-
-          <!-- 2022 -->
-          <li class="flex items-start gap-3 mt-4"><span class="text-red-500 mt-1 shrink-0"><i
-                data-lucide="chevron-right" class="w-4 h-4"></i></span> <span><strong class="text-white">CIV VI</strong>
-              - <span class="text-yellow-500 font-bold">Top 1</span> - Division 3 - Novembre 2022 - <span
-                class="italic">Team PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Multiversus</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - UFA 2022 - Novembre 2022 - <span
-                class="italic">Psycoquaxe</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TM</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Compétition journalière - Juillet 2022 - <span
-                class="italic">Roquete</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Qualifier #1 TFT Series - Mai 2022 - <span
-                class="italic">Kalfl0</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">FIFA CP</strong> - <span
-                class="text-yellow-500 font-bold">Champion</span> - Efifa Champion des champions - Mars 2022 - <span
-                class="italic">PCS Pegaze</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TM</strong> - <span
-                class="text-yellow-500 font-bold">Champion</span> - AGEM - Février 2022 - <span
-                class="italic">Shpluk</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-yellow-500 font-bold">Champion d'Europe</span> - Janvier 2022 - <span
-                class="italic">Xperion</span></span></li>
-
-          <!-- 2021 -->
-          <li class="flex items-start gap-3 mt-4"><span class="text-red-500 mt-1 shrink-0"><i
-                data-lucide="chevron-right" class="w-4 h-4"></i></span> <span><strong class="text-white">FIFA
-                CP</strong> - <span class="text-yellow-500 font-bold">Champion</span> - Ligue Bronze EsportFA - Décembre
-              2021 - <span class="italic">PCS Pegaze</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-yellow-500 font-bold">Champion</span> - Allie Coin Pro - Décembre 2021 - <span
-                class="italic">Kalfl0</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">R6S</strong> - <span
-                class="text-yellow-500 font-bold">1er/24</span> - 4Tuna's cup - Novembre 2021 - <span
-                class="italic">Team PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">LOL</strong> - <span
-                class="text-yellow-500 font-bold">Champion</span> OTF 2021 - <span class="italic">PCS
-                Taran</span></span></li>
+          {{ $lastYear := 0 }}
+          {{ range $a := $accomplishments }}
+            {{ $color := index $rankColors $a.rankClass | default "text-gray-300" }}
+            {{ $isNewYear := ne $a.year $lastYear }}
+            <li class="flex items-start gap-3{{ if and $isNewYear (ne $lastYear 0) }} mt-4{{ end }}">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">{{ $a.game }}</strong>
+                - <span class="{{ $color }} font-bold">{{ $a.rank }}</span>
+                - {{ $a.tournament }}
+                - <span class="italic">{{ $a.team }}</span>
+              </span>
+            </li>
+            {{ $lastYear = $a.year }}
+          {{ end }}
         </ul>
 
       </div>
@@ -217,63 +98,34 @@
       <!-- Ex-Talents & Photos (Right, 5 columns) -->
       <div class="lg:col-span-5 space-y-6">
 
-        <!-- Talent 1 & 2 Grid -->
+        <!-- Ex-Talents portraits grid -->
+        <!-- Ex-Talents portraits grid -->
         <div class="grid grid-cols-2 gap-4">
-          <div
-            class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
-            <img src="https://placehold.co/300x400/1a1a24/ffffff?text=XPerion" alt="XPerion"
-              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
-              <p class="font-handwriting text-xl text-white">XPerion</p>
+          {{ range .Params.exTalents }}
+            <div class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
+              <img src="{{ .image | default "https://placehold.co/300x400/1a1a24/ffffff?text=Talent" }}" alt="{{ .name }}"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
+                <p class="font-handwriting text-xl text-white">{{ .name }}</p>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
-            <img src="https://placehold.co/300x400/1a1a24/ffffff?text=Seelame" alt="Seelame"
-              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
-              <p class="font-handwriting text-xl text-white">Seelame</p>
-            </div>
-          </div>
+          {{ end }}
         </div>
 
-        <!-- Talent 3 & 4 Grid -->
-        <div class="grid grid-cols-2 gap-4">
-          <div
-            class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
-            <img src="https://placehold.co/300x400/1a1a24/ffffff?text=Trayton" alt="Trayton"
-              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
-              <p class="font-handwriting text-xl text-white">Trayton</p>
+        <!-- Featured Team photo -->
+        {{ with .Params.featuredTeam }}
+          <div class="space-y-0 mt-4">
+            <div class="group relative rounded-xl overflow-hidden aspect-video border border-gray-800 hover:border-yellow-500 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+              <img src="{{ .image }}" alt="{{ .alt }}"
+                class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="bg-[#0b0b0f]/95 text-white p-4 border-x border-b border-gray-800 rounded-b-xl text-center">
+              <p class="font-bold text-sm sm:text-base text-yellow-500 uppercase tracking-widest mb-1">{{ .badge }}</p>
+              <p class="text-xs sm:text-sm font-bold text-gray-200">{{ .title }}</p>
+              <p class="text-[10px] sm:text-xs font-medium text-gray-400 mt-1">{{ .players }}</p>
             </div>
           </div>
-
-          <div
-            class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
-            <img src="https://placehold.co/300x400/1a1a24/ffffff?text=Waakz" alt="Waakz"
-              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
-              <p class="font-handwriting text-xl text-white">Waakz</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Team PCS 2016 -->
-        <div
-          class="group relative rounded-xl overflow-hidden aspect-video border border-gray-800 hover:border-yellow-500 transition-all duration-300 mt-4 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-          <img src="https://placehold.co/600x338/1a1a24/ffffff?text=Championnat+National+2016"
-            alt="Championnat National ESL SUMMER 2016"
-            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-transform duration-700">
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
-          <div
-            class="absolute bottom-0 inset-x-0 bg-[#0b0b0f]/95 text-white p-3 pt-4 border-t border-gray-800 text-center transform translate-y-0 group-hover:-translate-y-1 transition-transform">
-            <p class="font-bold text-sm sm:text-base text-yellow-500 uppercase tracking-widest mb-1">Champion</p>
-            <p class="text-xs sm:text-sm font-bold text-gray-200">Championnat National ESL SUMMER 2016</p>
-            <p class="text-[10px] sm:text-xs font-medium text-gray-400 mt-1">PCS GLORY : Marex - Tiger - Saken - Shemek
-              - Targamas</p>
-          </div>
-        </div>
+        {{ end }}
 
       </div>
     </div>

@@ -52,23 +52,30 @@
           <img src="/images/logo.png" alt="Project Conquerors" class="h-12 w-auto object-contain">
           <div class="hidden sm:flex flex-col">
             <span class="font-black text-xl text-white">PROJECT CONQUERORS</span>
-            <span class="text-red-600 text-xs font-bold tracking-wider">ESPORT</span>
+            <span class="text-red-600 text-xs font-bold tracking-wider">CLUB ESPORT</span>
           </div>
         </a>
       </div>
 
       
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+      <div class="hidden md:flex items-center gap-12">
+        <a href="/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="0">ACCUEIL</a>
-        <a href="/news/" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+        <a href="/news/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
-        <a href="/partenaires" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
-          data-aos="fade-down" data-aos-delay="300">PARTENAIRES</a>
+        <a href="/partenaires/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="200">PARTENAIRES</a>
+        <a href="/a-propos/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="300">À PROPOS</a>
+
         <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
           rel="noopener noreferrer"
-          class="bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 font-bold text-sm px-6 py-2.5 rounded-md shadow-lg hover:shadow-red-600/20"
-          data-aos="fade-down" data-aos-delay="500">BOUTIQUE</a>
+          class="bg-red-600 text-white hover:bg-red-700 transition-all duration-300 font-black text-xs px-8 py-3 rounded-md shadow-lg shadow-red-600/20 uppercase tracking-widest italic"
+          data-aos="fade-down" data-aos-delay="400">BOUTIQUE</a>
       </div>
 
       
@@ -87,14 +94,24 @@
     style="display: none;">
     <div class="px-4 py-6 space-y-4">
       <a href="/" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACCUEIL</a>
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACCUEIL</a>
       <a href="/news/" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACTUALITÉS</a>
-      <a href="/partenaires" @click="isOpen = false"
-        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">PARTENAIRES</a>
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACTUALITÉS</a>
+      <a href="/partenaires/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">PARTENAIRES</a>
+      <a href="/a-propos/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">À
+        PROPOS</a>
+      <div class="pl-4 border-l border-gray-800 space-y-2">
+        <a href="/teams/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Nos
+          Équipes</a>
+        <a href="/recrutement/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Recrutement</a>
+      </div>
       <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
         rel="noopener noreferrer"
-        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg">BOUTIQUE</a>
+        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg uppercase italic tracking-widest text-sm">BOUTIQUE</a>
     </div>
   </div>
 </nav>
@@ -459,144 +476,428 @@
           Derniers Accomplissements
         </h3>
 
+        
+        
+
         <ul class="space-y-3 font-medium text-sm sm:text-base text-gray-300">
           
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">COD</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - LAN E-Coffee Lens - <span class="italic">Team
-                PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Nantarena 2025 - <span
-                class="italic">Zagranda</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Clash of Clans</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - PCL - 2025 - <span class="italic">PCS COC</span></span>
-          </li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">LOL</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - LFL2 Saison - 2025 - <span
-                class="italic">Div2</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">FIFA</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - PFL France Cashcup - 2025 - <span class="italic">PCS
-                Efoot</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Apex</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - EXO - 2025 - <span class="italic">Team
-                PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">SSBU</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Cinnamon Games - 2025 - <span
-                class="italic">Souren</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">SSBU</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Champi Série - 2025 - <span
-                class="italic">Ashgaar</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Brawlhalla</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - Brawl for Glory - 2025 - <span
-                class="italic">Shadra</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">OW2</strong> - <span
-                class="text-orange-400 font-bold">Top 3</span> - StarLight Tournament - 2025 - <span class="italic">PCS
-                ODIL</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">OW2</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - StarLight Tournament - 2025 - <span class="italic">PCS
-                Sans-Plomb</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">LOL</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - LFL2 Winter split, playoff - 2025 - <span
-                class="italic">Div2</span></span></li>
-
           
-          <li class="flex items-start gap-3 mt-4"><span class="text-red-500 mt-1 shrink-0"><i
-                data-lucide="chevron-right" class="w-4 h-4"></i></span> <span><strong
-                class="text-white">Lorcana</strong> - <span class="text-blue-400 font-bold">Top 16/2100</span> - Lorcana
-              Lille Challenge - Mai 2024 - <span class="italic">Flaxeau</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">NBA2K</strong> - <span
-                class="text-blue-400 font-bold">Top 4</span> - Championnat de France - Mai 2024 - <span
-                class="italic">Team PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Overwatch 2</strong> - <span
-                class="text-blue-400 font-bold">Top 4</span> - Gamers Assembly - Avril 2024 - <span class="italic">PCS
-                Cooking</span></span></li>
-
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">COD</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - LAN E-Coffee Lens
+                - <span class="italic">Team PCS</span>
+              </span>
+            </li>
+            
           
-          <li class="flex items-start gap-3 mt-4"><span class="text-red-500 mt-1 shrink-0"><i
-                data-lucide="chevron-right" class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> -
-              <span class="text-blue-400 font-bold">Top 4</span> - Hex League - Octobre 2023 - <span
-                class="italic">CrocoCostaud</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">R6S</strong> - <span
-                class="text-blue-400 font-bold">Top 4</span> - Euro League&Cup (ELC) - Mai 2023 - <span
-                class="italic">Team PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">NBA2K</strong> - <span
-                class="text-blue-400 font-bold">Top 4</span> - PlayOffs nationaux - Mai 2023 - <span class="italic">Team
-                PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">BS</strong> - <span
-                class="text-gray-300 font-bold">Top 2</span> - Thonon Gaming Fest - Mai 2023 - <span class="italic">Team
-                PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-orange-400 font-bold">Top 3</span> - Hex League - Avril 2023 - <span
-                class="italic">Texita</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">LOR</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Open Runeterra EMEA - Avril 2023 - <span
-                class="italic">Tabouta</span></span></li>
-
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">TFT</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - Nantarena 2025
+                - <span class="italic">Zagranda</span>
+              </span>
+            </li>
+            
           
-          <li class="flex items-start gap-3 mt-4"><span class="text-red-500 mt-1 shrink-0"><i
-                data-lucide="chevron-right" class="w-4 h-4"></i></span> <span><strong class="text-white">CIV VI</strong>
-              - <span class="text-yellow-500 font-bold">Top 1</span> - Division 3 - Novembre 2022 - <span
-                class="italic">Team PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">Multiversus</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - UFA 2022 - Novembre 2022 - <span
-                class="italic">Psycoquaxe</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TM</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Compétition journalière - Juillet 2022 - <span
-                class="italic">Roquete</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-yellow-500 font-bold">Top 1</span> - Qualifier #1 TFT Series - Mai 2022 - <span
-                class="italic">Kalfl0</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">FIFA CP</strong> - <span
-                class="text-yellow-500 font-bold">Champion</span> - Efifa Champion des champions - Mars 2022 - <span
-                class="italic">PCS Pegaze</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TM</strong> - <span
-                class="text-yellow-500 font-bold">Champion</span> - AGEM - Février 2022 - <span
-                class="italic">Shpluk</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-yellow-500 font-bold">Champion d'Europe</span> - Janvier 2022 - <span
-                class="italic">Xperion</span></span></li>
-
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">Clash of Clans</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - PCL - 2025
+                - <span class="italic">PCS COC</span>
+              </span>
+            </li>
+            
           
-          <li class="flex items-start gap-3 mt-4"><span class="text-red-500 mt-1 shrink-0"><i
-                data-lucide="chevron-right" class="w-4 h-4"></i></span> <span><strong class="text-white">FIFA
-                CP</strong> - <span class="text-yellow-500 font-bold">Champion</span> - Ligue Bronze EsportFA - Décembre
-              2021 - <span class="italic">PCS Pegaze</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">TFT</strong> - <span
-                class="text-yellow-500 font-bold">Champion</span> - Allie Coin Pro - Décembre 2021 - <span
-                class="italic">Kalfl0</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">R6S</strong> - <span
-                class="text-yellow-500 font-bold">1er/24</span> - 4Tuna's cup - Novembre 2021 - <span
-                class="italic">Team PCS</span></span></li>
-          <li class="flex items-start gap-3"><span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right"
-                class="w-4 h-4"></i></span> <span><strong class="text-white">LOL</strong> - <span
-                class="text-yellow-500 font-bold">Champion</span> OTF 2021 - <span class="italic">PCS
-                Taran</span></span></li>
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">LOL</strong>
+                - <span class="text-gray-300 font-bold">Top 2</span>
+                - LFL2 Saison - 2025
+                - <span class="italic">Div2</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">FIFA</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - PFL France Cashcup - 2025
+                - <span class="italic">PCS Efoot</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">Apex</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - EXO - 2025
+                - <span class="italic">Team PCS</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">SSBU</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - Cinnamon Games - 2025
+                - <span class="italic">Souren</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">SSBU</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - Champi Série - 2025
+                - <span class="italic">Ashgaar</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">Brawlhalla</strong>
+                - <span class="text-gray-300 font-bold">Top 2</span>
+                - Brawl for Glory - 2025
+                - <span class="italic">Shadra</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">OW2</strong>
+                - <span class="text-orange-400 font-bold">Top 3</span>
+                - StarLight Tournament - 2025
+                - <span class="italic">PCS ODIL</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">OW2</strong>
+                - <span class="text-gray-300 font-bold">Top 2</span>
+                - StarLight Tournament - 2025
+                - <span class="italic">PCS Sans-Plomb</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">LOL</strong>
+                - <span class="text-gray-300 font-bold">Top 2</span>
+                - LFL2 Winter split, playoff - 2025
+                - <span class="italic">Div2</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3 mt-4">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">Lorcana</strong>
+                - <span class="text-blue-400 font-bold">Top 16/2100</span>
+                - Lorcana Lille Challenge - Mai 2024
+                - <span class="italic">Flaxeau</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">NBA2K</strong>
+                - <span class="text-blue-400 font-bold">Top 4</span>
+                - Championnat de France - Mai 2024
+                - <span class="italic">Team PCS</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">Overwatch 2</strong>
+                - <span class="text-blue-400 font-bold">Top 4</span>
+                - Gamers Assembly - Avril 2024
+                - <span class="italic">PCS Cooking</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3 mt-4">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">TFT</strong>
+                - <span class="text-blue-400 font-bold">Top 4</span>
+                - Hex League - Octobre 2023
+                - <span class="italic">CrocoCostaud</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">R6S</strong>
+                - <span class="text-blue-400 font-bold">Top 4</span>
+                - Euro League&amp;Cup (ELC) - Mai 2023
+                - <span class="italic">Team PCS</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">NBA2K</strong>
+                - <span class="text-blue-400 font-bold">Top 4</span>
+                - PlayOffs nationaux - Mai 2023
+                - <span class="italic">Team PCS</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">BS</strong>
+                - <span class="text-gray-300 font-bold">Top 2</span>
+                - Thonon Gaming Fest - Mai 2023
+                - <span class="italic">Team PCS</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">TFT</strong>
+                - <span class="text-orange-400 font-bold">Top 3</span>
+                - Hex League - Avril 2023
+                - <span class="italic">Texita</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">LOR</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - Open Runeterra EMEA - Avril 2023
+                - <span class="italic">Tabouta</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3 mt-4">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">CIV VI</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - Division 3 - Novembre 2022
+                - <span class="italic">Team PCS</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">Multiversus</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - UFA 2022 - Novembre 2022
+                - <span class="italic">Psychoquaxe</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">TM</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - Compétition journalière - Juillet 2022
+                - <span class="italic">Roquete</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">TFT</strong>
+                - <span class="text-yellow-500 font-bold">Top 1</span>
+                - Qualifier #1 TFT Series - Mai 2022
+                - <span class="italic">Kalfl0</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">FIFA CP</strong>
+                - <span class="text-yellow-500 font-bold">Champion</span>
+                - Efifa Champion des champions - Mars 2022
+                - <span class="italic">PCS Pegaze</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">TM</strong>
+                - <span class="text-yellow-500 font-bold">Champion</span>
+                - AGEM - Février 2022
+                - <span class="italic">Shpluk</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">TFT</strong>
+                - <span class="text-yellow-500 font-bold">Champion d&#39;Europe</span>
+                - Janvier 2022
+                - <span class="italic">Xperion</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3 mt-4">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">FIFA CP</strong>
+                - <span class="text-yellow-500 font-bold">Champion</span>
+                - Ligue Bronze EsportFA - Décembre 2021
+                - <span class="italic">PCS Pegaze</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">TFT</strong>
+                - <span class="text-yellow-500 font-bold">Champion</span>
+                - Allie Coin Pro - Décembre 2021
+                - <span class="italic">Kalfl0</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">R6S</strong>
+                - <span class="text-yellow-500 font-bold">1er/24</span>
+                - 4Tuna&#39;s cup - Novembre 2021
+                - <span class="italic">Team PCS</span>
+              </span>
+            </li>
+            
+          
+            
+            
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1 shrink-0"><i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+              <span>
+                <strong class="text-white">LOL</strong>
+                - <span class="text-yellow-500 font-bold">Champion</span>
+                - OTF 2021
+                - <span class="italic">PCS Taran</span>
+              </span>
+            </li>
+            
+          
         </ul>
 
       </div>
@@ -605,62 +906,57 @@
       <div class="lg:col-span-5 space-y-6">
 
         
+        
         <div class="grid grid-cols-2 gap-4">
-          <div
-            class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
-            <img src="https://placehold.co/300x400/1a1a24/ffffff?text=XPerion" alt="XPerion"
-              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
-              <p class="font-handwriting text-xl text-white">XPerion</p>
+          
+            <div class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
+              <img src="/images/uploads/xperion.png" alt="XPerion"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
+                <p class="font-handwriting text-xl text-white">XPerion</p>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
-            <img src="https://placehold.co/300x400/1a1a24/ffffff?text=Seelame" alt="Seelame"
-              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
-              <p class="font-handwriting text-xl text-white">Seelame</p>
+          
+            <div class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
+              <img src="/images/uploads/seelame.png" alt="Seelame"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
+                <p class="font-handwriting text-xl text-white">Seelame</p>
+              </div>
             </div>
-          </div>
+          
+            <div class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
+              <img src="/images/uploads/trayton.png" alt="Trayton"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
+                <p class="font-handwriting text-xl text-white">Trayton</p>
+              </div>
+            </div>
+          
+            <div class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
+              <img src="/images/uploads/waakz.png" alt="Waakz"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
+                <p class="font-handwriting text-xl text-white">Waakz</p>
+              </div>
+            </div>
+          
         </div>
 
         
-        <div class="grid grid-cols-2 gap-4">
-          <div
-            class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
-            <img src="https://placehold.co/300x400/1a1a24/ffffff?text=Trayton" alt="Trayton"
-              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
-              <p class="font-handwriting text-xl text-white">Trayton</p>
-            </div>
-          </div>
-
-          <div
-            class="group relative rounded-xl overflow-hidden aspect-[3/4] border border-gray-800 hover:border-red-500 transition-all duration-300">
-            <img src="https://placehold.co/300x400/1a1a24/ffffff?text=Waakz" alt="Waakz"
-              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 pb-3">
-              <p class="font-handwriting text-xl text-white">Waakz</p>
-            </div>
-          </div>
-        </div>
-
         
-        <div
-          class="group relative rounded-xl overflow-hidden aspect-video border border-gray-800 hover:border-yellow-500 transition-all duration-300 mt-4 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-          <img src="https://placehold.co/600x338/1a1a24/ffffff?text=Championnat+National+2016"
-            alt="Championnat National ESL SUMMER 2016"
-            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-transform duration-700">
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
-          <div
-            class="absolute bottom-0 inset-x-0 bg-[#0b0b0f]/95 text-white p-3 pt-4 border-t border-gray-800 text-center transform translate-y-0 group-hover:-translate-y-1 transition-transform">
-            <p class="font-bold text-sm sm:text-base text-yellow-500 uppercase tracking-widest mb-1">Champion</p>
-            <p class="text-xs sm:text-sm font-bold text-gray-200">Championnat National ESL SUMMER 2016</p>
-            <p class="text-[10px] sm:text-xs font-medium text-gray-400 mt-1">PCS GLORY : Marex - Tiger - Saken - Shemek
-              - Targamas</p>
+          <div class="space-y-0 mt-4">
+            <div class="group relative rounded-xl overflow-hidden aspect-video border border-gray-800 hover:border-yellow-500 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+              <img src="/images/uploads/esl2016.png" alt="Championnat National ESL SUMMER 2016"
+                class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="bg-[#0b0b0f]/95 text-white p-4 border-x border-b border-gray-800 rounded-b-xl text-center">
+              <p class="font-bold text-sm sm:text-base text-yellow-500 uppercase tracking-widest mb-1">Champion</p>
+              <p class="text-xs sm:text-sm font-bold text-gray-200">Championnat National ESL SUMMER 2016</p>
+              <p class="text-[10px] sm:text-xs font-medium text-gray-400 mt-1">PCS GLORY : Marex - Tiger - Saken - Shemek - Targamas</p>
+            </div>
           </div>
-        </div>
+        
 
       </div>
     </div>
@@ -722,10 +1018,14 @@
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Accueil</a></li>
           <li><a href="/news/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Actualités</a></li>
+          <li><a href="/a-propos/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nos engagements</a></li>
+          <li><a href="/teams/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nos Équipes</a></li>
           <li><a href="/partenaires/"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Partenaires</a></li>
-          <li><a href="/#contact"
-              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Contact</a></li>
+          <li><a href="/recrutement/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Recrutement</a></li>
         </ul>
       </div>
 
@@ -736,12 +1036,15 @@
           <li><a href="https://drive.google.com/drive/folders/1_Yzxh7rdaWvGPhbKuzCXw-KT_eImvfju" target="_blank"
               rel="noopener noreferrer"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Press kit</a></li>
+          <li><a href="https://drive.google.com/drive/folders/19B5rJMzqQ2ZdiY1QYRGYYKtMprgKlhvh" target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Fonds d'écran PCS</a></li>
           <li><a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs"
               target="_blank" rel="noopener noreferrer"
               class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nous soutenir</a>
           </li>
-          <li><a href="/recrutement/"
-              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Recrutement</a></li>
+          <li><a href="/#contact"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Contact</a></li>
         </ul>
       </div>
 
@@ -750,7 +1053,8 @@
         <h4 class="font-black text-white mb-6 text-lg">LÉGAL</h4>
         <ul class="space-y-3">
           <li><a href="/mentions-legales/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Mentions légales</a></li>
-          <li><a href="/cgu/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">CGU</a></li>
+          <li><a href="/politique-confidentialite/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Politique de confidentialité</a></li>
+          <li><a href="/politique-cookies/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Politique cookies</a></li>
         </ul>
       </div>
     </div>
@@ -763,5 +1067,42 @@
     </div>
   </div>
 </footer>
+  <div class="fixed left-0 top-1/2 -translate-y-1/2 z-50 social-floating-container hidden lg:flex flex-col gap-0 border-y border-r border-gray-800 rounded-r-xl overflow-hidden shadow-2xl bg-black/40 backdrop-blur-md">
+  
+  <a href="https://www.twitch.tv/projectconquerorstv1" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#9146FF] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Twitch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://x.com/PCS_Original" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-white transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="X">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-black transition-colors duration-300">
+      <path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.facebook.com/ProjectConquerors" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#1877F2] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.linkedin.com/company/project-conquerors/" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#0A66C2] transition-all duration-300 flex items-center justify-center" 
+     title="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+  </a>
+</div>
+
 </body>
 </html>

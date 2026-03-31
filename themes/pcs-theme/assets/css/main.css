@@ -188,3 +188,49 @@
   display: flex;
   width: max-content;
 }
+
+/* ── Hero Carousel Crossfade ────────────────────────────────── */
+@keyframes hero-fade {
+  0%        { opacity: 0; }
+  5%        { opacity: 1; }      /* fade in */
+  40%       { opacity: 1; }      /* hold visible */
+  50%       { opacity: 0; }      /* fade out */
+  100%      { opacity: 0; }      /* stay hidden until next cycle */
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: hero-fade var(--hero-duration, 5s) ease-in-out infinite;
+  animation-delay: var(--hero-delay, 0s);
+  will-change: opacity;
+}
+
+/* Single image: disable animation, stay fully visible */
+.hero-slide:only-child {
+  opacity: 1;
+  animation: none;
+}
+
+/* Floating Social Menu */
+.social-floating-container {
+  animation: slideInLeft 0.8s ease-out forwards;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate(-100%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+}
+
+.social-floating-container a:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}

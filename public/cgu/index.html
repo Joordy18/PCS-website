@@ -61,7 +61,7 @@ Tout accès et/ou utilisation du site www.project-conquerors.com suppose l’acc
           <img src="/images/logo.png" alt="Project Conquerors" class="h-12 w-auto object-contain">
           <div class="hidden sm:flex flex-col">
             <span class="font-black text-xl text-white">PROJECT CONQUERORS</span>
-            <span class="text-red-600 text-xs font-bold tracking-wider">ESPORT</span>
+            <span class="text-red-600 text-xs font-bold tracking-wider">CLUB ESPORT</span>
           </div>
         </a>
       </div>
@@ -74,6 +74,8 @@ Tout accès et/ou utilisation du site www.project-conquerors.com suppose l’acc
           data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
         <a href="/partenaires" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
           data-aos="fade-down" data-aos-delay="300">PARTENAIRES</a>
+        <a href="/recrutement" class="text-gray-300 hover:text-red-600 transition-colors duration-300 font-bold text-sm"
+          data-aos="fade-down" data-aos-delay="300">RECRUTEMENT</a>
         <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
           rel="noopener noreferrer"
           class="bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 font-bold text-sm px-6 py-2.5 rounded-md shadow-lg hover:shadow-red-600/20"
@@ -101,6 +103,8 @@ Tout accès et/ou utilisation du site www.project-conquerors.com suppose l’acc
         class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">ACTUALITÉS</a>
       <a href="/partenaires" @click="isOpen = false"
         class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">PARTENAIRES</a>
+      <a href="/recrutement" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold">RECRUTEMENT</a>
       <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
         rel="noopener noreferrer"
         class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg">BOUTIQUE</a>
@@ -223,5 +227,42 @@ Le visiteur sollicite l&rsquo;autorisation préalable du site pour toute reprodu
     </div>
   </div>
 </footer>
+  <div class="fixed left-0 top-1/2 -translate-y-1/2 z-50 social-floating-container hidden lg:flex flex-col gap-0 border-y border-r border-gray-800 rounded-r-xl overflow-hidden shadow-2xl bg-black/40 backdrop-blur-md">
+  
+  <a href="https://www.twitch.tv/projectconquerorstv1" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#9146FF] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Twitch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://x.com/PCS_Original" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-white transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="X">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-black transition-colors duration-300">
+      <path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.facebook.com/ProjectConquerors" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#1877F2] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.linkedin.com/company/project-conquerors/" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#0A66C2] transition-all duration-300 flex items-center justify-center" 
+     title="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+  </a>
+</div>
+
 </body>
 </html>
