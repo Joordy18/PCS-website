@@ -2,7 +2,7 @@ local_backend: true
 
 backend:
   name: git-gateway
-  branch: main
+  branch: master
 
 # Emplacement des médias uploadés
 media_folder: "static/images/uploads"
