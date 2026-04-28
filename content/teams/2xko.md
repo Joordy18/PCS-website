@@ -1,8 +1,8 @@
 ---
 title: 2XKO
 rosters:
-  - name: "Équipe Principale"
-    show_in_slider: true
+  - name: Équipe Principale
+    show_in_slider: false
     players:
       - name: Joordy
         role: poste
