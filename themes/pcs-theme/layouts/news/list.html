@@ -19,9 +19,17 @@
             <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
           </div>
           <div class="p-6 flex-1 flex flex-col bg-[#0b0b0f]">
-            <div class="flex items-center gap-2 text-gray-500 text-xs mb-3 font-medium uppercase tracking-wider">
-              <i data-lucide="calendar" class="w-4 h-4 text-red-500"></i>
-              <span>{{ .Date.Format "02 Jan 2006" }}</span>
+            <div class="flex items-center flex-wrap gap-x-4 gap-y-2 text-gray-500 text-xs mb-3 font-medium uppercase tracking-wider">
+              <div class="flex items-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4 text-red-500"></i>
+                <span>{{ .Date.Format "02 Jan 2006" }}</span>
+              </div>
+              {{ if .Params.author }}
+              <div class="flex items-center gap-2">
+                <i data-lucide="user" class="w-4 h-4 text-red-500"></i>
+                <span class="text-gray-400">{{ .Params.author }}</span>
+              </div>
+              {{ end }}
             </div>
             <h3 class="font-black text-xl text-white mb-3 group-hover:text-red-500 transition-colors duration-300 line-clamp-2 min-h-[3.5rem] leading-snug">
               {{ .Title }}
