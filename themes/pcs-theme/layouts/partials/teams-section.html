@@ -1,4 +1,19 @@
-{{ $topGames := first 5 (where .Site.RegularPages "Section" "teams") }}
+{{ $eligibleGames := slice }}
+{{ range (where .Site.RegularPages "Section" "teams") }}
+  {{ $hasVisibleSliderRoster := false }}
+  {{ if .Params.rosters }}
+    {{ range .Params.rosters }}
+      {{ $show := default true .show_in_slider }}
+      {{ if and $show .players }}
+        {{ $hasVisibleSliderRoster = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if $hasVisibleSliderRoster }}
+    {{ $eligibleGames = $eligibleGames | append . }}
+  {{ end }}
+{{ end }}
+{{ $topGames := first 5 $eligibleGames }}
 <section id="teams" class="py-24 bg-black border-t border-gray-900" x-data="{ activeGame: 0 }">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 

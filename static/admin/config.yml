@@ -34,6 +34,7 @@ collections:
         widget: "list"
         fields:
           - {label: "Nom de l'équipe (ex: Équipe Principale, Académie)", name: "name", widget: "string", default: "Équipe Principale"}
+          - {label: "Logo de l'équipe", name: "logo", widget: "image", required: false}
           - {label: "Afficher dans le slider d'accueil ?", name: "show_in_slider", widget: "boolean", default: true}
           - {label: "Description / Contenu (Texte/Images)", name: "content", widget: "markdown", required: false}
           - {label: "Joueurs (Roster)", name: "players", widget: "list", required: false, fields: [

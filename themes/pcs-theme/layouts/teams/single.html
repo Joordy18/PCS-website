@@ -25,6 +25,7 @@
       <!-- Roster Header & Content -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12" data-aos="fade-up">
         <h2 class="text-4xl font-black mb-6 uppercase tracking-wider flex items-center gap-4 text-white">
+          {{ if $roster.logo }}<img src="{{ $roster.logo }}" alt="Logo {{ $roster.name }}" class="h-12 w-auto object-contain">{{ end }}
           {{ $roster.name }} <div class="h-1 flex-1 bg-gradient-to-r from-red-600 to-transparent opacity-50"></div>
         </h2>
         {{ if $roster.content }}
