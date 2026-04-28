@@ -14,7 +14,7 @@
       <a href="{{ $featured.RelPermalink }}"
         class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-900 rounded-lg overflow-hidden border border-red-900/30 hover:border-red-600 transition-all duration-300">
         <div class="relative h-96 lg:h-auto overflow-hidden bg-black">
-          <img src='{{ $featured.Params.image | default "/images/uploads/test1.jpeg" }}' alt="{{ $featured.Title }}"
+          <img src='{{ $featured.Params.image | default "/images/test1.jpeg" }}' alt="{{ $featured.Title }}"
             class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
           <div class="absolute top-6 left-6">
             <span class="px-4 py-2 bg-red-600 text-white font-bold text-sm rounded shadow-lg uppercase tracking-wider">À
@@ -59,7 +59,7 @@
           class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 h-full flex flex-col block">
           <div class="relative h-48 overflow-hidden bg-black">
             <img
-              src='{{ .Params.image | default "/images/uploads/test1.jpeg" }}'
+              src='{{ .Params.image | default "/images/test1.jpeg" }}'
               alt="{{ .Title }}"
               class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
           </div>
