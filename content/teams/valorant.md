@@ -1,11 +1,14 @@
 ﻿---
 title: "Valorant"
-players:
-  - name: "Joueur 1"
-    role: "Support"
-  - name: "Joueur 2"
-    role: "Attaquant"
-staff:
-  - name: "Coach 1"
-    role: "Head Coach"
+rosters:
+  - name: "Équipe Principale"
+    show_in_slider: true
+    players:
+      - name: "Joueur 1"
+        role: "Support"
+      - name: "Joueur 2"
+        role: "Attaquant"
+    staff:
+      - name: "Coach 1"
+        role: "Head Coach"
 ---
