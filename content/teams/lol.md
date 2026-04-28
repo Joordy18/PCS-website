@@ -14,8 +14,9 @@ rosters:
   - name: Div2
     show_in_slider: true
     players:
-      - name: Joueur 1
+      - name: test
         role: Support
+        image: /images/uploads/2024-11-11_214100427.gif
       - name: Joueur 2
         role: Attaquant
     staff:
