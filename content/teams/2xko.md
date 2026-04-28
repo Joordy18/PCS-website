@@ -1,5 +1,6 @@
 ---
 title: 2XKO
+image: /images/uploads/2024-11-11_214100427.gif
 rosters:
   - name: Équipe Principale
     show_in_slider: true
