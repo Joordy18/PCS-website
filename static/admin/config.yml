@@ -29,6 +29,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Nom du jeu", name: "title", widget: "string"}
+      - {label: "Image du jeu (Icône/Couverture)", name: "image", widget: "image", required: false}
       - label: "Équipes / Rosters"
         name: "rosters"
         widget: "list"
