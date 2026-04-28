@@ -26,8 +26,6 @@ Comme tout bon sportif, un gamer a besoin de pauses stratégiques. La plus évid
 
 ![](https://project-conquerors.com/wp-content/uploads/2025/08/Impact-energetique-Impec.png)
 
-
-
 # Geste 2 : Les objets connectés c'est cool... Mais ça consomme
 
 Aujourd’hui, nos vies sont entourées d’objets connectés. Box internet, enceintes, écrans, lampes intelligentes… Tout cela reste branché en permanence et pèse lourd dans notre **consommation d’énergie**.
@@ -37,8 +35,6 @@ Aujourd’hui, nos vies sont entourées d’objets connectés. Box internet, enc
 ⚫️ Autre astuce simple : paramètre une **mise en veille automatique** de ton écran après quelques minutes d’inactivité. Et attention aux fameux *chargeurs fantômes* : même sans appareil branché, ils continuent à consommer de l’électricité. Un petit geste facile consiste à tout brancher sur une **multiprise à interrupteur** et la couper quand tu ne joues pas.
 
 ⚪️ Et petit bonus auquel on ne pense pas toujours : ferme tes **onglets Internet** quand tu as terminé ta recherche. Chaque onglet ouvert sollicite un serveur à distance, et ces serveurs tournent 24h/24. Moins d’onglets ouverts, c’est aussi un **gaming plus écologique** ! 
-
-
 
 # Geste 3 : Optimise tes machines de jeu
 
@@ -60,11 +56,7 @@ Et lorsque tu n’utilises pas ton matériel, éteins-le vraiment. Fermer une mu
 
 C’est une philosophie simple : prendre le temps de profiter vraiment de ce qu’on a déjà.
 
-* Au lieu de commencer 10 jeux en même temps, concentre-toi sur 
-
-  **un seul titre**
-
-  , vis-le à fond, explore les moindres recoins. Tu verras, l’expérience est bien plus riche.
+* Au lieu de commencer 10 jeux en même temps, concentre-toi sur **un seul titre** vis-le à fond, explore les moindres recoins. Tu verras, l’expérience est bien plus riche.
 * Résister à l’achat compulsif, c’est éviter de transformer ta bibliothèque Steam en “backlog infini” où 80% des jeux n’ont jamais dépassé le tutoriel.
 
 #### ⚫️  **Privilégie l’occasion**
@@ -84,13 +76,9 @@ Pas besoin de rusher vers chaque console next-génération. Une **Wii de 2006**
 Fabriquer une console neuve = plusieurs **centaines de kilos de CO₂**. Pour te donner une idée, c’est comme un **aller-retour Paris–Barcelone en avion**.
 Donc en ralentissant un peu la cadence, tu gagnes :
 
-* **Économies IRL**
-
-   (ton portefeuille te dit merci)
+* **Économies IRL** (ton portefeuille te dit merci)
 * **Impact écolo réduit**
-* **Plus de plaisir de jeu**
-
-   (parce que tu savoures vraiment tes sessions au lieu de courir après la nouveauté).
+* **Plus de plaisir de jeu** (parce que tu savoures vraiment tes sessions au lieu de courir après la nouveauté).
 
 #### 💡 En clair :
 
@@ -102,20 +90,8 @@ Le **slowplay**, c’est un peu comme passer en mode *hardcore immersif*. Tu p
 
 #### 🔴  **Donne-lui une seconde vie !**
 
-* Si ton PC ou ta console fonctionne encore, tu peux le 
-
-  **revendre en occasion**
-
-   sur des plateformes comme LeBonCoin, BackMarket ou eBay. Tu gagnes un peu de gold IRL et un autre joueur profite d’un setup à prix réduit.
-* Tu peux aussi 
-
-  **l’offrir à un pote**
-
-   qui débute, ou à une 
-
-  **asso**
-
-   (certaines collectent du matériel pour équiper des jeunes en difficulté ou des espaces associatifs). Résultat : tu fais un heureux, et tu évites que ton matos devienne juste un déchet électronique de plus.
+* Si ton PC ou ta console fonctionne encore, tu peux le **revendre en occasion** sur des plateformes comme LeBonCoin, BackMarket ou eBay. Tu gagnes un peu de gold IRL et un autre joueur profite d’un setup à prix réduit.
+* Tu peux aussi **l’offrir à un pote** qui débute, ou à une **asso** (certaines collectent du matériel pour équiper des jeunes en difficulté ou des espaces associatifs). Résultat : tu fais un heureux, et tu évites que ton matos devienne juste un déchet électronique de plus.
 
 #### ⚫️  **Et si ton équipement est vraiment en fin de vie ?**
 
@@ -130,8 +106,6 @@ Acheter un PC, une console ou même une simple souris en reconditionné, c’est
 Recycler, revendre, offrir, acheter reconditionné → ce sont des façons simples de prolonger la vie du matériel, de faire plaisir à d’autres gamers, et d’éviter que ton setup devienne un “poids mort” pour la planète.
 
 ![](https://project-conquerors.com/wp-content/uploads/2025/08/5-GESTES-SURVEILLER-TA-CONSO-2-724x1024.png)
-
-
 
 # Deviens un gamer éco-responsable
 
