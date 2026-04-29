@@ -1,37 +1,71 @@
 ---
-title: Marketing éthique dans les clubs esports
-date: 2020-11-15T00:00:00.000+01:00
+title: Le marketing dans l’esport
+date: 2020-10-31T00:00:00.000+01:00
 comments_enabled: true
 ---
 
 
-## Définition du marketing
+Parlons du Marketing dans l’esport, j’imagine que vous connaissez ces licences devenues incontournables comme League of Legends (LOL), Fortnite (FTN), Counter Strike : Global Offensive (CSGO), Hearthstone (HS), Teamfight Tactics (TFT)…
+Ces jeux permettent à des joueurs de devenir véritablement professionnels. De nombreuses compétitions officielles sont organisées pour les PROS mais aussi sur la scène amateur. D’ailleurs n’hésitez pas à jeter un oeil à [ce lien](http://www.conquerorscup.com/) si vous cherchez des tournois amateurs.
 
-Tout d’abord, avant de parler du marketing éthique dans les clubs esports, commençons par éliminer cette fameuse idée reçue « Le marketing c’est le mal ! ».
+## Contexte
 
-Voici la [définition du marketing](https://www.cnrtl.fr/definition/marketing) donnée par le Centre National de Ressources Textuelles et Lexicales :
-« Ensemble des études et des actions qui concourent à créer des produits satisfaisant les besoins et les désirs des consommateurs et à assurer leur commercialisation dans les meilleures conditions de profit. Le marketing comprend toutes les activités qui dirigent les produits du producteur au consommateur. Ces activités incluent, en plus de la vente, des fonctions telles que l’achat, le transport, l’entreposage, la finance, la publicité, etc.  »
-
-Comme indiqué, c’est donc une technique rassemblant « des études et des actions pour créer des produits satisfaisant les besoins et les désirs des consommateurs ».  Le but est donc de faire de meilleurs produits pour le consommateur. Est-ce mal de vous donner des produits qui vous correspondent plus ? Je pense qu’au contraire, le marketing est nécessaire au développement de produits toujours plus soucieux des besoins et des envies du consommateur. Si par la suite, vous manquez de moyens pour acquérir tel ou tel article, c’est indépendant du marketing.
-
-Le marketing est un outil, il faut donc s’en servir en gardant en tête la définition. D’ailleurs n’hésitez pas à lire notre article sur [le placement de produit](https://www.project-conquerors.com/2020/10/12/mario-roule-en-merco-esprit-critique-et-placement-de-produit/).
-
-Maintenant que nous avons fait le point sur le marketing, nous pouvons commencer à définir le marketing éthique.
+Avec le confinement, l’esport ne fait que grandir et attirer toujours plus de pratiquants. L’image de l’esport a énormément évolué et plus largement l’image du jeu vidéo. Il y a une trentaine d’années, ça n’était qu’une poignée de marginaux qui se retrouvaient et s’affrontaient dans des lieux improbables comme des garages notamment… Aujourd’hui, le joueur esport ne ressemble plus du tout à ce marginal, il a évolué. On estime que plus de 70% de la population française a joué à un jeu vidéo durant le mois dernier. Concernant le sexe des joueurs esport, les femmes sont bien plus présentes qu’à l’époque, elles représentent aujourd’hui 6 millions de pratiquantes sur presque 15 millions selon France esport.
 
 
 
-## Définition du marketing éthique
+## Pourquoi intégrer du marketing dans l’esport ?
 
-Le marketing éthique correspond à la mise en place d’une stratégie qui consiste à inciter le consommateur à acheter un produit respectant certaines engagements comme par exemple le bio, le développement durable, … Ainsi le produit vendu devient un porte-étendard d’une cause menée par l’entreprise et rend le produit directement lié à celle-ci.
+### Marques Endémiques et non Endémiques
 
-Maintenant que nous avons défini le marketing et le marketing éthique, concentrons-nous sur cette stratégie dans l’univers des associations esports.
+Aujourd’hui, de nombreuses marques franchissent le pas en sponsorisant des clubs esports. Les entreprises liées directement à l’esport ont démarré logiquement le sponsoring de la discipline. Cependant, depuis quelques années, elles sont rejointes par des sociétés éloignées du secteur mais qui ont un réel intérêt pour la cible.
+
+Nous pouvons noter la présence d’opérateurs internet (Orange, etc.), de marques de sport (Adidas, etc.), d’entreprises de services numériques (ESN) (Acensi, Capgemini, etc.). Nous pouvons même compter sur les agences intérim (Randstad, etc.) ou même des marques de voitures (Renault, BMW, etc.) et de soda (Pepsi, Coca Cola, etc.).
+
+C’est donc un secteur qui prend de plus en plus d’ampleur et qui mérite de s’y intéresser. C’est aujourd’hui qu’il faut [rejoindre](https://tournois.project-conquerors.com/devenir-partenaire) le peloton de tête.
 
 
 
-## Pourquoi faire du marketing éthique dans les clubs esports ?
+### Quelques chiffres utiles en 2019
 
-L’esport, comme vu dans les articles [« La communication dans l’esport »](https://www.project-conquerors.com/2020/10/07/la-communication-dans-lesport/) ou même dans celui sur le [« marketing dans l’esport »](https://www.project-conquerors.com/2020/10/31/marketing-dans-lesport/), est un domaine prometteur. Ce secteur connait une croissance énorme et surtout apporte une cible qui ne correspond pas aux cibles touchées par les moyens de communication classiques. Décider de mettre en place un marketing éthique dans les associations **esports** est un moyen intéressant de développer l’expansion de véritables causes. De plus, cette jeune génération est curieuse et porte une véritable volonté de rupture avec les anciennes méthodes. Elle veut plus de responsabilités. Communiquer avec elle sur des causes, c’est lui permettre d’être également acteur d’une cause et ainsi de l’impliquer.
+* League of Legends avec les Worlds a atteint un record d’audience avec 
 
-C’est donc une stratégie qui a un véritable intérêt pour les associations esports. Il faut donc, pour la mettre en place, définir une cause cohérente avec l’entreprise, apporter de la transparence dans l’objectif que vous avez à soutenir cette cause et trouver un partenaire pour apporter plus de crédibilité. Pensez également à faire en sorte que cette cause soit directement liée à votre activité.
+  **21,8 millions de spectateurs par minute en moyenne.**
+* League of Legends est aussi le jeu le plus regardé sur Twitch avec 
 
-D’ailleurs pour réfléchir à cela, vous pouvez faire appel à [une agence](https://rdsevents.fr/agence-digitale-3-raisons-dy-faire-appel/). Si vous êtes motivés à l’idée de sponsoriser une association esport, ça se passe [ici](https://tournois.project-conquerors.com/devenir-partenaire).
+  **11 118 435 546 heures de visionnage**
+
+   !
+* Le marché fleurissant de l’esport a atteint 
+
+  **1,096 milliards**
+
+   
+
+  **de dollars**
+
+   exactement !
+* **450 millions de spectacteurs dans le monde**
+
+   consomment du streaming de compétition.
+* **64,4 millions de dollars de gain :**
+
+   Fortnite arrivé en 2017 a distribué le plus gros montant de gains cumulés.
+
+### La stratégie gagnante du marketing dans l’esport
+
+Il faut s’implanter durablement et arriver avec un véritable projet. Votre cible vous récompensera vraiment si vous intégrez son secteur en soutenant véritablement sa passion.
+
+Entre le streaming, les compétitions ou même les joueurs et équipes directement, beaucoup de possibilités vous sont offertes. A vous de choisir le canal de communication adapté pour toucher votre cible.
+
+Le choix le plus logique est de soutenir une ou plusieurs compétitions. Décider de financer un tournoi auprès d’un acteur engagé et stable, c’est le choix le moins risqué. Remplir un tournoi est toujours plus facile alors que d’assurer les performances d’un joueur ou d’une équipe lors d’une compétition officielle est plus incertain.
+
+### La rentabilité du sponsoring
+
+Le sponsoring peut s’avérer extrêmement rentable en vous apportant de l’adhésion envers votre marque, de la communication, puis en fonction de votre entreprise, une augmentation de portefeuille client. Ne vous attendez pas à avoir un retour financier directement, l’important étant surtout de faire parler de votre marque, les retombées financières arrivera quant à lui un peu plus tard.
+
+## Un Avenir radieux pour le marketing dans l’esport
+
+Avec **644 millions de spectateurs uniques prévus** pour **2022**, le marché de l’esport poursuit son ascension et continuera d’attirer toujours plus d’entreprises non endémiques.
+
+La crise sanitaire se poursuivant, le marché de l’esport constitue une **réelle alternative à la communication traditionnelle**. Si vous avez encore des doutes, vous pouvez faire appel à une [agence digitale](https://rdsevents.fr/agence-digitale-3-raisons-dy-faire-appel/).
