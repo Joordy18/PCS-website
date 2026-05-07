@@ -201,7 +201,7 @@
           isLoading: true,
           error: false,
           async fetchEvents() {
-            const apiKey = 'AIzaSyAl3-zlkhFZU8v4K1iAl9XAjYOxC6D2Tgk';
+            const apiKey = '{{ getenv "GOOGLE_CALENDAR_API_KEY" }}';
             const calendarId = '42e7f455aa67b0978c4279ddcb3be12cf9e69804cd1e0999c78f5b09a31480ac@group.calendar.google.com';
             const timeMin = new Date().toISOString();
             const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${encodeURIComponent(timeMin)}&singleEvents=true&orderBy=startTime&maxResults=2`;
