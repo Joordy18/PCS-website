@@ -39,7 +39,7 @@
             {{ $featured.Title }}
           </h3>
           <p class="text-gray-400 text-lg mb-8 leading-relaxed line-clamp-3">
-            {{ $featured.Params.description | default $featured.Summary | truncate 240 }}
+            {{ $featured.Params.description | default $featured.Summary | plainify | truncate 240 }}
           </p>
           <div
             class="flex items-center gap-2 text-red-500 font-bold uppercase tracking-wider group-hover:gap-4 transition-all duration-300">
@@ -79,8 +79,7 @@
             <h3
               class="font-bold text-lg text-white mb-3 group-hover:text-red-500 transition-colors duration-300 line-clamp-2 leading-snug min-h-[3.5rem]">
               {{ .Title }}</h3>
-            <p class="text-gray-400 text-sm mb-4 flex-1 line-clamp-3">{{ .Params.description | default .Summary |
-              truncate 120 }}</p>
+            <p class="text-gray-400 text-sm mb-4 flex-1 line-clamp-3">{{ .Params.description | default .Summary | plainify | truncate 120 }}</p>
             <div
               class="flex items-center gap-2 text-red-500 text-xs font-bold uppercase tracking-wider mt-auto group-hover:gap-3 transition-all duration-300">
               <span>Lire</span>
