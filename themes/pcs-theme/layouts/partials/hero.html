@@ -11,13 +11,13 @@
     {{ range $i, $img := $images }}
     {{ $delay := mul $i 5 }}
     <div class="hero-slide" style="--hero-duration:{{ $duration }}s; --hero-delay:{{ $delay }}s;">
-      <img src="{{ $img.src }}" alt="{{ $img.alt }}" class="w-full h-full object-cover" />
+      <img src="{{ $img.src }}" alt="{{ $img.alt }}" class="w-full h-full object-cover object-top" />
     </div>
     {{ end }}
     {{ else }}
     {{/* Fallback image statique */}}
     <div style="position:absolute;inset:0;">
-      <img src="/images/20250705_224354-scaled.jpg" alt="Gaming Arena" class="w-full h-full object-cover" />
+      <img src="/images/20250705_224354-scaled.jpg" alt="Gaming Arena" class="w-full h-full object-cover object-top" />
     </div>
     {{ end }}
 
