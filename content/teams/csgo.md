@@ -4,11 +4,17 @@ rosters:
   - name: Équipe Principale
     show_in_slider: true
     players:
-      - name: Joueur 1
-        role: Support
-      - name: Joueur 2
-        role: Attaquant
+      - name: AriSenpai
+        role: Joueur
+      - name: PlutonJazz
+        role: Joueur
+      - name: Azr0dd
+        role: Joueur
+      - name: Ralves34
+        role: Joueur
+      - name: Sp3cTre-
+        role: Joueur
     staff:
-      - name: Coach 1
-        role: Head Coach
+      - name: Voltox
+        role: Manager
 ---
