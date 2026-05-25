@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Présentation WoW Classic | Project Conquerors</title>
+<meta name="description" content="Cet article est un récapitulatif non exhaustif de ce qu’il se passe sur Wow classic  à la 1.12 le patch auquel nous allons jouer le 27 août 2019. Je vous ferai une brève présentation des classes, des races, des métiers et de la guilde Project Conquerors. 
+Création de personnage 
+  La création de personnage est longue et souvent très compliquée. Cependant il faut faire des choix qui seront définitifs, si vous ne voulez pas recommencer votre personnage. Il va falloir prendre en compte plusieurs paramètre : faction, race et classe.">
+<meta property="og:url" content="http://localhost:1313/news/2019-07-28-pr%C3%A9sentation-wow-classic/">
+  <meta property="og:site_name" content="Project Conquerors">
+  <meta property="og:title" content="Présentation WoW Classic">
+  <meta property="og:description" content="Cet article est un récapitulatif non exhaustif de ce qu’il se passe sur Wow classic à la 1.12 le patch auquel nous allons jouer le 27 août 2019. Je vous ferai une brève présentation des classes, des races, des métiers et de la guilde Project Conquerors. Création de personnage La création de personnage est longue et souvent très compliquée. Cependant il faut faire des choix qui seront définitifs, si vous ne voulez pas recommencer votre personnage. Il va falloir prendre en compte plusieurs paramètre : faction, race et classe.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="news">
+    <meta property="article:published_time" content="2019-07-29T00:00:00+02:00">
+    <meta property="article:modified_time" content="2019-07-29T00:00:00+02:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Présentation WoW Classic">
+  <meta name="twitter:description" content="Cet article est un récapitulatif non exhaustif de ce qu’il se passe sur Wow classic à la 1.12 le patch auquel nous allons jouer le 27 août 2019. Je vous ferai une brève présentation des classes, des races, des métiers et de la guilde Project Conquerors. Création de personnage La création de personnage est longue et souvent très compliquée. Cependant il faut faire des choix qui seront définitifs, si vous ne voulez pas recommencer votre personnage. Il va falloir prendre en compte plusieurs paramètre : faction, race et classe.">
+
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+      <script src="/js/main.js"></script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+</head>
+<body class="bg-black text-white antialiased text-base overflow-x-hidden">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-900"
+  x-data="{ isOpen: false }">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <div class="flex items-center" data-aos="fade-right">
+        <a href="/" class="flex items-center gap-3">
+          <img src="/images/logo.png" alt="Project Conquerors" class="h-12 w-auto object-contain">
+          <div class="hidden sm:flex flex-col">
+            <span class="font-black text-xl text-white">PROJECT CONQUERORS</span>
+            <span class="text-red-600 text-xs font-bold tracking-wider">CLUB ESPORT</span>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="hidden md:flex items-center gap-12">
+        <a href="/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="0">ACCUEIL</a>
+        <a href="/news/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="100">ACTUALITÉS</a>
+        <a href="/partenaires/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="200">PARTENAIRES</a>
+        <a href="/a-propos/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="300">À PROPOS</a>
+
+        <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
+          rel="noopener noreferrer"
+          class="bg-red-600 text-white hover:bg-red-700 transition-all duration-300 font-black text-xs px-8 py-3 rounded-md shadow-lg shadow-red-600/20 uppercase tracking-widest italic"
+          data-aos="fade-down" data-aos-delay="400">BOUTIQUE</a>
+      </div>
+
+      
+      <button @click="isOpen = !isOpen" class="md:hidden text-white p-2">
+        <i data-lucide="menu" x-show="!isOpen"></i>
+        <i data-lucide="x" x-show="isOpen" style="display: none;"></i>
+      </button>
+    </div>
+  </div>
+
+  
+  <div x-show="isOpen" x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 -translate-y-2" class="md:hidden bg-black/98 border-t border-gray-900"
+    style="display: none;">
+    <div class="px-4 py-6 space-y-4">
+      <a href="/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACCUEIL</a>
+      <a href="/news/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">ACTUALITÉS</a>
+      <a href="/partenaires/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">PARTENAIRES</a>
+      <a href="/a-propos/" @click="isOpen = false"
+        class="block text-gray-300 hover:text-red-600 transition-colors duration-300 py-2 font-bold tracking-[0.2em]">À
+        PROPOS</a>
+      <div class="pl-4 border-l border-gray-800 space-y-2">
+        <a href="/teams/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Nos
+          Équipes</a>
+        <a href="/recrutement/" @click="isOpen = false"
+          class="block text-gray-500 hover:text-red-600 transition-colors duration-300 py-1 font-bold text-sm uppercase italic tracking-widest">Recrutement</a>
+      </div>
+      <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
+        rel="noopener noreferrer"
+        class="block bg-red-600 text-white hover:bg-red-700 transition-colors duration-300 py-3 px-4 rounded-md font-bold text-center mt-6 shadow-lg uppercase italic tracking-widest text-sm">BOUTIQUE</a>
+    </div>
+  </div>
+</nav>
+  <main class="w-full relative z-0 flex-grow">
+    
+<div class="bg-black min-h-screen text-white pt-20 pb-20">
+  
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 relative">
+    <a href="/news/" class="inline-flex items-center gap-2 text-gray-400 hover:text-red-500 transition-colors font-bold mb-8 group">
+      <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+      Retour aux actualités
+    </a>
+
+    <header class="mb-12">
+      <div class="flex items-center gap-3 text-red-500 font-bold uppercase tracking-widest text-sm mb-4 flex-wrap">
+        <div class="flex items-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <time datetime="2019-07-29T00:00:00&#43;02:00">29 Jul 2019</time>
+        </div>
+        
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">Présentation WoW Classic</h1>
+      <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-red-900/10 border border-gray-800">
+        <img src="/images/test1.jpeg" alt="Présentation WoW Classic" class="w-full h-full object-cover">
+      </div>
+    </header>
+
+    <div class="prose prose-invert prose-red max-w-none prose-lg prose-headings:font-black prose-p:text-gray-300 prose-a:text-red-500 hover:prose-a:text-red-400 prose-img:rounded-xl leading-relaxed">
+      <p>Cet article est un récapitulatif non exhaustif de ce qu’il se passe sur Wow classic  à la 1.12 le patch auquel nous allons jouer le 27 août 2019. Je vous ferai une brève présentation des classes, des races, des métiers et de la guilde Project Conquerors. </p>
+<h2 id="création-de-personnage">Création de personnage </h2>
+<p>  La création de personnage est longue et souvent très compliquée. Cependant il faut faire des choix qui seront définitifs, si vous ne voulez pas recommencer votre personnage. Il va falloir prendre en compte plusieurs paramètre : faction, race et classe.</p>
+<h3 id="présentation-wow-classic--race"><strong>Présentation WoW Classic – Race</strong></h3>
+<p>Choisir une race est super important sur wow classic. Par conséquent la race que vous choisirez a un réel impact sur une multitude de choses dans le jeu. La race définit votre zone de départ, même si vous pouvez accéder aux zones de départ des autres races. </p>
+<p>Elle impacte votre game-play; chaque race a ce que l’on appelle des raciaux, des compétences activables ou passives propres à votre race.</p>
+<p><strong>exemple</strong>: <em>les nains ont la forme de pierre qui vous permet d’augmenter de 10% l’armure et d’annuler les poisons et les saignements</em>.</p>
+<p>Il semblerait que dans un cas particulier, l’association d’une classe et d’une race donne un racial différent supplémentaire.</p>
+<p><strong>exemple</strong>: pour le prêtre; Nain <em>(gardien de la Peur, protège la cible alliée contre la Peur. Le prochain effet de Peur utilisé sur la cible échoue, mais dissipe la protection, dure 10 min).</em> </p>
+<p>Humains <em>(Guérit instantanément le lanceur de sorts).</em></p>
+<p>D’ailleurs les différentes races donnent aussi un bonus en statistique <em>(force, agilité, intelligence, esprit)</em> de départ. </p>
+<p>Il ne faut pas oublier que certaines classes ne sont pas accessibles pour toutes les races. </p>
+<p>En définitif vous choisissez une classe et une race en fonction du poste que vous voulez occuper si vous voulez être optimisé. </p>
+<p><em>Dans mon cas je jouerai Guerrier nain car j’occuperai le poste de tank</em>.</p>
+<p>Pour toutes ces raisons prenez votre temps. </p>
+<h3 id="alliance-"><strong>Alliance :</strong></h3>
+<ul>
+<li>
+<p><strong>Humain :</strong></p>
+<p> </p>
+<p><em>(Paladin – Guerrier – Voleur – Prêtre – Mage – Démoniste)</em></p>
+<p>Activable : Perception </p>
+<p><em>(détection du camouflage améliorée).</em></p>
+<p>Passif : Esprit amélioré. Bonus aux gains de réputation.Compétences Épées et Masses améliorées.</p>
+</li>
+<li>
+<p><strong>Nain :</strong></p>
+<p> </p>
+<p><em>(Paladin – Guerrier – Voleur – Prêtre – Chasseur)</em></p>
+<p>Activable : Forme de pierre (</p>
+<p><em>Augmente de 10% l’armure et annule les saignement, les poisons et les maladies).</em></p>
+<p>Découverte des trésors.Passif : Compétence Armes à feu améliorée.Résistance aux dégâts de givre accrue. </p>
+</li>
+<li>
+<p><strong>Gnome :</strong></p>
+<p> </p>
+<p><em>(Guerrier – Voleur – Mage – Démoniste)</em></p>
+<p>Activable : Maître de l’évasion </p>
+<p><em>(Vous libère des effets d’immobilisation et de ralentissements).</em></p>
+<p>Passif : Intelligence amélioré.Résistance aux dégâts de Arcanes accrue.Compétence d’ingénierie améliorée.</p>
+</li>
+<li>
+<p><strong>Elfe de la nuit :</strong></p>
+<p> </p>
+<p><em>(Druide – Guerrier – Voleur – Prêtre – Chasseur)</em></p>
+<p>Activable : Camouflage dans l’ombre </p>
+<p><em>(devient furtif).</em></p>
+<p>Passif : Chances d’esquiver améliorées.Forme de feu follet lorsque mort </p>
+<p><em>(déplacement plus rapide en fantôme).</em></p>
+<p>Résistance aux dégâts de Nature accrue.Camouflage dans l’ombre </p>
+<p><em>(améliore les compétences de camouflage).</em></p>
+</li>
+</ul>
+<h3 id="horde-"><strong>Horde :</strong></h3>
+<ul>
+<li>
+<p><strong>Orc :</strong></p>
+<p> </p>
+<p><em>(Guerrier – Voleur – Chasseur – Démoniste – Chamane)</em></p>
+<p>Activable : Fureur sanguinaire (</p>
+<p><em>augmente les dégât de mêlée de 25% mais réduit les soins reçus de 50%).</em></p>
+<p>Passif : Résistance aux effets d’étourdissement accrue.Dégâts des familiers augmentés.Compétence Haches améliorée.</p>
+</li>
+<li>
+<p><strong>Troll :</strong></p>
+<p> </p>
+<p><em>(Guerrier – Voleur – Chasseur – Démoniste – Chamane – Prêtre)</em></p>
+<p>Activable : Berserker </p>
+<p><em>(augmente la vitesse d’attaque).</em></p>
+<p>Passif : Régénération améliorée.Dégâts augmentés contre les bêtes.Compétences Armes de jet et Arcs améliorées.</p>
+</li>
+<li>
+<p><strong>Tauren :</strong></p>
+<p> </p>
+<p><em>(Druide – Guerrier – Chamane – Chasseur)</em></p>
+<p>Activable : Choc martial </p>
+<p><em>(Étourdi jusqu’à 5 ennemis autour).</em></p>
+<p>Passif : Vie maximale améliorée.Compétence Herboristerie améliorée.Résistance aux dégâts de Nature accrue. </p>
+</li>
+<li>
+<p><strong>Mort-Vivant :</strong></p>
+<p> </p>
+<p><em>(Guerrier – Voleur – Démoniste – Prêtre – Mage)</em></p>
+<p>Activable : Volonté des réprouvés </p>
+<p><em>(rend insensible aux effets de charme, de peur et de sommeil).</em></p>
+<p>Cannibalisme </p>
+<p><em>(rend 7% des point vie max toutes les 2 sec pendant 10 sec et consume un corps de morts-vivants et humanoïdes).</em></p>
+<p>Passif : Respiration aquatique améliorée.Résistance aux dégâts d’ombre accrue.</p>
+</li>
+</ul>
+<h3 id="présentation-wow-classic--classes">Présentation WoW Classic – Classes</h3>
+<p>Toutes les classes disposent de trois spécialisations qui peuvent être améliorées grâce à l’arbre de talents. La spécialisation définit le rôle, il existe trois rôles différents :  </p>
+<ul>
+<li>
+<p>un pour infliger des dégâts, DPS </p>
+<p><em>(Dégâts Par Seconde).</em></p>
+</li>
+<li>
+<p>un pour soigner, HEAL </p>
+<p><em>(soin en français).</em></p>
+</li>
+<li>
+<p>un pour récupérer la menace des ennemis, TANK </p>
+<p><em>(char en français).</em></p>
+</li>
+</ul>
+<p>Le nombre de rôles possibles diffère selon les classes.</p>
+<h4 id="présentation-wow-classic-prêtre">Présentation wow classic – Prêtre </h4>
+<p>Utilise l’énergie de la lumière pour soigner et l’énergie de l’ombre pour infliger des dégâts. </p>
+<ul>
+<li>
+<p><strong>Ombre :</strong></p>
+<p> permet d’infliger principalement des dégâts sur la durée DOT </p>
+<p><em>(damage on time), spécialisation DPS.</em></p>
+</li>
+<li>
+<p><strong>Disciple :</strong></p>
+<p>  soigne grâce à des sorts de soins et de protection, spécialisation HEAL.</p>
+</li>
+<li>
+<p><strong>Sacrée :</strong></p>
+<p> soigne ses alliés avec des sorts instantanés ou des soins sur la durée HOT </p>
+<p><em>(heal on time), spécialisation HEAL.</em></p>
+</li>
+</ul>
+<p>Pour plus d’information : <a href="https://www.wowisclassic.com/fr/guide-classe/pretre/">ICI</a></p>
+<h4 id="présentation-wow-classic--druide">Présentation wow classic – Druide </h4>
+<p>Le druide utilise l’énergie de la nature pour soigner <em>(HEAL)</em> et inflige des dégâts à distance <em>(DPS)</em>. Il s’empare de la force et l’endurance de l’ours pour encaisser des dégâts <em>(TANK)</em>, et l’agilité de la panthère pour infliger des dégâts au CAC <em>(DPS CAC)</em>.</p>
+<ul>
+<li>
+<p><strong>Équilibre :</strong></p>
+<p> spécialisation DPS, permet au druide d’infliger des dégâts à distance grâce à des sorts. Se transformer en sélénien.</p>
+</li>
+<li>
+<p><strong>Restauration :</strong></p>
+<p> spécialisation HEAL, permet de soigner principalement avec des soins sur la durée HOT</p>
+<p><em>(heal on time).</em></p>
+<p> </p>
+</li>
+<li>
+<p><strong>Farouche :</strong></p>
+<p> spécialisation DPS ou TANK, permet au druide de tank ou de dps selon les talents choisis.</p>
+</li>
+</ul>
+<p>Pour plus d’information : <a href="https://www.wowisclassic.com/fr/guide-classe/druide/">ICI</a></p>
+<h4 id="présentation-wow-classic--chasseur">Présentation wow classic – Chasseur</h4>
+<p>Il combat avec un fusil, un arc ou une arbalète mais aussi avec un PET <em>(familier)</em> qu’il devra nourrir soigner et aimer <em>(trois spécialisations DPS).</em></p>
+<ul>
+<li>
+<p><strong>Précision :</strong></p>
+<p> infliger des dégâts principalement basés sur les attaques à distance du personnage.</p>
+</li>
+<li>
+<p><strong>Survie :</strong></p>
+<p> infliger des dégâts à l’aide d’un mélange de compétences à distance, au CAC </p>
+<p><em>(corps à corps)</em></p>
+<p> et du pet </p>
+<p><em>(familier).</em></p>
+</li>
+<li>
+<p><strong>Maîtrise des Bêtes :</strong></p>
+<p> infliger des dégâts à distance et au CAC avec l’aide du PET </p>
+<p><em>(familier).</em></p>
+</li>
+</ul>
+<p>Pour plus d’information : <a href="https://www.wowisclassic.com/fr/guide-classe/chasseur/">ICI</a></p>
+<h4 id="présentation-wow-classic--voleur">Présentation wow classic – Voleur</h4>
+<p>Souvent dans l’ombre pour mieux surprendre l’adversaire. Le voleur dispose d’une multitude de capacités qui vous permettront d’éliminer votre cible facilement <em>(trois spécialisations DPS).</em> </p>
+<ul>
+<li>
+<p><strong>Finesse :</strong></p>
+<p> appréciée en pvp, elle utilise l’effet de surprise que lui confère le camouflage à son avantage pour infliger de lourds dégâts dans un court lapse de temps.  </p>
+</li>
+<li>
+<p><strong>Combat :</strong></p>
+<p> aussi efficace en PVE qu’en PVP, le voleur combat ne fait pas dans la dentelle. Contrairement au deux autres spécialisations, son game play est brutal  et ses dégâts considérables. Un véritable guerrier en cuir.</p>
+</li>
+<li>
+<p><strong>Assassinat :</strong></p>
+<p> comme la spécialisation combat, elle est efficace en PVE et en PVP. Elle utilise des poisons enduits sur ses lames pour infliger des altérations d’état. Cela lui sert aussi comme boost de dégâts.</p>
+</li>
+</ul>
+<p>Pour plus d’information : <a href="https://www.wowisclassic.com/fr/guide-classe/voleur/">ICI</a></p>
+<h4 id="présentation-wow-classic--mage">Présentation wow classic – Mage</h4>
+<p>Le mage choisira sa voie en fonction de sa manière de jouer et de la situation. Le feu, le givre ou les dégats d’arcane <em>(trois spécialisations DPS).</em></p>
+<ul>
+<li>
+<p><strong>Givre :</strong></p>
+<p> obligatoire sur la plupart des premiers boss de raid, la spécialisation givre a une grand capacité de contrôle et de ralentissement. Fort utile en phase de leveling.</p>
+</li>
+<li>
+<p><strong>Feu :</strong></p>
+<p> fort apprécié en PVP la spécialisation feu inflige de lourds dégâts dans un court lapse de temps.</p>
+</li>
+<li>
+<p><strong>Arcane :</strong></p>
+<p> peu utilisée, trop manavore </p>
+<p><em>(gourmand en mana).</em></p>
+<p> </p>
+<p>Cette spécialisation n’est presque pas jouée.</p>
+</li>
+</ul>
+<p>Pour plus d’information : <a href="https://www.wowisclassic.com/fr/guide-classe/mage/">ICI</a></p>
+<h4 id="présentation-wow-classic--guerrier">Présentation wow classic – Guerrier</h4>
+<p>Plutôt bourrin, le guerrier est toujours au contact, les trois spécialisations du guerrier excellent dans leur domaine. Le guerrier devient plus fort quand il est accompagné. Il peut laisser place à une furie destructrice en PVE, une maîtrise de l’art du combat en PVP ou encore le plaisir de protéger ses alliés dans la bataille TANK.</p>
+<p><em>(Deux spécialisations DPS et une TANK).</em></p>
+<ul>
+<li>
+<p><strong>Armes :</strong></p>
+<p> se joue avec 1 arme à 2 mains. La spécialisation armes n’est pas optimisée pour le PVE, mais en PVP avec un duo HEAL, il excelle. </p>
+</li>
+<li>
+<p><strong>Protection :</strong></p>
+<p> spécialisation TANK. Elle se joue obligatoirement avec un bouclier, a pour rôle de récupérer la menace pour attirer l’attention des ennemis PNJ </p>
+<p><em>(personnage non-joueur).</em></p>
+<p> </p>
+</li>
+<li>
+<p><strong>Fureur :</strong></p>
+<p> semblable à la spécialisation armes, mais se joue principalement avec deux armes à 1 main. Elle est très efficace en PVE.</p>
+</li>
+</ul>
+<p>Pour plus d’information : <a href="https://www.wowisclassic.com/fr/guide-classe/guerrier/">ICI</a></p>
+<h4 id="présentation-wow-classic--démoniste">Présentation wow classic – Démoniste</h4>
+<p>Disposant de trois spécialisations optimisées pour infliger toutes sortes de dégâts, le démoniste est très fort et agréable à jouer seul. Mais encore plus efficace quand il dispose d’alliés.</p>
+<ul>
+<li>
+<p><strong>Démonologie :</strong></p>
+<p> spécialisation qui a pour but d’augmenter les dégâts de son démon grâce à des talents. Le démoniste qui joue cette spécialisation est un peu plus solide en terme de résistance. Efficace pour les quêtes mais peu joué à haut niveau.</p>
+</li>
+<li>
+<p><strong>Affliction :</strong></p>
+<p> c’est une spécialisation qui joue plus sur les DOT </p>
+<p><em>(damage on time)</em></p>
+<p> </p>
+<p>et les altérations d’états. Très forte en PVP sauvage et champ de bataille, elle se joue très peu en PVE.</p>
+</li>
+<li>
+<p><strong>Destruction :</strong></p>
+<p> mage de la destruction qui utilise principalement le feu et les énergies du chaos pour infliger de lourds dégâts. Très efficace en PVP.</p>
+</li>
+</ul>
+<p>Pour plus d’information : <a href="https://www.wowisclassic.com/fr/guide-classe/demoniste/">ICI</a></p>
+<h4 id="présentation-wow-classic--paladin-alliance">Présentation wow classic – Paladin (Alliance) </h4>
+<p>Le paladin utilise la lumière pour toute ses tâches que ce soit pour protéger, soigner ou punir ses ennemis. <em>(Une spécialisation HEAL, une spécialisations DPS CAC et une TANK).</em></p>
+<ul>
+<li>
+<p><strong>Protection :</strong></p>
+<p> très peu jouée voire pas du tout jouée puisque que le paladin TANK n’a pas de provocation pour attirer la menace.</p>
+</li>
+<li>
+<p><strong>Vindicte :</strong></p>
+<p> spécialisation principalement utilisée pour la phase de leveling </p>
+</li>
+<li>
+<p><strong>Sacrée :</strong></p>
+<p> très souvent utilisée au poste de HEAL TANK, le paladin sacré envoie de très gros HEAL en mono cible.</p>
+</li>
+</ul>
+<p>Pour plus d’information : <a href="https://www.wowisclassic.com/fr/guide-classe/paladin/">ICI</a></p>
+<h4 id="présentation-wow-classic--chaman-horde">Présentation wow classic – Chaman (Horde) </h4>
+<p>Utilisant toute les forces élémentaires présentes sur Azeroth, le chaman pourra soigner ses alliés ou infliger des dégâts à ses ennemis avec l’appui de ses totems et de ses ancêtres. <em>(Une spécialisation HEAL et deux spécialisations DPS dont une qui peu TANK pendant le leveling).</em></p>
+<ul>
+<li>
+<p><strong>Restauration :</strong></p>
+<p> cette spécialisation est très utile en raid et en donjon. Le chaman restauration a un grande capacité de HEAL plusieurs cibles, il peut aussi bien remonter la vie rapidement d’un joueur ou stabiliser les points de vie d’un groupe. Il peut aussi jouer le rôle de HEAL TANK mais avec plus de difficultés.</p>
+</li>
+<li>
+<p><strong>Amélioration :</strong></p>
+<p> très agréable à jouer en PVP avec une arme à deux mains. Le cham-amélio inflige de très lourds dégâts voir même tue sa cible instantanément grâce à un système de chance de doubler ses attaques. De plus le cham-amélio peut aussi tank à bas niveau, ce qui est appréciable en phase de leveling.</p>
+</li>
+<li>
+<p><strong>Élémentaire :</strong></p>
+<p> utilisant l’énergie élémentaire </p>
+<p><em>(terre, glace, vent, foudre, feu, nature)</em></p>
+<p> </p>
+<p>pour infliger des dégâts à distance avec des sorts.</p>
+</li>
+</ul>
+<p>Pour plus d’information <a href="https://www.wowisclassic.com/fr/guide-classe/chaman/">ICI</a></p>
+<h3 id="présentation-wow-classic--talents"><strong>Présentation WoW Classic – Talents</strong></h3>
+<p>Contrairement à l’arbre de talents du live (BFA), l’arbre de talent de WOW Classic n’est pas une suite de sorts ou de passifs acquis à différents niveaux. Au contraire l’arbre de talents de WOW Classic est une optimisation de la voie que vous souhaiterez emprunter avec un ou deux sorts exclusifs à cette voie.</p>
+<p>Vous gagnerez 1 point de talent par niveau et le premier est acquis au niveau 10. Nous disposons de 51 points au niveau 60 à dispatcher dans 3 branches. Dans chaque branche, il y a 1 talent ultime que nous pouvons atteindre avec 31 points. </p>
+<p>Vous l’aurez compris, finalement il vous restera 20 points à votre disposition que vous dépenserez dans la ou les branches que vous souhaitez . </p>
+<p>En somme cela vous donnera un game-play unique qui vous est propre. </p>
+<p>Il y a évidemment des dispositions de points préconisées pour tel ou tel tâche (HEAL, TANK, DPS, PVE et PVP).</p>
+<p><em>Simulateur de talents</em> <a href="https://www.wowisclassic.com/fr/calculateur-talents/">ICI</a></p>
+<h2 id="guilde-project-conquerors">Guilde Project Conquerors </h2>
+<p>Pour finir, je vais parler de notre guilde. Nous créons une guilde sur wow classic côté Alliance sur un serveur PVP. Nous recrutons des joueurs avec tout type de profil et de temps de jeu. Mais nous recrutons surtout des joueurs actifs le soir en semaine entre 20h30 et 00h00, 2 à 4 soirs par semaine. N’hésitez pas à nous rejoindre !</p>
+
+    </div>
+
+    
+      <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-32 pt-20 border-t border-gray-900"
+         x-data="{ 
+            comments: [], 
+            commentCount: 0,
+            loading: true, 
+            nickname: '', 
+            email: '', 
+            content: '', 
+            success: false,
+            error: null,
+            async fetchComments() {
+              try {
+                const res = await fetch(`https://cusdis.com/api/open/comments?appId=462abefd-2d1e-4ef9-a19d-dc8f94a8332b&pageId=6a98212519f700b2fb0a767e7ddfd418`);
+                const data = await res.json();
+                this.comments = data.data.data || [];
+                this.commentCount = data.data.commentCount || 0;
+                this.loading = false;
+              } catch (e) {
+                console.error('Fetch error:', e);
+                this.loading = false;
+              }
+            },
+            async postComment() {
+              if (!this.nickname || !this.content) return;
+              this.error = null;
+              try {
+                const res = await fetch('https://cusdis.com/api/open/comments', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                    appId: '462abefd-2d1e-4ef9-a19d-dc8f94a8332b',
+                    pageId: '6a98212519f700b2fb0a767e7ddfd418',
+                    nickname: this.nickname,
+                    email: this.email,
+                    content: this.content
+                  })
+                });
+                if (res.ok) {
+                  this.success = true;
+                  this.content = '';
+                  // Refresh comments (might take a moment to appear depending on moderation settings)
+                  this.fetchComments();
+                } else {
+                  this.error = 'Erreur lors de l\'envoi. Veuillez réessayer.';
+                }
+              } catch (e) {
+                this.error = 'Une erreur est survenue.';
+              }
+            }
+         }"
+         x-init="fetchComments()">
+  
+  <div class="flex items-center gap-4 mb-16">
+    <div class="h-1 w-12 bg-red-600"></div>
+    <h3 class="text-4xl font-black text-white uppercase tracking-tighter italic">Espace Commentaires</h3>
+  </div>
+
+  <div class="grid grid-cols-1 gap-16">
+    
+    <div class="bg-gray-900/20 backdrop-blur-sm border border-gray-800/50 rounded-2xl p-8 shadow-2xl">
+      <h4 class="text-xl font-bold text-white mb-8 flex items-center gap-3">
+        <i data-lucide="message-square" class="w-6 h-6 text-red-600 font-bold"></i>
+        LAISSER UN COMMENTAIRE
+      </h4>
+      
+      <form @submit.prevent="postComment" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <input type="text" x-model="nickname" required placeholder="Pseudo *" 
+                 class="w-full px-6 py-4 bg-gray-950 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-all duration-300">
+          <input type="email" x-model="email" placeholder="Email (optionnel)" 
+                 class="w-full px-6 py-4 bg-gray-950 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-all duration-300">
+        </div>
+        <textarea x-model="content" required placeholder="Votre message... *" rows="4"
+                  class="w-full px-6 py-4 bg-gray-950 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-all duration-300 resize-none"></textarea>
+        
+        <div class="flex flex-col gap-4">
+          <button type="submit" 
+                  class="w-full md:w-max px-12 py-4 bg-red-600 text-white font-black text-lg rounded-lg hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-red-900/20 uppercase italic tracking-tighter">
+            Publier le commentaire
+          </button>
+          <p x-show="success" x-cloak class="text-green-500 font-bold flex items-center gap-2">
+            <i data-lucide="check-circle" class="w-5 h-5"></i> Commentaire envoyé avec succès !
+          </p>
+          <p x-show="error" x-cloak class="text-red-500 font-bold" x-text="error"></p>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="space-y-10">
+      <h4 class="text-2xl font-black text-white flex items-center gap-3 uppercase italic tracking-widest">
+        Derniers messages
+        <span class="text-sm bg-gray-800 text-gray-400 px-3 py-1 rounded-full font-bold ml-2" x-text="commentCount"></span>
+      </h4>
+
+      <template x-if="loading">
+        <div class="flex justify-center py-10">
+          <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-red-600"></div>
+        </div>
+      </template>
+
+      <div class="space-y-8">
+        <template x-for="comment in comments" :key="comment.id">
+          <div class="group">
+            <div class="flex items-start gap-4 p-6 rounded-2xl border border-transparent hover:border-gray-800 hover:bg-gray-900/10 transition-all duration-300">
+              <div class="w-12 h-12 rounded-full bg-red-600/10 border border-red-600 flex items-center justify-center text-red-600 font-black text-xl flex-shrink-0" x-text="(comment.by_nickname || 'A').charAt(0).toUpperCase()"></div>
+              <div class="flex-grow">
+                <div class="flex items-center justify-between mb-2">
+                  <h5 class="text-lg font-bold text-white uppercase tracking-tight" x-text="comment.by_nickname || 'Anonyme'"></h5>
+                  <span class="text-xs text-gray-500 font-medium" x-text="comment.createdAt ? new Date(comment.createdAt).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }) : ''"></span>
+                </div>
+                <p class="text-gray-400 leading-relaxed" x-text="comment.content"></p>
+              </div>
+            </div>
+          </div>
+        </template>
+        
+        <template x-if="!loading && comments.length === 0">
+          <div class="text-center py-20 bg-gray-900/10 rounded-3xl border border-dashed border-gray-800">
+            <i data-lucide="message-circle" class="w-16 h-16 text-gray-700 mx-auto mb-4"></i>
+            <p class="text-gray-500 text-xl font-medium">Soyez le premier à commenter cet article !</p>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+  </article>
+
+</div>
+
+<style>
+ 
+.prose-invert h1 { font-size: 2.5rem; margin-top: 2rem; margin-bottom: 1rem; color: #fff; }
+.prose-invert h2 { font-size: 2rem; margin-top: 2rem; margin-bottom: 1rem; color: #fff; }
+.prose-invert h3 { font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #fff; }
+.prose-invert p { margin-bottom: 1.5rem; }
+.prose-invert ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.prose-invert ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.prose-invert blockquote { border-left: 4px solid #dc2626; padding-left: 1rem; font-style: italic; color: #9ca3af; margin-bottom: 1.5rem; }
+.prose-invert img { margin: 2rem auto; }
+</style>
+
+  </main>
+  <footer class="bg-black border-t border-gray-900 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      
+      <div class="col-span-1">
+        <div class="mb-6 flex items-center gap-4">
+          <img src="/images/logo.png" alt="Project Conquerors" class="h-15 w-auto object-contain">
+        </div>
+        <div class="flex gap-3">
+          <a href="https://www.linkedin.com/company/project-conquerors/" target="_blank" rel="noopener noreferrer"
+            class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://x.com/PCS_Original" target="_blank" rel="noopener noreferrer"
+            class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+          </a>
+          <a href="https://www.twitch.tv/projectconquerorstv1" target="_blank" rel="noopener noreferrer"
+            class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/></svg>
+          </a>
+          <div x-data="{ user: 'contact', domain: 'project-conquerors.com' }" class="flex">
+            <a :href="'mailto:' + user + '@' + domain" title="Nous contacter"
+              class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
+              <i data-lucide="mail" class="text-white" width="20" height="20"></i>
+            </a>
+          </div>
+          <a href="https://www.facebook.com/ProjectConquerors" target="_blank" rel="noopener noreferrer"
+            class="p-3 bg-gray-900 hover:bg-red-600 rounded transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      
+      <div>
+        <h4 class="font-black text-white mb-6 text-lg">NAVIGATION</h4>
+        <ul class="space-y-3">
+          <li><a href="/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Accueil</a></li>
+          <li><a href="/news/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Actualités</a></li>
+          <li><a href="/a-propos/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nos engagements</a></li>
+          <li><a href="/teams/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nos Équipes</a></li>
+          <li><a href="/partenaires/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Partenaires</a></li>
+          <li><a href="/recrutement/"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Recrutement</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 class="font-black text-white mb-6 text-lg">LIENS UTILES</h4>
+        <ul class="space-y-3">
+          <li><a href="https://drive.google.com/drive/folders/1_Yzxh7rdaWvGPhbKuzCXw-KT_eImvfju" target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Press kit</a></li>
+          <li><a href="https://drive.google.com/drive/folders/19B5rJMzqQ2ZdiY1QYRGYYKtMprgKlhvh" target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Fonds d'écran PCS</a></li>
+          <li><a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs"
+              target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Nous soutenir</a>
+          </li>
+          <li><a href="/#contact"
+              class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Contact</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h4 class="font-black text-white mb-6 text-lg">LÉGAL</h4>
+        <ul class="space-y-3">
+          <li><a href="/mentions-legales/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Mentions légales</a></li>
+          <li><a href="/politique-confidentialite/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Politique de confidentialité</a></li>
+          <li><a href="/politique-cookies/" class="text-gray-400 hover:text-red-600 transition-colors duration-300 font-semibold">Politique cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="pt-8 border-t border-gray-900 text-center">
+      <p class="text-gray-500 font-semibold">
+        © 2026 PROJECT CONQUERORS - TOUS DROITS RÉSERVÉS
+      </p>
+    </div>
+  </div>
+</footer>
+  <div class="fixed left-0 top-1/2 -translate-y-1/2 z-50 social-floating-container hidden lg:flex flex-col gap-0 border-y border-r border-gray-800 rounded-r-xl overflow-hidden shadow-2xl bg-black/40 backdrop-blur-md">
+  
+  <a href="https://www.twitch.tv/projectconquerorstv1" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#9146FF] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Twitch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://x.com/PCS_Original" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-white transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="X">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-black transition-colors duration-300">
+      <path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.facebook.com/ProjectConquerors" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#1877F2] transition-all duration-300 border-b border-gray-800/50 flex items-center justify-center" 
+     title="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </svg>
+  </a>
+  
+  
+  <a href="https://www.linkedin.com/company/project-conquerors/" target="_blank" rel="noopener noreferrer" 
+     class="group p-3 hover:bg-[#0A66C2] transition-all duration-300 flex items-center justify-center" 
+     title="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-white transition-colors duration-300">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+  </a>
+</div>
+
+</body>
+</html>
