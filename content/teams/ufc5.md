@@ -1,5 +1,6 @@
 ---
 title: UFC 5
+image: /images/uploads/ufc5.jpg
 rosters:
   - name: Équipe Principale
     show_in_slider: false
@@ -9,5 +10,5 @@ rosters:
       - name: KaliLinuxDZ
         role: Joueur
     staff: []
-    logo: /images/uploads/ufc5.jpg
+    logo: ""
 ---
