@@ -1,6 +1,6 @@
 ---
 title: UFC 5
-image: /images/uploads/ufc5.jpg
+image: ""
 rosters:
   - name: Équipe Principale
     show_in_slider: false
