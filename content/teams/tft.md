@@ -1,12 +1,11 @@
 ---
 title: TFT
+image: /images/uploads/tft.png
 rosters:
   - name: Équipe Principale
     show_in_slider: false
     players:
       - name: Zagranda
         role: Joueur
-    staff:
-      - name: Coach 1
-        role: Head Coach
+    staff: []
 ---
