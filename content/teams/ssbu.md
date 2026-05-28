@@ -1,5 +1,6 @@
 ---
 title: Super Smash Bros Ultimate
+image: /images/uploads/ssbu.png
 rosters:
   - name: Équipe Principale
     show_in_slider: false
@@ -16,7 +17,5 @@ rosters:
         role: Joueur
       - name: KingBloups
         role: Joueur
-    staff:
-      - name: Coach 1
-        role: Head Coach
+    staff: []
 ---
