@@ -1,5 +1,6 @@
 ---
 title: EVA
+image: /images/uploads/images.jfif
 rosters:
   - name: Équipe Principale
     show_in_slider: false
@@ -14,7 +15,5 @@ rosters:
         role: Joueur
       - name: Coubi
         role: Joueur
-    staff:
-      - name: Coach 1
-        role: Head Coach
+    staff: []
 ---

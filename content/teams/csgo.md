@@ -1,5 +1,6 @@
 ---
 title: CS2
+image: /images/uploads/cs2.webp
 rosters:
   - name: Équipe Principale
     show_in_slider: true

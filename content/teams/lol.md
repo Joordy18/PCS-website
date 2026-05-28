@@ -1,5 +1,6 @@
 ---
 title: League of Legends
+image: /images/uploads/lol.png
 rosters:
   - name: Div2
     show_in_slider: true
