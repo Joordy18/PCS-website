@@ -8,7 +8,6 @@ rosters:
         role: Joueur
       - name: KaliLinuxDZ
         role: Joueur
-    staff:
-      - name: Coach 1
-        role: Head Coach
+    staff: []
+    logo: /images/uploads/ufc5.jpg
 ---
