@@ -7,7 +7,5 @@ rosters:
     players:
       - name: Amnésia
         role: Joueur
-    staff:
-      - name: Coach 1
-        role: Head Coach
+    staff: []
 ---
