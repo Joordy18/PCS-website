@@ -1,5 +1,6 @@
 ---
 title: Call of Duty
+image: /images/uploads/cod.png
 rosters:
   - name: Équipe Principale
     show_in_slider: false
