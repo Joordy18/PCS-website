@@ -1,6 +1,6 @@
 ---
 title: Super Smash Bros Ultimate
-image: /images/uploads/ssbu.png
+image: /images/uploads/ssbu.jpg
 rosters:
   - name: Équipe Principale
     show_in_slider: false

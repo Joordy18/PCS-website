@@ -1,5 +1,6 @@
 ---
 title: Rocket League
+image: /images/uploads/rl.png
 rosters:
   - name: Équipe Principale
     show_in_slider: true
@@ -11,5 +12,5 @@ rosters:
       - name: Smashy
         role: Joueur
     staff: []
-    logo: /images/uploads/rl.png
+    logo: ""
 ---
