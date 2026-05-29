@@ -2,10 +2,27 @@
 <div class="bg-black text-white min-h-screen pt-20">
   <!-- Hero Section -->
   <section class="relative h-[60vh] flex items-center justify-center overflow-hidden border-b border-gray-900">
-    <div class="absolute inset-0 z-0">
-      <img src="/images/about_pcs_hero.png" alt="About PCS"
-        class="w-full h-full object-cover opacity-30 scale-105 animate-pulse-slow">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black"></div>
+    <div class="absolute inset-0 z-0 bg-black overflow-hidden">
+      <!-- Glow effects -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] bg-red-600/10 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div class="absolute -top-20 left-10 w-72 h-72 bg-red-800/10 rounded-full blur-3xl"></div>
+      
+      <!-- Tech Grid Pattern -->
+      <svg class="absolute inset-0 w-full h-full opacity-10 stroke-red-600" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="tech-grid" width="50" height="50" patternUnits="userSpaceOnUse">
+            <path d="M 50 0 L 0 0 0 50" fill="none" stroke-width="1" />
+            <circle cx="0" cy="0" r="1.5" fill="currentColor" class="text-red-500" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#tech-grid)" />
+      </svg>
+      
+      <!-- Diagonal tech stripes pattern -->
+      <div class="absolute inset-0 opacity-[0.03] bg-[linear-gradient(45deg,currentColor_25%,transparent_25%,transparent_50%,currentColor_50%,currentColor_75%,transparent_75%,transparent)] bg-[size:40px_40px] text-white"></div>
+      
+      <!-- Gradient overlays -->
+      <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black"></div>
     </div>
     <div class="relative z-10 text-center px-4" data-aos="zoom-out">
       <h1
