@@ -1,5 +1,6 @@
 ---
 title: Call of Duty
+weight: 101
 image: /images/uploads/callofduty.png
 rosters:
   - name: Équipe Principale

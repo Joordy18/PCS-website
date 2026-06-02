@@ -1,5 +1,6 @@
 ---
 title: Valorant
+weight: 108
 image: /images/uploads/valorant.png
 rosters:
   - name: Équipe Principale

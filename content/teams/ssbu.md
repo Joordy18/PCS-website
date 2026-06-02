@@ -1,5 +1,6 @@
 ---
 title: Super Smash Bros Ultimate
+weight: 104
 image: /images/uploads/ssbu.jpg
 rosters:
   - name: Équipe Principale

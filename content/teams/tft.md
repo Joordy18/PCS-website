@@ -1,5 +1,6 @@
 ---
 title: TFT
+weight: 105
 image: /images/uploads/tft.png
 rosters:
   - name: Équipe Principale

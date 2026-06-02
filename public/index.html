@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.157.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.157.0">
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Project Conquerors</title>
 <link rel="icon" type="image/png" href="/images/logo.png">
 <meta name="description" content="Project Conquerors (PCS), association d&#39;esport depuis 2013. Organisateur de tournois, événements gaming locaux et équipes compétitives.">
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="https://example.org/">
   <meta property="og:site_name" content="Project Conquerors">
   <meta property="og:title" content="Home">
   <meta property="og:description" content="Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim excepteur excepteur pariatur nostrud qui irure ullamco.">
@@ -20,11 +20,11 @@
   <meta name="twitter:description" content="Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim excepteur excepteur pariatur nostrud qui irure ullamco.">
 
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.91f3500876de28d62e975b9ec8c717d0a81aac4dd94353e4a54cbfb432a5b66d.css" integrity="sha256-kfNQCHbeKNYul1ueyMcX0KgarE3ZQ1PkpUy/tDKltm0=" crossorigin="anonymous">
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      <script src="/js/main.js"></script>
+        <script src="/js/main.04286dbc41eea958aace078698768d354eb3f6a8f2f042b6c69ab08ca86dd9f1.js" integrity="sha256-BChtvEHuqViqzgeGmHaNNU6z9qjy8EK2xpqwjKht2fE=" crossorigin="anonymous"></script>
 
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -73,11 +73,14 @@
         <a href="/a-propos/"
           class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
           data-aos="fade-down" data-aos-delay="300">À PROPOS</a>
+        <a href="/teams/"
+          class="text-gray-300 hover:text-red-600 transition-all duration-300 font-bold text-xs tracking-[0.1em] uppercase whitespace-nowrap"
+          data-aos="fade-down" data-aos-delay="400">ÉQUIPES</a>
 
         <a href="https://www.helloasso.com/associations/pcs-saint-germain-du-puy/boutiques/boutique-pcs" target="_blank"
           rel="noopener noreferrer"
           class="bg-red-600 text-white hover:bg-red-700 transition-all duration-300 font-black text-xs px-8 py-3 rounded-md shadow-lg shadow-red-600/20 uppercase tracking-widest italic"
-          data-aos="fade-down" data-aos-delay="400">BOUTIQUE</a>
+          data-aos="fade-down" data-aos-delay="500">BOUTIQUE</a>
       </div>
 
       
@@ -654,7 +657,7 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
           isLoading: true,
           error: false,
           async fetchEvents() {
-            const apiKey = 'AIzaSyAl3-zlkhFZU8v4K1iAl9XAjYOxC6D2Tgk';
+            const apiKey = '';
             const calendarId = '42e7f455aa67b0978c4279ddcb3be12cf9e69804cd1e0999c78f5b09a31480ac@group.calendar.google.com';
             const timeMin = new Date().toISOString();
             const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${encodeURIComponent(timeMin)}&singleEvents=true&orderBy=startTime&maxResults=2`;
@@ -738,8 +741,12 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
     
       
       
+        
+      
     
   
+  
+    
   
 
   
@@ -747,8 +754,12 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
     
       
       
+        
+      
     
   
+  
+    
   
 
   
@@ -787,12 +798,8 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
     
       
       
-        
-      
     
   
-  
-    
   
 
   
@@ -800,12 +807,8 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
     
       
       
-        
-      
     
   
-  
-    
   
 
   
@@ -874,25 +877,25 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
         <button @click="activeGame = 0"
           :class="activeGame === 0 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
           class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
-          <img src="/images/uploads/2xko.png" alt="2XKO" class="w-10 h-10 object-contain drop-shadow-md">
+          <img src="/images/uploads/lol.png" alt="League of Legends" class="w-10 h-10 object-contain drop-shadow-md">
         </button>
         
         <button @click="activeGame = 1"
           :class="activeGame === 1 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
           class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
-          <img src="/images/uploads/cs2.webp" alt="CS2" class="w-10 h-10 object-contain drop-shadow-md">
+          <img src="/images/uploads/rl.png" alt="Rocket League" class="w-10 h-10 object-contain drop-shadow-md">
         </button>
         
         <button @click="activeGame = 2"
           :class="activeGame === 2 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
           class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
-          <img src="/images/uploads/lol.png" alt="League of Legends" class="w-10 h-10 object-contain drop-shadow-md">
+          <img src="/images/uploads/cs2.webp" alt="CS2" class="w-10 h-10 object-contain drop-shadow-md">
         </button>
         
         <button @click="activeGame = 3"
           :class="activeGame === 3 ? 'bg-white/10 border-red-600 opacity-100 scale-110 shadow-lg shadow-red-900/20' : 'bg-white/5 border-transparent opacity-60 hover:bg-white/10 hover:opacity-100 hover:scale-105 hover:border-gray-600'"
           class="flex-shrink-0 p-3 rounded-xl border-2 transition-all duration-300 flex items-center justify-center cursor-pointer min-w-[70px]">
-          <img src="/images/uploads/rl.png" alt="Rocket League" class="w-10 h-10 object-contain drop-shadow-md">
+          <img src="/images/uploads/2xko.png" alt="2XKO" class="w-10 h-10 object-contain drop-shadow-md">
         </button>
         
 
@@ -922,232 +925,6 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
          class="relative group/slider w-full h-full">
 
         <div x-ref="slider_0" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
-          
-          
-            
-              
-              
-                
-              
-            
-          
-
-          
-            
-            
-            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
-              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
-              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
-                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
-                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Amn%c3%a9sia" alt="Amnésia"
-                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
-                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
-
-                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                  <a href="/teams/2xko/"
-                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
-                    Voir la page équipe
-                  </a>
-                </div>
-              </div>
-
-              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
-                <div class="flex items-end justify-between">
-                  <div>
-                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
-                      Amnésia</h3>
-                    <p class="text-gray-300 text-sm italic">Joueur</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          
-        </div>
-      </div>
-      
-      
-      <div x-show="activeGame === 1" x-transition:enter="transition ease-out duration-300 transform"
-        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
-        x-transition:enter-end="opacity-100 translate-y-0 relative"
-        x-transition:leave="transition ease-in duration-300 transform"
-        x-transition:leave-start="opacity-100 translate-y-0"
-        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
-        style="display: none;" class="relative group/slider w-full h-full">
-
-        <div x-ref="slider_1" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
-          
-          
-            
-              
-              
-                
-              
-            
-          
-
-          
-            
-            
-            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
-              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
-              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
-                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
-                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=AriSenpai" alt="AriSenpai"
-                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
-                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
-
-                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                  <a href="/teams/csgo/"
-                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
-                    Voir la page équipe
-                  </a>
-                </div>
-              </div>
-
-              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
-                <div class="flex items-end justify-between">
-                  <div>
-                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
-                      AriSenpai</h3>
-                    <p class="text-gray-300 text-sm italic">Joueur</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
-              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
-              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
-                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
-                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=PlutonJazz" alt="PlutonJazz"
-                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
-                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
-
-                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                  <a href="/teams/csgo/"
-                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
-                    Voir la page équipe
-                  </a>
-                </div>
-              </div>
-
-              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
-                <div class="flex items-end justify-between">
-                  <div>
-                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
-                      PlutonJazz</h3>
-                    <p class="text-gray-300 text-sm italic">Joueur</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
-              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
-              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
-                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
-                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Azr0dd" alt="Azr0dd"
-                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
-                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
-
-                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                  <a href="/teams/csgo/"
-                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
-                    Voir la page équipe
-                  </a>
-                </div>
-              </div>
-
-              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
-                <div class="flex items-end justify-between">
-                  <div>
-                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
-                      Azr0dd</h3>
-                    <p class="text-gray-300 text-sm italic">Joueur</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
-              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
-              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
-                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
-                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Ralves34" alt="Ralves34"
-                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
-                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
-
-                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                  <a href="/teams/csgo/"
-                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
-                    Voir la page équipe
-                  </a>
-                </div>
-              </div>
-
-              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
-                <div class="flex items-end justify-between">
-                  <div>
-                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
-                      Ralves34</h3>
-                    <p class="text-gray-300 text-sm italic">Joueur</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
-              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
-              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
-                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
-                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Sp3cTre-" alt="Sp3cTre-"
-                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
-                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
-
-                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                  <a href="/teams/csgo/"
-                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
-                    Voir la page équipe
-                  </a>
-                </div>
-              </div>
-
-              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
-                <div class="flex items-end justify-between">
-                  <div>
-                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
-                      Sp3cTre-</h3>
-                    <p class="text-gray-300 text-sm italic">Joueur</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          
-        </div>
-      </div>
-      
-      
-      <div x-show="activeGame === 2" x-transition:enter="transition ease-out duration-300 transform"
-        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
-        x-transition:enter-end="opacity-100 translate-y-0 relative"
-        x-transition:leave="transition ease-in duration-300 transform"
-        x-transition:leave-start="opacity-100 translate-y-0"
-        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
-        style="display: none;" class="relative group/slider w-full h-full">
-
-        <div x-ref="slider_2" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
           
           
             
@@ -1310,7 +1087,7 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
       </div>
       
       
-      <div x-show="activeGame === 3" x-transition:enter="transition ease-out duration-300 transform"
+      <div x-show="activeGame === 1" x-transition:enter="transition ease-out duration-300 transform"
         x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
         x-transition:enter-end="opacity-100 translate-y-0 relative"
         x-transition:leave="transition ease-in duration-300 transform"
@@ -1318,7 +1095,7 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
         x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
         style="display: none;" class="relative group/slider w-full h-full">
 
-        <div x-ref="slider_3" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+        <div x-ref="slider_1" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
           
           
             
@@ -1412,6 +1189,232 @@ par Mark Dindal. Il est sorti en salle le 31 juillet …</p>
                   <div>
                     <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
                       Smashy</h3>
+                    <p class="text-gray-300 text-sm italic">Joueur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+      
+      
+      <div x-show="activeGame === 2" x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
+        x-transition:enter-end="opacity-100 translate-y-0 relative"
+        x-transition:leave="transition ease-in duration-300 transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
+        style="display: none;" class="relative group/slider w-full h-full">
+
+        <div x-ref="slider_2" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+          
+          
+            
+              
+              
+                
+              
+            
+          
+
+          
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=AriSenpai" alt="AriSenpai"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/csgo/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      AriSenpai</h3>
+                    <p class="text-gray-300 text-sm italic">Joueur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=PlutonJazz" alt="PlutonJazz"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/csgo/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      PlutonJazz</h3>
+                    <p class="text-gray-300 text-sm italic">Joueur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Azr0dd" alt="Azr0dd"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/csgo/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Azr0dd</h3>
+                    <p class="text-gray-300 text-sm italic">Joueur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Ralves34" alt="Ralves34"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/csgo/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Ralves34</h3>
+                    <p class="text-gray-300 text-sm italic">Joueur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Sp3cTre-" alt="Sp3cTre-"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/csgo/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Sp3cTre-</h3>
+                    <p class="text-gray-300 text-sm italic">Joueur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+      
+      
+      <div x-show="activeGame === 3" x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 absolute inset-0"
+        x-transition:enter-end="opacity-100 translate-y-0 relative"
+        x-transition:leave="transition ease-in duration-300 transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4 absolute inset-0" 
+        style="display: none;" class="relative group/slider w-full h-full">
+
+        <div x-ref="slider_3" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
+          
+          
+            
+              
+              
+                
+              
+            
+          
+
+          
+            
+            
+            <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
+              class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
+              <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
+                <div class="absolute inset-0 opacity-30 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_50%,#000_50%,#000_75%,transparent_75%,transparent_100%)] bg-[length:10px_10px]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600/20 blur-[60px] rounded-full group-hover:bg-red-600/40 transition-all duration-500"></div>
+                <img src="https://placehold.co/400x500/1a1a24/ffffff?text=Amn%c3%a9sia" alt="Amnésia"
+                  class="w-full h-full object-cover object-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-10 relative saturate-50 group-hover:saturate-100">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/80 to-transparent z-20"></div>
+
+                <div class="absolute inset-0 z-40 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                  <a href="/teams/2xko/"
+                    class="px-6 py-3 bg-red-600 text-white font-bold text-base uppercase tracking-wider rounded transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl border border-red-500">
+                    Voir la page équipe
+                  </a>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 inset-x-0 p-5 z-50 transform group-hover:-translate-y-2 transition-transform duration-300 pointer-events-none">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="font-black text-white text-2xl leading-none mb-1 group-hover:text-red-500 transition-colors">
+                      Amnésia</h3>
                     <p class="text-gray-300 text-sm italic">Joueur</p>
                   </div>
                 </div>

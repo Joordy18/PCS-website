@@ -1,5 +1,6 @@
 ---
 title: Rocket League
+weight: 2
 image: /images/uploads/rl.png
 rosters:
   - name: Équipe Principale

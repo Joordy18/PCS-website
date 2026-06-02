@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boutique on Project Conquerors</title>
-    <link>http://localhost:1313/shop/</link>
+    <link>https://example.org/shop/</link>
     <description>Recent content in Boutique on Project Conquerors</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/shop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/shop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chiffonnette</title>
-      <link>http://localhost:1313/shop/chiffonnette/</link>
+      <link>https://example.org/shop/chiffonnette/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shop/chiffonnette/</guid>
+      <guid>https://example.org/shop/chiffonnette/</guid>
       <description></description>
     </item>
     <item>
       <title>Maillot PCS 2026</title>
-      <link>http://localhost:1313/shop/maillot-pcs-2026/</link>
+      <link>https://example.org/shop/maillot-pcs-2026/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shop/maillot-pcs-2026/</guid>
+      <guid>https://example.org/shop/maillot-pcs-2026/</guid>
       <description></description>
     </item>
     <item>
       <title>Tapis de souris</title>
-      <link>http://localhost:1313/shop/tapis-de-souris/</link>
+      <link>https://example.org/shop/tapis-de-souris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/shop/tapis-de-souris/</guid>
+      <guid>https://example.org/shop/tapis-de-souris/</guid>
       <description></description>
     </item>
   </channel>

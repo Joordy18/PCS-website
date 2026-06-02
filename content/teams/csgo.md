@@ -1,5 +1,6 @@
 ---
 title: CS2
+weight: 3
 image: /images/uploads/cs2.webp
 rosters:
   - name: Équipe Principale

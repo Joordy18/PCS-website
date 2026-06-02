@@ -1,5 +1,6 @@
 ---
 title: 2XKO
+weight: 4
 image: /images/uploads/2xko.png
 rosters:
   - name: Équipe Principale

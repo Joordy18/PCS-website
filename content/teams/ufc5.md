@@ -1,5 +1,6 @@
 ---
 title: UFC 5
+weight: 107
 image: /images/uploads/ufc5.jpg
 rosters:
   - name: Équipe Principale

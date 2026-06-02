@@ -1,5 +1,6 @@
 ---
 title: League of Legends
+weight: 1
 image: /images/uploads/lol.png
 rosters:
   - name: Div2

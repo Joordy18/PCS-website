@@ -1,5 +1,6 @@
 ---
 title: EVA
+weight: 102
 image: /images/uploads/images.jfif
 rosters:
   - name: Équipe Principale
