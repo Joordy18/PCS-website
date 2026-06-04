@@ -12,6 +12,14 @@ rosters:
         role: Joueur
       - name: Smashy
         role: Joueur
-    staff: []
+    staff:
+      - name: Galimba
+        role: Head of RL
+      - name: Myoné
+        role: Deputy Head of RL
+      - name: Teorix
+        role: Team Manager
+      - name: Niméa
+        role: Content Creator
     logo: ""
 ---
