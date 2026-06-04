@@ -1,1 +1,109 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project Conquerors</title><link>https://example.org/partenaires/</link><description>Recent content on Project Conquerors</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://example.org/partenaires/index.xml" rel="self" type="application/rss+xml"/><item><title>Avignon Geek Expo</title><link>https://example.org/partenaires/avignon-geek-expo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/avignon-geek-expo/</guid><description/></item><item><title>BeeBerry</title><link>https://example.org/partenaires/beeberry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/beeberry/</guid><description/></item><item><title>GRENIER DU GEEK</title><link>https://example.org/partenaires/grenier-du-geek/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/grenier-du-geek/</guid><description/></item><item><title>HERO FESTIVAL</title><link>https://example.org/partenaires/hero-festival/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/hero-festival/</guid><description/></item><item><title>JOKO WEAR</title><link>https://example.org/partenaires/joko-wear/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/joko-wear/</guid><description/></item><item><title>KONIX</title><link>https://example.org/partenaires/konix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/konix/</guid><description/></item><item><title>LEGENDS PATH</title><link>https://example.org/partenaires/legends-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/legends-path/</guid><description/></item><item><title>mySafetyChild</title><link>https://example.org/partenaires/mysafetychild/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/mysafetychild/</guid><description/></item><item><title>NEL WORKSHOP</title><link>https://example.org/partenaires/nel-workshop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/nel-workshop/</guid><description/></item><item><title>RESPECT ZONE</title><link>https://example.org/partenaires/respect-zone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/respect-zone/</guid><description/></item><item><title>Safe Bear</title><link>https://example.org/partenaires/safe-bear/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/safe-bear/</guid><description/></item><item><title>SONIX</title><link>https://example.org/partenaires/sonix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/sonix/</guid><description/></item><item><title>TURTLE BEACH</title><link>https://example.org/partenaires/turtle-beach/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/turtle-beach/</guid><description/></item><item><title>UPPERSCORE</title><link>https://example.org/partenaires/upperscore/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/partenaires/upperscore/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Conquerors</title>
+    <link>http://localhost:1313/partenaires/</link>
+    <description>Recent content on Project Conquerors</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/partenaires/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avignon Geek Expo</title>
+      <link>http://localhost:1313/partenaires/avignon-geek-expo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/avignon-geek-expo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BeeBerry</title>
+      <link>http://localhost:1313/partenaires/beeberry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/beeberry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GRENIER DU GEEK</title>
+      <link>http://localhost:1313/partenaires/grenier-du-geek/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/grenier-du-geek/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HERO FESTIVAL</title>
+      <link>http://localhost:1313/partenaires/hero-festival/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/hero-festival/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JOKO WEAR</title>
+      <link>http://localhost:1313/partenaires/joko-wear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/joko-wear/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KONIX</title>
+      <link>http://localhost:1313/partenaires/konix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/konix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LEGENDS PATH</title>
+      <link>http://localhost:1313/partenaires/legends-path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/legends-path/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>mySafetyChild</title>
+      <link>http://localhost:1313/partenaires/mysafetychild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/mysafetychild/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NEL WORKSHOP</title>
+      <link>http://localhost:1313/partenaires/nel-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/nel-workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RESPECT ZONE</title>
+      <link>http://localhost:1313/partenaires/respect-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/respect-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Safe Bear</title>
+      <link>http://localhost:1313/partenaires/safe-bear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/safe-bear/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SONIX</title>
+      <link>http://localhost:1313/partenaires/sonix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/sonix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TURTLE BEACH</title>
+      <link>http://localhost:1313/partenaires/turtle-beach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/turtle-beach/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UPPERSCORE</title>
+      <link>http://localhost:1313/partenaires/upperscore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/partenaires/upperscore/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

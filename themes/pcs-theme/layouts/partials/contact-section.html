@@ -25,24 +25,19 @@
 
       <!-- Contact Form & Direct Link -->
       <div data-aos="fade-left" data-aos-duration="600" class="space-y-8">
-        <div class="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-8 shadow-2xl">
-          <h3 class="text-3xl font-black text-white mb-8 border-b border-red-600/30 pb-4">ENVOYEZ UN MESSAGE</h3>
-          <form class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input type="text" placeholder="Nom"
-                class="w-full px-6 py-4 bg-gray-900/50 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300" />
-              <input type="email" placeholder="Email"
-                class="w-full px-6 py-4 bg-gray-900/50 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300" />
-            </div>
-            <div>
-              <textarea rows="4" placeholder="Message"
-                class="w-full px-6 py-4 bg-gray-900/50 border border-gray-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition-colors duration-300 resize-none"></textarea>
-            </div>
-            <button type="button"
-              class="w-full px-8 py-4 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_20px_-10px_rgba(220,38,38,0.5)]">
-              ENVOYER LE MESSAGE
-            </button>
-          </form>
+        <div class="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-8 shadow-2xl flex flex-col justify-center items-center text-center h-full min-h-[400px]">
+          <div class="w-16 h-16 bg-red-600/10 rounded-full flex items-center justify-center border border-red-600/20 text-red-500 mb-6">
+            <i data-lucide="mail" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-3xl font-black text-white mb-4 uppercase italic tracking-tighter">ENVOYEZ UN EMAIL</h3>
+          <p class="text-gray-400 mb-8 max-w-sm">
+            Vous préférez nous écrire directement ? Notre équipe est à votre écoute.
+          </p>
+          <a href="mailto:contact@project-conquerors.com"
+            class="w-full px-8 py-4 bg-red-600 text-white font-bold text-lg rounded hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_20px_-10px_rgba(220,38,38,0.5)] inline-flex items-center justify-center gap-3">
+            <span>NOUS CONTACTER</span>
+            <i data-lucide="send" class="w-5 h-5"></i>
+          </a>
         </div>
       </div>
     </div>
