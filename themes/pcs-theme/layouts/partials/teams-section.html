@@ -4,7 +4,7 @@
   {{ if .Params.rosters }}
     {{ range .Params.rosters }}
       {{ $show := default true .show_in_slider }}
-      {{ if and $show .players }}
+      {{ if and $show (or .players .staff) }}
         {{ $hasVisibleSliderRoster = true }}
       {{ end }}
     {{ end }}
@@ -64,19 +64,24 @@
         {{ if ne $index 0 }}style="display: none;"{{ end }} class="relative group/slider w-full h-full">
 
         <div x-ref="slider_{{ $index }}" class="flex overflow-x-auto gap-4 lg:gap-8 pb-10 pt-4 px-2 hide-scrollbar">
-          {{ $sliderPlayers := slice }}
+          {{ $sliderMembers := slice }}
           {{ if .Params.rosters }}
             {{ range .Params.rosters }}
               {{ $show := default true .show_in_slider }}
-              {{ if and $show .players }}
-                {{ $sliderPlayers = $sliderPlayers | append .players }}
+              {{ if $show }}
+                {{ if .players }}
+                  {{ $sliderMembers = $sliderMembers | append .players }}
+                {{ end }}
+                {{ if .staff }}
+                  {{ $sliderMembers = $sliderMembers | append .staff }}
+                {{ end }}
               {{ end }}
             {{ end }}
           {{ end }}
 
-          {{ if $sliderPlayers }}
-            {{ range $sliderPlayers }}
-            <!-- Player Card -->
+          {{ if $sliderMembers }}
+            {{ range $sliderMembers }}
+            <!-- Player/Staff Card -->
             <div style="min-width: 320px; width: 320px; height: 420px; flex: 0 0 auto;"
               class="group relative bg-[#0b0b0f] rounded-xl overflow-hidden border border-gray-800 hover:border-red-600 transition-all duration-300 flex flex-col shadow-lg hover:shadow-red-900/40">
               <div class="relative w-full h-full overflow-hidden bg-[#111] flex items-center justify-center">
@@ -106,7 +111,7 @@
             </div>
             {{ end }}
           {{ else }}
-            <p class="text-gray-400 text-center py-20 w-full italic">Aucun joueur n'est à afficher sur la page d'accueil pour le moment.</p>
+            <p class="text-gray-400 text-center py-20 w-full italic">Aucun membre n'est à afficher sur la page d'accueil pour le moment.</p>
           {{ end }}
         </div>
       </div>
