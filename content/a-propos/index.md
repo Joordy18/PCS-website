@@ -11,10 +11,13 @@ date: 2026-03-25T16:00:00Z
 
 ## Nos Valeurs Fondamentales
 
-Au cœur de notre ADN, trois piliers guident nos actions quotidiennes :
-- **L'Excellence** : Que ce soit dans la compétition ou dans l'organisation d'événements.
+Au cœur de notre ADN, six valeurs guident nos actions quotidiennes :
+- **Le Respect** : Prôner le fairplay dans le jeu et le respect des personnes au sein de la communauté.
 - **L'Inclusion** : Faire de l'esport un espace ouvert à tous, sans distinction.
 - **La Responsabilité** : Agir en tant qu'acteur citoyen du monde numérique.
+- **L'Esprit familial** : Une véritable famille unie par le partage, la convivialité et la bienveillance.
+- **La Solidarité** : Unir nos forces pour soutenir chacun de nos membres et favoriser l'entraide.
+- **Le Dépassement de soi** : Repousser ses limites, s'améliorer continuellement et viser l'excellence.
 
 ---
 
@@ -34,8 +37,8 @@ Conscients de l'impact écologique du numérique, nous avons intégré un volet 
 ### 🧒 Protection des Mineurs
 Nous protégeons nos plus jeunes membres contre la publicité intrusive et les risques d'addictions aux jeux vidéo, en assurant un suivi et un accompagnement pédagogique.
 
-### 🇫🇷 Rayonnement de l'Esport en France
-PCS est fier de contribuer au développement de l'esport français en collaboration avec des instances comme l'**UAEF** et **France Esport**.
+### 🌐 Structuration de l'Esport Francophone
+Acteur engagé pour le développement de notre écosystème, PCS est fondateur de l'**UAEF** (Union des Associations Esports de France) et membre fondateur de **France Esports Sud**.
 
 ---
 

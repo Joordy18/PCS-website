@@ -1,7 +1,7 @@
 ---
 title: BeeBerry
 image: /images/uploads/logo.png
-category: Officiel
+category: Partenaires RSE
 link: https://www.beeberry.fr/
 show_in_banner: true
 ---
