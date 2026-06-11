@@ -38,7 +38,7 @@ Conscients de l'impact écologique du numérique, nous avons intégré un volet 
 Nous protégeons nos plus jeunes membres contre la publicité intrusive et les risques d'addictions aux jeux vidéo, en assurant un suivi et un accompagnement pédagogique.
 
 ### 🌐 Structuration de l'Esport Francophone
-Acteur engagé pour le développement de notre écosystème, PCS est fondateur de l'**UAEF** (Union des Associations Esports de France) et membre fondateur de **France Esports Sud**.
+Acteur engagé pour le développement de notre écosystème, PCS est fondateur de l'**UAEF** (Union des Associations Esports de France) et membre fondateur de **France Esports Sud**. PCS s'étend dans de nombreux territoires et échange avec les familles régulièrement pour sensibiliser aux bonnes pratiques mais aussi plus largement à notre secteur.
 
 ---
 

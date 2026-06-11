@@ -21,7 +21,6 @@ collections:
       - {label: "Image de couverture", name: "image", widget: "image", required: false}
       - {label: "Description / Résumé", name: "description", widget: "text", required: false}
       - {label: "Contenu", name: "body", widget: "markdown"}
-      - {label: "Activer les commentaires", name: "comments_enabled", widget: "boolean", default: true}
 
   - name: "teams"
     label: "Équipes et Rosters"

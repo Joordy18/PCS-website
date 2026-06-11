@@ -31,10 +31,6 @@
       {{ .Content }}
     </div>
 
-    {{ if ne .Params.comments_enabled false }}
-      {{ partial "comments.html" . }}
-    {{ end }}
-
   </article>
 
 </div>
